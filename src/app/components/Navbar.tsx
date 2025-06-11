@@ -1,4 +1,7 @@
+"use client";
+
 import React, {useState} from 'react'
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -6,18 +9,26 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
     const menuItems = [
-        { name: 'Home', href: '/' },
-        { name: 'Officers', href: '/officers' },
-        { name: 'Events', href: '/events' },
-        { name: 'Membership', href: '/membership' },
-        { name: 'General Meetings', href: '/gm' },
-        { name: 'Jiatings', href: '/jiatings' },
-        { name: 'Nihowdy', href: '/nihowdy' },
-        { name: 'Photos', href: '/photos' },
-        { name: 'Contact', href: '/contact' },
+        { label: 'Home', href: '/' },
+        { label: 'Officers', href: '/officers' },
+        { label: 'Events', href: '/events' },
+        { label: 'Membership', href: '/membership' },
+        { label: 'General Meetings', href: '/gm' },
+        { label: 'Jiatings', href: '/jiatings' },
+        { label: 'Nihowdy', href: '/nihowdy' },
+        { label: 'Photos', href: '/photos' },
+        { label: 'Contact', href: '/contact' },
     ];
   return (
-    <div>navbar</div>
+    <nav className='fixed w-full bg-gray-400 dark:bg-dark/80 backdrop-blur-sm z-50'>
+        <div className='container max-w-7xl mx-auto px-4'>
+            {/* Desktop Menu */}
+            <div>
+                <Link href='/'>CSA Logo</Link>
+            </div>
+            {/* Mobile Menu */}
+        </div>
+    </nav>
   )
 }
 
