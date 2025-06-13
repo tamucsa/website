@@ -23,7 +23,7 @@ const Navbar = () => {
         { label: 'Contact', href: '/contact' },
     ];
   return (
-    <nav className='fixed top w-full bg-white shadow-md/15'>
+    <nav className='sticky top-0 w-full bg-white shadow-md/15'>
         <div className='mx-auto px-5 py-1'>
             {/* Desktop Menu */}
             <div className='flex items-center justify-between h-16 font-primary'>

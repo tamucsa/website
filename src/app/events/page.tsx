@@ -10,7 +10,7 @@ const EventsPage = () => {
                 title="Styled Calendar"
                 className="styled-calendar-container mb-20"
                 style={{ width: "80%", border: "none" }}
-                height="760px"
+                height="800px"
                 data-cy="calendar-embed-iframe"
             />
         </div>

@@ -18,8 +18,8 @@ const MembershipPage = () => {
                             <div className="flex flex-col outline outline-black rounded-xl font-secondary border-2 p-3 md:p-5 text-md md:text-2xl gap-1 md:gap-4">
                                 <p className="text-nowrap"><b>Semester:</b> $35</p>
                                 <p className="text-nowrap"><b>Full Year:</b> $45</p>
-                                <p className="text-nowrap"><b>Venmo:</b> @ruth_jasa</p>
-                                <p className="text-nowrap"><b>Zelle:</b> 214-675-3557</p>
+                                <p className="text-nowrap"><b>Venmo:</b> <Link href="https://venmo.com/?txn=pay&recipients=Kody-Chu" className="underline">@Kody-Chu</Link></p>
+                                <p className="text-nowrap"><b>Zelle:</b> 832-859-2588</p>
                                 <p className="md:text-nowrap"><b>Cash:</b> Talk to our Treasurer at our General Meetings!</p>
                             </div>
                             <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 

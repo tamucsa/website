@@ -14,8 +14,12 @@
   --animation-fade-in: fadeIn 0.5s ease-in-out;
   --animation-slide-up: slideUp 0.5s ease-in-out;
 }
+html {
+    height: 100%;
+    overflow: hidden;
+}
 
-html, body {
+body {
     height: 100%;
     overflow-y: auto;
     scroll-behavior: smooth;
