@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bayon, Akshar } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +11,17 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const bayon = Bayon({
+  variable: "--font-bayon",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const akshar = Akshar({
+  variable: "--font-akshar",
   subsets: ["latin"],
 });
 
@@ -25,12 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
-      >
+      <body className={`${bayon.variable} ${akshar.variable} antialiased bg-white text-black`}>
         <Navbar />
-        {children}
-        <footer>Footer</footer>
+        <main className="min-h-screen pt-18">{children}</main>
+        <Footer />
       </body>
     </html>
   );
