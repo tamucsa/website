@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { RiMenuLine, RiCloseLargeLine } from "react-icons/ri";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -25,25 +26,52 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 w-full bg-white shadow-md/15'>
         <div className='mx-auto px-5 py-1'>
-            {/* Desktop Menu */}
+
+            {/* Desktop View */}
             <div className='flex items-center justify-between h-16 font-primary'>
                 <Link href='/'>
                     <Image src="/logo.png" alt="CSA Logo" width={50} height={50}/>
                 </Link>
-                <div className='hidden md:flex items-center space-x-7'>
+                {/* desktop menu (nav bar links) */}
+                <div className='hidden lg:flex items-center space-x-7'>
                     {
                         menuItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
-                                <Link className={`tracking-wider text-xl text-black hover:scale-110 hover:text-primary ${isActive ? 'scale-110 text-primary' : '' }`} 
+                                <Link className={`transition tracking-wider text-xl text-black hover:scale-110 hover:text-primary ${isActive ? 'scale-110 text-primary' : '' }`} 
                                 href={item.href} key={item.href}>{item.label}</Link>
                             )
                         })
                     }
                 </div>  
+                {/* mobile menu (dashboard button) */}
+                <button className='lg:hidden p-4 -m-2 text-black hover:text-primary transition-colors cursor-pointer'
+                    onClick={toggleMobileMenu}>
+                    {
+                        isMobileMenuOpen ? (<RiCloseLargeLine className='w-6 h-6'/>) : (<RiMenuLine className='w-6 h-6'/>)
+                    }
+                </button>
             </div>          
 
-            {/* Mobile Menu */}
+            {/* Mobile View */}
+            {
+                isMobileMenuOpen && (
+                    <div className='lg:hidden'>
+                        <div className='pb-2 space-y-4'></div>
+                        {
+                            menuItems.map((item) => {
+                                const isActive = pathname === item.href;
+                                return (
+                                    <div key={item.href}>
+                                        <Link className={`block py-2 font-primary tracking-wider transition-colors text-xl text-black hover:text-primary ${isActive ? ' text-primary' : '' }`}
+                                        href={item.href}>{item.label}</Link>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                )
+            }
         </div>
     </nav>
   )
