@@ -35,7 +35,7 @@ const Navbar = () => {
                         menuItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
-                                <Link className={`text-xl text-black hover:scale-110 hover:text-primary ${isActive ? 'scale-110 text-primary' : '' }`} 
+                                <Link className={`tracking-wider text-xl text-black hover:scale-110 hover:text-primary ${isActive ? 'scale-110 text-primary' : '' }`} 
                                 href={item.href} key={item.href}>{item.label}</Link>
                             )
                         })
