@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 
 const GMPage = () => {
@@ -8,4 +9,10 @@ Check out <Link href='/events' className="underline">Events</Link> to see the ca
         </div>
     );
 }
+
+export const metadata: Metadata = {
+  title: "TAMU CSA - General Meetings",
+  description: "Information about the General Meetings of the Chinese Student Association at TAMU.",
+};
+
 export default GMPage;

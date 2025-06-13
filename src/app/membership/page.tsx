@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 
 const MembershipPage = () => {
@@ -21,7 +22,7 @@ const MembershipPage = () => {
                                 <p className="text-nowrap"><b>Zelle:</b> 214-675-3557</p>
                                 <p className="md:text-nowrap"><b>Cash:</b> Talk to our Treasurer at our General Meetings!</p>
                             </div>
-                            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
+                            <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
                                   className="p-3 outline outline-blac border-2 rounded-lg text-center font-primary tracking-wider text-xl md:text-2xl hover:text-primary hover:outline-primary transition duration-300">
                                   CSA Membership Form
                             </Link>
@@ -32,4 +33,10 @@ const MembershipPage = () => {
         </div>
     );
 }
+
+export const metadata: Metadata = {
+  title: "TAMU CSA - Membership",
+  description: "Membership information for the Chinese Student Association at TAMU.",
+};
+
 export default MembershipPage;
