@@ -26,7 +26,7 @@ const MembershipPage = () => {
                         </div>
                         <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
                               className=" w-full p-3 outline outline-blac border-2 rounded-lg text-center font-primary tracking-wider transition-colors duration-300 text-xl md:text-2xl hover:text-primary hover:outline-primary">
-                              CSA Membership Form
+                              CSA Membership Form (2024-2025)
                         </Link>
                     </div>
                 </div>
