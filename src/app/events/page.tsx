@@ -13,6 +13,12 @@ const EventsPage = () => {
                 height="800px"
                 data-cy="calendar-embed-iframe"
             />
+            <iframe
+                src="https://calendar.google.com/calendar/embed?src=c_3fbff6dee5464c48cd33d9e32ba9933ddd6c09b628abee73df76c39d931da62f%40group.calendar.google.com&ctz=America%2FChicago"
+                style={{ border: 0 }}
+                width={800}
+                height={600}
+            />
         </div>
     );
 }
