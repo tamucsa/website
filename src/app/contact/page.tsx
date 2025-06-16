@@ -2,7 +2,9 @@ import { Metadata } from "next";
 
 const ContactPage = () => {
     return (
-        <div>Contact Page</div>
+        <div className="container max-w-7xl mx-auto py-20">
+            <h1 className="font-primary text-center tracking-wider text-xl mb-8 ">Contact Us</h1>
+        </div>
     )
 }
 
