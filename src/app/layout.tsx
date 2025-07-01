@@ -40,8 +40,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bayon.variable} ${akshar.variable} antialiased bg-white text-black`}>
         <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <main className="grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
