@@ -13,11 +13,11 @@ const MembershipPage = () => {
                         <p> Make sure to Venmo or Zelle to the correct contact listed on the right as well! Note that there is a different cost for semester vs. full year, and if you need to pay in cash, talk to our Treasurer at a General Meeting!</p>
                     </div>
                     {/* Right Payment Info & Form */}
-                    <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-5">
+                    <div className="flex flex-col items-center justify-center gap-3 md:gap-5">
                         <div className="flex flex-col w-full outline outline-black rounded-xl font-secondary border-2 p-3 md:p-5 text-md md:text-2xl gap-1 md:gap-4">
-                            <p className="text-nowrap"><b>Semester:</b> $35</p>
-                            <p className="text-nowrap"><b>Full Year:</b> $45</p>
-                            <p className="text-nowrap">Payment Methods will be listed in the form below!</p>
+                            <p className=""><b>Semester:</b> $35</p>
+                            <p className=""><b>Full Year:</b> $45</p>
+                            <p className="">Payment Methods will be listed in the form below!</p>
                             {/*
                             <p className="text-nowrap"><b>Venmo:</b> <Link href="https://venmo.com/?txn=pay&recipients=Kody-Chu" className="underline">@Kody-Chu</Link></p>
                             <p className="text-nowrap"><b>Zelle:</b> 832-859-2588</p>
@@ -25,7 +25,7 @@ const MembershipPage = () => {
                             */}
                         </div>
                         <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
-                              className=" w-full p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors duration-300 text-xl md:text-2xl hover:text-primary hover:outline-primary">
+                              className="w-full text-nowrap p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors duration-300 text-xl md:text-2xl hover:text-primary hover:outline-primary">
                               CSA Membership Form (2024-2025)
                         </Link>
                     </div>
