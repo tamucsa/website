@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { RiMenuLine, RiCloseLargeLine } from "react-icons/ri";
+import classNames from 'classnames';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
         { label: 'Contact', href: '/contact' },
     ];
   return (
-    <nav className='sticky top-0 w-full bg-white shadow-md/15'>
+    <nav className='fixed top-0 w-full bg-white shadow-md/15'>
         <div className='mx-auto lg:pr-5 py-1'>
 
             {/* Desktop View */}
@@ -38,7 +39,9 @@ const Navbar = () => {
                         menuItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
-                                <Link className={`transition tracking-wider text-xl text-black hover:scale-110 hover:text-primary ${isActive ? 'scale-110 text-primary' : '' }`} 
+                                <Link className={classNames('transition tracking-wider text-xl text-black hover:scale-110 hover:text-primary', {
+                                    'scale-110 text-primary': isActive
+                                })} 
                                 href={item.href} key={item.href}>{item.label}</Link>
                             )
                         })
