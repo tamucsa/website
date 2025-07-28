@@ -6,9 +6,9 @@ const MembershipPage = () => {
         <div className='flex flex-col items-center gap-5 md:gap-15'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15'>How to Join CSA!</h1>
             <div className='container items-center justify-center px-5 md:px-15'>
-                <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10'>
+                <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10 pb-15'>
                     {/* Left Text */}
-                    <div className="flex flex-col items-center justify-center font-secondary text-md md:text-2xl/10 tracking-wide gap-5 px-3 md:px-0">
+                    <div className="flex flex-col items-center justify-center font-secondary text-md md:text-2xl/10 tracking-wide gap-5 px-3">
                         <p>CSA has a membership form to fill out before you can become a member! Just click the membership form button on the right to fill it out with your information.</p>
                         <p> Make sure to Venmo or Zelle to the correct contact listed on the right as well! Note that there is a different cost for semester vs. full year, and if you need to pay in cash, talk to our Treasurer at a General Meeting!</p>
                     </div>
@@ -25,7 +25,7 @@ const MembershipPage = () => {
                             */}
                         </div>
                         <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
-                              className="w-full text-nowrap p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors duration-300 text-xl md:text-2xl hover:text-primary hover:outline-primary">
+                              className="w-full text-nowrap p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors text-xl md:text-2xl hover:text-primary hover:outline-primary">
                               CSA Membership Form (2024-2025)
                         </Link>
                     </div>
