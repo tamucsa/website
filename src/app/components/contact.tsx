@@ -19,7 +19,7 @@ const Contact: FC = () => {
     }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 w-sm md:max-w-3xl md:w-xl mx-auto font-secondary'>
+    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-xl mx-auto font-secondary'>
         <h2 className=' text-sm md:text-xl font-secondary'>
             Fill out this form below and we'll get back to you as soon as possible!
         </h2>   
