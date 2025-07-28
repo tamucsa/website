@@ -19,17 +19,17 @@ const Contact: FC = () => {
     }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 max-w-md mx-auto font-secondary'>
-        <h2 className='text-center text-nowrap text-base md:text-lg font-secondary'>
+    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 w-sm md:max-w-3xl md:w-xl mx-auto font-secondary'>
+        <h2 className=' text-sm md:text-xl font-secondary'>
             Fill out this form below and we'll get back to you as soon as possible!
-        </h2>
+        </h2>   
         <div className='flex flex-col gap-1'>
             <label htmlFor='name' className='text-base md:text-lg'>Name</label>
             <input
                 type="text"
                 placeholder="Your name"
                 {...register("name", { required: true })}
-                className="px-3 py-2 border rounded-lg border-gray-400 text-base"
+                className="px-3 py-2 border rounded-lg border-gray-400 text-sm md:text-base"
             />
         </div>
         <div className='flex flex-col gap-1'>
@@ -38,7 +38,7 @@ const Contact: FC = () => {
                 type="email"
                 placeholder="example@domain.com"
                 {...register("email", { required: true })}
-                className="px-3 py-2 border rounded-lg border-gray-400 text-base"
+                className="px-3 py-2 border rounded-lg border-gray-400 text-sm md:text-base"
             />
         </div>
         <div className='flex flex-col gap-1'>
@@ -47,7 +47,7 @@ const Contact: FC = () => {
                 type="text"
                 placeholder="How can we help?"
                 {...register("subject", { required: true })}
-                className="px-3 py-2 border rounded-lg border-gray-400 text-base"
+                className="px-3 py-2 border rounded-lg border-gray-400 text-sm md:text-base"
             />
         </div>
         <div className='flex flex-col gap-1'>
@@ -56,7 +56,7 @@ const Contact: FC = () => {
                 rows={5}
                 placeholder="Type your message here..."
                 {...register("message", { required: true })}
-                className="px-3 py-2 border rounded-lg border-gray-400 text-base h-32"
+                className="px-3 py-2 border rounded-lg border-gray-400 h-32 text-sm md:text-base"
             />
         </div>
         <div>
