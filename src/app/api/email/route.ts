@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
-    const { name, email, message } = await request.json();
+    const { name, email, message, subject } = await request.json();
 
     const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const mailOptions: Mail.Options = {
         from: process.env.CSA_EMAIL,
         to: process.env.CSA_EMAIL,
-        subject: `Message from ${name} (${email})`,
+        subject: `Message from ${name} (${email} - ${subject})`,
         text: message,
     };
 
