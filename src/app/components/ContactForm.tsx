@@ -11,7 +11,7 @@ export type FormData = {
     subject: string;
 }
 
-const Contact: FC = () => {
+const ContactForm: FC = () => {
     const {register, handleSubmit} = useForm<FormData>();
 
     function onSubmit(data: FormData) {
@@ -67,4 +67,4 @@ const Contact: FC = () => {
     </form>
   )
 }
-export default Contact;
+export default ContactForm;

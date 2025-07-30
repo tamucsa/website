@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Contact from "@/app/components/contact";
+import ContactForm from "@/app/components/ContactForm";
 
 const ContactPage = () => {
     return (
@@ -9,7 +9,7 @@ const ContactPage = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10 pb-15">
                 {/* Left/Top - Contact Form */}
                 <div className="w-full px-0 md:px-0">
-                    <Contact />
+                    <ContactForm />
                 </div>
                 {/* Right - Images, Hidden on smaller screens */}
                 <div className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:gap-5 xl:pl-10">
