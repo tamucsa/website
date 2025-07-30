@@ -12,9 +12,9 @@ const PhotosPage = () => {
           {/* Button list of photo albums */} {/* Replace 'hidden' with 'flex' to show component */}
           <main className="hidden flex-col w-full md:w-lg border items-center justify-center gap-4">
             <LinkButton href="" newTab={true}
-              className="w-full text-lg md:text-xl">
-              Event Name (MM/DD/YYYY)
-            </LinkButton>
+              className="w-full text-lg md:text-xl"
+              text="Event Name (MM/DD/YYYY)"
+            />
             {/* <LinkButton href="/jiatings" newTab={true}
               className="w-full text-lg md:text-xl">
               Event Name (MM/DD/YYYY)
