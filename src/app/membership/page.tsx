@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import LinkButton from "@/app/components/LinkButton";
 
 const MembershipPage = () => {
     return (
@@ -24,10 +24,10 @@ const MembershipPage = () => {
                             <p className="md:text-nowrap"><b>Cash:</b> Talk to our Treasurer at our General Meetings!</p>
                             */}
                         </div>
-                        <Link target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" 
-                              className="w-full text-nowrap p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors text-xl md:text-2xl hover:text-primary hover:outline-primary">
-                              CSA Membership Form (2024-2025)
-                        </Link>
+                        <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" newTab={true}
+                            className="w-full text-nowrap text-xl md:text-2xl">
+                            CSA Membership Form (2024-2025)
+                        </LinkButton>
                     </div>
                 </div>
             </div>
