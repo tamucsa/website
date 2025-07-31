@@ -4,10 +4,14 @@ import Image from "next/image";
 
 export default function OfficerCard({ officer }: { officer: Officer }) {
     return (
-        <div className="flex flex-col items-center p-4 border border-gray-300 rounded-lg">
-            <Image src={officer.image} alt={`${officer.name}'s photo`} className="w-24 h-24 rounded-full" />
-            <h3 className="text-lg font-semibold">{officer.name}</h3>
-            <p className="text-gray-600">{officer.position} {officer.major}</p>
+        <div className="flex flex-col gap-5 p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
+            <Image src={`/officers/${officer.name}.JPG`} alt={`${officer.name}'s photo`} 
+                className="rounded-2xl" width={300} height={300}/>
+            <div className="flex flex-col gap-3">
+                <h3 className="font-primary tracking-widest text-3xl">{officer.name}</h3>
+                <p className="font-secondary text-xl">{officer.position}</p>
+                <p className="font-secondary text-xl">{officer.major}</p>
+            </div>
         </div>
     );
 }

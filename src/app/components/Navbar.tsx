@@ -25,7 +25,7 @@ const Navbar = () => {
         { label: 'Contact', href: '/contact' },
     ];
   return (
-    <nav className='fixed top-0 w-full bg-white shadow-md/15'>
+    <nav className='fixed top-0 w-full bg-white shadow-md/25 shadow-gray-600'>
         <div className='mx-auto lg:pr-5 py-1'>
 
             {/* Desktop View */}
