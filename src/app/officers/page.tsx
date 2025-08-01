@@ -10,11 +10,11 @@ const OfficerPage = () => {
           </header> */}
           <main className="mt-10 md:mt-15 md:mb-15">
             <div className='grid grid-cols-3 grid-rows-6 gap-12'>
-                    {
-                        OfficerList.map((officer) => (
-                            <OfficerCard key={officer.name} officer={officer} />
-                        ))
-                    }
+              {
+                  OfficerList.map((officer) => (
+                      <OfficerCard key={officer.name} officer={officer} />
+                  ))
+              }
             </div>  
           </main>
         </div>
