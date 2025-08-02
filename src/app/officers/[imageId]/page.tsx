@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { use } from "react";
 import { useRouter } from "next/navigation";
 
-export default function ModalImage({ params }: { params: Promise<{imageId: number}> }) {
+export default function OfficerFullImage({ params }: { params: Promise<{imageId: number}> }) {
     const { imageId } = use(params);
     const router = useRouter();
 
