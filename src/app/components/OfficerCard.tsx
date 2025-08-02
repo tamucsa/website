@@ -23,7 +23,7 @@ export default function OfficerCard({ officer }: { officer: Officer }) {
                 <Link
                     target="_blank"
                     href={`https://www.instagram.com/${officer.instagram}/`}
-                    className="absolute top-3 right-3 hover:scale-110 transition-transform bg-white shadow p-1 rounded-md sm:p-2 sm:rounded-xl"
+                    className="absolute top-3 right-3 hover:scale-110 bg-white/75 hover:bg-white transition shadow p-1 rounded-md sm:p-2 sm:rounded-xl"
                     aria-label={`Visit ${officer.name}'s Instagram`}
                 >
                     <RiInstagramFill className="h-4 w-4 sm:h-6 sm:w-6 text-primary" />
