@@ -30,6 +30,7 @@ const ContactForm: FC = () => {
                 placeholder="Your name"
                 id='formname'
                 {...register("name", { required: true })}
+                autoComplete='on'
                 className="px-3 py-2 border rounded-lg border-gray-400 text-sm md:text-base"
             />
         </div>
@@ -40,6 +41,7 @@ const ContactForm: FC = () => {
                 placeholder="example@domain.com"
                 id='formemail'
                 {...register("email", { required: true })}
+                autoComplete='on'
                 className="px-3 py-2 border rounded-lg border-gray-400 text-sm md:text-base"
             />
         </div>
