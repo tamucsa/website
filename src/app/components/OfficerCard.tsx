@@ -9,7 +9,7 @@ export default function OfficerCard({ officer }: { officer: Officer }) {
             {/* Image section w/ clickable button to open modal */}
             <Link href={`/officers/${officer.id}`}>
                 <Image src={`/officerImages/cropped/${officer.id}.JPG`} alt={`${officer.name}'s photo`} 
-                    className="rounded-2xl hover:scale-105 transition-transform duration-200 hover:brightness-110" width={300} height={300}/>
+                    className="rounded-2xl hover:scale-105 duration-200 hover:brightness-110 transition-[transform, colors]" width={300} height={300}/>
             </Link>
             {/* Text section with name, position, major, and year */}
             <div className="flex flex-col gap-3">
