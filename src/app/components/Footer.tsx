@@ -20,7 +20,7 @@ const Footer = () => {
             <div className='flex flex-row items-center gap-2'>
                 {
                     menuItems.map((item) => (
-                        <Link target='_blank' key={item.href} href={item.href} className='hover:scale-110 p-3 bg-white rounded-xl'>
+                        <Link target='_blank' key={item.href} href={item.href} className='hover:scale-110 transition-transform p-3 bg-white rounded-xl'>
                             {item.child}
                         </Link>
                     ))
