@@ -7,7 +7,7 @@ export default async function ModalImage({ params }: { params: Promise<{imageId:
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-20">
-            <Link href={`/officers#officer-${imageId}`} className="absolute -inset-0 cursor-default z-20">
+            <Link href={`/officers#${imageId}`} className="absolute -inset-0 cursor-default z-20">
                 <Image alt={`Officer ${imageId} Blurred Background`} src={`/officerImages/raw/${imageId}.JPG`} fill className="max-w-full max-h-screen blur-xl" />
             </Link>
             <div className="bg-white p-0 rounded-lg shadow-lg z-30">

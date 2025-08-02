@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function OfficerCard({ officer }: { officer: Officer }) {
     return (
-        <div id={`officer-${officer.id}`} className="flex flex-col gap-5 p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
+        <div id={`${officer.id}`} className="flex flex-col gap-5 p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
             <Link href={`/officers/${officer.id}`}>
                 <Image src={`/officerImages/cropped/${officer.id}.JPG`} alt={`${officer.name}'s photo`} 
