@@ -1,9 +1,28 @@
+"use client";
+
 import ImageModal from "@/app/components/ImageModal";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { use } from "react";
+import { useRouter } from "next/navigation";
 
-export default async function ModalImage({ params }: { params: Promise<{imageId: number}> }) {
-    const { imageId } = await params;
+export default function ModalImage({ params }: { params: Promise<{imageId: number}> }) {
+    const { imageId } = use(params);
+    const router = useRouter();
+
+    useEffect(() => {
+        const handleKeyPress = (event: KeyboardEvent) => {
+            console.log(`Key pressed: ${event.key}`);
+            if (event.key === "Escape") {
+                router.push(`/officers#${imageId}`);
+            }
+        }
+        window.addEventListener("keydown", handleKeyPress);
+        return () => {
+            window.removeEventListener("keydown", handleKeyPress);
+        }
+    }, []);
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-20">
