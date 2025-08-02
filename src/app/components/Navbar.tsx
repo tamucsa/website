@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* Mobile View */}
             {
                 isMobileMenuOpen && (
-                    <div className='lg:hidden absolute w-full border-t-1 border-secondary shadow-md/15 bg-white'>
+                    <div className='lg:hidden absolute w-full border-t-1 border-secondary shadow-md/15 bg-white transition-transform'>
                         <div className='pb-2 space-y-4'></div>
                         {
                             menuItems.map((item) => {
