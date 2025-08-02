@@ -30,7 +30,7 @@ const Navbar = () => {
 
             {/* Desktop View */}
             <div className='flex items-center justify-between h-16 font-primary'>
-                <Link href='/' className='px-5'>
+                <Link href='/' className='px-5 hover:scale-110 transition-transform'>
                     <Image src="/logo.png" alt="CSA Logo" width={50} height={50}/>
                 </Link>
                 {/* desktop menu (nav bar links) */}
