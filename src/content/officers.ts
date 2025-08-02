@@ -1,4 +1,4 @@
-import { Officer } from "@/types";
+import { Officer } from "@/utils/types";
 
 export const OfficerList: Officer[] = [
     {
