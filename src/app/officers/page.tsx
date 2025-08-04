@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { OfficerList } from "@/content/officers";
-import OfficerCard from "@/app/components/OfficerCard";
+import OfficerCard from "@/app/components/officers/OfficerCard";
 
 const OfficerPage = () => {
     return (

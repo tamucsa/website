@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import ContactForm from "@/app/components/ContactForm";
+import ContactForm from "@/app/components/contact/ContactForm";
 
 const ContactPage = () => {
     return (

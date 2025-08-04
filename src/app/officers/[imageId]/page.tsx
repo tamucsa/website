@@ -1,6 +1,6 @@
 "use client";
 
-import ImageModal from "@/app/components/ImageModal";
+import ImageModal from "@/app/components/officers/ImageModal";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
