@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import LinkButton from "@/app/components/LinkButton";
+
 import { Metadata } from "next";
  
 export const metadata: Metadata = {
@@ -19,10 +20,12 @@ export default function NotFound(){
                         <p className='text-xl font-secondary mt-2'>The page you are looking for does not exist or has been moved.</p>
                     </div>
                 </div>
-                <Link href="/" 
-                    className=" w-full p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors duration-300 text-3xl lg:text-4xl hover:text-primary hover:outline-primary">
-                    Home
-                </Link>
+                <LinkButton
+                    href="/"
+                    newTab={false}
+                    className="w-full text-3xl lg:text-4xl"
+                    text="Home"
+                />
             </div>
         </div>
     )
