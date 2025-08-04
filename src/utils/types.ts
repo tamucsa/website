@@ -5,3 +5,12 @@ export interface Officer {
     major: string;
     instagram: string;
 }
+
+export interface Album {
+    id: number;
+    title: string;
+    description?: string;
+    coverImage?: string;
+    url: string;
+    years: string;
+}
