@@ -11,7 +11,7 @@ export default function AlbumLinkButton({ album, className }: AlbumLinkButtonPro
         <LinkButton
             href={album.url}
             newTab={true}
-            className={`${className}`}
+            className={`w-full md:w-md ${className}`}
             text={album.title}
         />
     );

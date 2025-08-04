@@ -9,10 +9,10 @@ export const AlbumList2024_25: Album[] = [
 
     // 2024-2025 Albums
     
-    { 
-        id: 29,
-        title: "Title",
-        url: "URL",
-        years: "2024-2025"
-    }
+    // { 
+    //     id: 29,
+    //     title: "Title",
+    //     url: "URL",
+    //     years: "2024-2025"
+    // }
 ];
