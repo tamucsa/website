@@ -1,7 +1,8 @@
 "use client";
 
 import ImageModal from "@/app/components/officers/ImageModal";
-import Loading from "@/app/loading";
+import { Officer } from "@/utils/types";
+import { OfficerList } from "@/content/officers";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -9,15 +10,14 @@ import { useEffect } from "react";
 import { use } from "react";
 import { useRouter } from "next/navigation";
 
-export default function OfficerFullImage({ params }: { params: Promise<{imageId: number}> }) {
-    const { imageId } = use(params);
+export default function OfficerFullImage({ officer }: { officer: Officer }) {
     const router = useRouter();
 
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
             console.log(`Key pressed: ${event.key}`);
             if (event.key === "Escape") {
-                router.push(`/officers#${imageId}`);
+                router.push(`/officers#${officer.id}`);
             }
         }
         window.addEventListener("keydown", handleKeyPress);
@@ -26,12 +26,21 @@ export default function OfficerFullImage({ params }: { params: Promise<{imageId:
         }
     }, []);
 
-    return (
+    if (!officer) {
+        return (
             <div className="fixed flex items-center justify-center bg-black z-20">
-                <Link href={`/officers#${imageId}`} className="absolute cursor-default z-20">
-                    <Image alt={`Officer ${imageId} Blurred Background`} src={`/officerImages/raw/${imageId}.JPG`} fill className="max-w-full max-h-screen blur-xl brightness-75" />
+                <p className="text-white">Officer not found.</p>
+            </div>
+        );
+    }
+    else {
+        return (
+            <div className="fixed flex items-center justify-center bg-black z-20">
+                <Link href={`/officers#${officer.id}`} className="absolute cursor-default z-20">
+                    <Image alt={`${officer.name} Blurred Background`} src={`/officerImages/raw/${officer.id}.JPG`} fill className="max-w-full max-h-screen blur-xl brightness-75" />
                 </Link>
-                <ImageModal imageId={imageId} className="z-30"/>
+                <ImageModal officer={officer} className="z-30"/>
             </div>  
-    );
+        );
+    }
 }
