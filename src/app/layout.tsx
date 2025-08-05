@@ -1,29 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bayon, Akshar } from "next/font/google";
+import { Bayon, Akshar } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Scroll from "./components/Scroll";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const bayon = Bayon({
-  variable: "--font-bayon",
+  // variable: "--font-bayon",
   subsets: ["latin"],
   weight: "400",
 });
 
 const akshar = Akshar({
-  variable: "--font-akshar",
+  // variable: "--font-akshar",
   subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -38,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bayon.variable} ${akshar.variable} antialiased bg-white text-black`}>
+      <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
         <Navbar />
         <div className="flex flex-col min-h-screen pt-18">
           <main className="grow">{children}</main>

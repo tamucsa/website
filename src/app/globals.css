@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-primary: var(--font-bayon);
-  --font-secondary: var(--font-akshar);
+  --font-primary: bayon;
+  --font-secondary: akshar;
 }
 @theme {
   --color-primary: #4779B8;

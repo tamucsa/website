@@ -25,12 +25,12 @@ const Navbar = () => {
         { label: 'Contact', href: '/contact' },
     ];
   return (
-    <nav className='fixed top-0 w-full bg-white shadow-md/15'>
+    <nav className='fixed top-0 w-full bg-white shadow-md/25 shadow-gray-600 z-10'>
         <div className='mx-auto lg:pr-5 py-1'>
 
             {/* Desktop View */}
             <div className='flex items-center justify-between h-16 font-primary'>
-                <Link href='/' className='px-5'>
+                <Link href='/' className='px-5 hover:scale-110 transition-transform'>
                     <Image src="/logo.png" alt="CSA Logo" width={50} height={50}/>
                 </Link>
                 {/* desktop menu (nav bar links) */}
@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* Mobile View */}
             {
                 isMobileMenuOpen && (
-                    <div className='lg:hidden absolute w-full border-t-1 border-secondary shadow-md/15 bg-white'>
+                    <div className='lg:hidden absolute w-full border-t-1 border-secondary shadow-md/25 shadow-gray-600 z-10 bg-white transition-transform'>
                         <div className='pb-2 space-y-4'></div>
                         {
                             menuItems.map((item) => {

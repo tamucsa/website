@@ -1,8 +1,17 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 const NihowdyPage = () => {
     return (
-        <div>Nihowdy!</div>
+        <div className="flex flex-col items-center justify-center">
+                <Image
+                src="/under-construction.png"
+                alt="Site is under construction"
+                width={800}
+                height={800}
+                className="items-center justify-center"
+              />
+            </div>
     );
 }
 
