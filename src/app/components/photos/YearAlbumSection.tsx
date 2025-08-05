@@ -29,24 +29,24 @@ export default function YearAlbumSection({ albumList, year, thisYear, className 
     return (
         <div className={`flex flex-col items-center gap-3 ${className}`}>
             {/* Year Title and Toggle Button */}
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row gap-2">
                 <h3 className={classNames(
                     "font-primary tracking-wider", {
                         "text-xl md:text-2xl": !thisYear,
                         "text-2xl md:text-3xl": thisYear
                     })}>{year}</h3>
                 <button onClick={toggleVisibility} className={classNames(
-                    "items-center gap-3", {
+                    "items-center", {
                         "flex": !thisYear,
                         "hidden": thisYear
                     })}>
                     {isVisible ? (
                         <>
-                            <RiArrowUpSLine className="text-xl" />
+                            <RiArrowUpSLine className="text-2xl" />
                         </>
                     ) : (
                         <>
-                            <RiArrowDownSLine className="text-xl" />
+                            <RiArrowDownSLine className="text-2xl" />
                         </>
                     )}
                 </button>

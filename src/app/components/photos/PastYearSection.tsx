@@ -33,20 +33,20 @@ export default function PastYearSection({ className, toggable }: PastYearSection
             {/* Header */}
             <div className="flex flex-col items-center gap-2">
                 {/* Title and Toggle Button */}
-                <div className="flex flex-row gap-5">
+                <div className="flex flex-row gap-2">
                     <h2 className="font-primary tracking-wider text-2xl md:text-3xl">Past Albums</h2>
                     <button onClick={toggleVisibility} className={classNames(
-                        "items-center gap-3", {
+                        "items-center", {
                             "flex": toggable,
                             "hidden": !toggable
                         })}>
                         {isVisible ? (
                             <>
-                                <RiArrowUpSLine className="text-xl" />
+                                <RiArrowUpSLine className="text-2xl" />
                             </>
                         ) : (
                             <>
-                                <RiArrowDownSLine className="text-xl" />
+                                <RiArrowDownSLine className="text-2xl" />
                             </>
                         )}
                     </button>
