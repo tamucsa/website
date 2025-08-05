@@ -1,11 +1,22 @@
 "use client";
 
 import ImageModal from "@/app/components/officers/ImageModal";
+import { Officer } from "@/utils/types";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { use } from "react";
 import { useRouter } from "next/navigation";
+import { Metadata, ResolvingMetadata } from "next";
+
+export async function generateMetadata ({ params }: { params: Promise<{ imageId: number }>}, parent: ResolvingMetadata): Promise<Metadata> {
+    const { imageId } = await params;
+    return {
+        title: `TAMU CSA - Officer ${imageId} Full Image`,
+        description: `Full image for officer #${imageId} of the Chinese Student Association at Texas A&M University.`,
+    };
+}
 
 export default function OfficerFullImage({ params }: { params: Promise<{imageId: number}> }) {
     const { imageId } = use(params);
