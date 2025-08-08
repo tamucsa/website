@@ -26,7 +26,7 @@ export default function ImageModal({ officer, className }: ImageModalProps) {
 
             <div className="m-7">
                 <Image alt={`${officer.name}'s Full Image`} src={`/officerImages/raw/${officer.id}.JPG`} width={width} height={height}
-                    className="rounded-2xl shadow-lg" objectFit="contain" sizes=""
+                    className="rounded-2xl shadow-lg" style={{ objectFit: "contain" }} sizes=""
                 />  
             </div>
             {/* <div className="rounded-2xl w-screen h-screen overflow-hidden">

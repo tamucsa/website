@@ -95,7 +95,7 @@ export const OfficerList: Officer[] = [
         major: "Economics '28",
         id: 12,
         instagram: "dongkai.zhang06",
-        rawImgOrientation: "horizontal"
+        rawImgOrientation: "vertical"
     },
     {
         name: "Ryan Kha",
@@ -111,7 +111,7 @@ export const OfficerList: Officer[] = [
         major: "Computer Science '27",
         id: 14,
         instagram: "cantguardkev",
-        rawImgOrientation: "horizontal"
+        rawImgOrientation: "vertical"
     },
     {
         name: "Hecate Hu",
@@ -135,7 +135,7 @@ export const OfficerList: Officer[] = [
         major: "Accounting '28",
         id: 17,
         instagram: "cmilychen",
-        rawImgOrientation: "horizontal"
+        rawImgOrientation: "vertical"
     },
     {
         name: "Bonnie Tsoi",
