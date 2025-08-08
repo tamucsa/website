@@ -4,6 +4,7 @@ export interface Officer {
     position: string;
     major: string;
     instagram: string;
+    rawImgOrientation: "horizontal" | "vertical";
 }
 
 export interface Album {

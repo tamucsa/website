@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Bayon, Akshar } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
 
 const bayon = Bayon({
   // variable: "--font-bayon",
@@ -29,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
-        {children}
+        {children }
       </body>
     </html>
+    
   );
 }

@@ -29,7 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
-        {children}
+        <Navbar />
+        <div className="flex flex-col min-h-screen pt-18">
+          <main className="grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
