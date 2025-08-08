@@ -2,6 +2,7 @@ import FullImage from "@/app/components/officers/FullImage";
 import { OfficerList } from "@/content/officers";
 
 import { Metadata, ResolvingMetadata } from "next";
+import NotFound from "@/app/not-found"
 
 export default async function OfficerImagePage({
     params,
@@ -9,11 +10,9 @@ export default async function OfficerImagePage({
     params: Promise<{ imageId: number }>;
 }) {
     const { imageId } = await params;
-    const officer = OfficerList.find(o => o.id === imageId);
+    const officer = OfficerList.find(o => o.id === Number(imageId));
     if (!officer) {
-        return (
-            <div>Officer not found</div>
-        );
+        return <NotFound showNavbar={false} />;
     }
     return (
         <FullImage officer={officer} />
@@ -22,7 +21,7 @@ export default async function OfficerImagePage({
 
 export async function generateMetadata ({ params }: { params: Promise<{ imageId: number }>}, parent: ResolvingMetadata): Promise<Metadata> {
     const { imageId } = await params;
-    const officer = OfficerList.find(o => o.id === imageId);
+    const officer = OfficerList.find(o => o.id === Number(imageId));
     if (!officer) {
         return {
             title: "TAMU CSA - Officer Not Found",
