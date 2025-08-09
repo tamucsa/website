@@ -14,4 +14,8 @@ export interface Album {
     coverImage?: string;
     url: string;
     years: string;
+    groupInfo?: { // Optional field for grouping albums;
+        group: "GM" | "Jiating Reveal" | "Pumpkin Patch" | "Ni-Howdy" | "Formals"
+        titleForGroup?: string // Optional field for providing a different title for the group;
+    };
 }

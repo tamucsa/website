@@ -54,7 +54,7 @@ export default function PastYearSection({ className, toggable }: PastYearSection
                         </span>
                     </button>
                 </div>
-                <p className="font-secondary tracking-wider text-base md:text-lg">Check out our past events!</p>
+                <p className="font-secondary tracking-wider text-base md:text-lg">Check out photos from past years!</p>
             </div>
             {/* Album Sections */}
             <div className={classNames(
