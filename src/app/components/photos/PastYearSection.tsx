@@ -5,7 +5,7 @@ import { AlbumList2023_24 } from "@/content/albums/2023-24";
 import { AlbumList2024_25 } from "@/content/albums/2024-25";
 
 import React, { useState } from "react";
-import { RiArrowDownSLine, RiArrowUpSLine} from "react-icons/ri";
+import { RiArrowUpSLine } from "react-icons/ri";
 import classNames from "classnames";
 
 interface PastYearSectionProps {
@@ -35,20 +35,23 @@ export default function PastYearSection({ className, toggable }: PastYearSection
                 {/* Title and Toggle Button */}
                 <div className="flex flex-row gap-2">
                     <h2 className="font-primary tracking-wider text-2xl md:text-3xl">Past Albums</h2>
-                    <button onClick={toggleVisibility} className={classNames(
-                        "items-center", {
-                            "flex": toggable,
-                            "hidden": !toggable
-                        })}>
-                        {isVisible ? (
-                            <>
-                                <RiArrowUpSLine className="text-2xl" />
-                            </>
-                        ) : (
-                            <>
-                                <RiArrowDownSLine className="text-2xl" />
-                            </>
-                        )}
+                    <button
+                        onClick={toggleVisibility}
+                        className={classNames(
+                            "items-center", {
+                                "flex": toggable,
+                                "hidden": !toggable
+                            }
+                        )}>
+                        <span
+                            className={classNames(
+                                "inline-block transition-transform duration-100",
+                                {
+                                    "scale-y-[-1]": !isVisible,
+                                }
+                            )}>
+                            <RiArrowUpSLine className="text-2xl" />
+                        </span>
                     </button>
                 </div>
                 <p className="font-secondary tracking-wider text-base md:text-lg">Check out our past events!</p>
