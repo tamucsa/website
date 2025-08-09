@@ -66,7 +66,7 @@ export const AlbumList2024_25: Album[] = [
     {
         id: 36,
         title: "TASA X CSA X VSA Halloween Costume Contest",
-        url: "https://drive.google.com/drive/folders/1-PziEjR5umDHYXjZcyu6hnP0KZ_QtDwi",
+        url: "https://drive.google.com/drive/folders/1-BGJY40tS5jZOq3gPyt4JNo04QwZ3z_P",
         years: "2024-2025",
     },
     {
