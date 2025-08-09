@@ -1,5 +1,7 @@
-import { Metadata } from "next";
 import LinkButton from "@/app/components/LinkButton";
+import PointTracker from "@/app/components/membership/PointTracker";
+
+import { Metadata } from "next";
 
 const MembershipPage = () => {
     return (
@@ -31,6 +33,7 @@ const MembershipPage = () => {
                     </div>
                 </div>
             </div>
+            <PointTracker />
         </div>
     );
 }
