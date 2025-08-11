@@ -2,6 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 
 export type CacheEntry = {
+    name: string;
     totalPoints: number;
     csaPoints: number;
     jtSportsPoints: number;
@@ -41,23 +42,23 @@ async function fetchRowByName(name: string) {
 
     // Debugging (Prints contents of found row)
     // console.log(`${name}: ${JSON.stringify(foundRow)}`);
-    return foundRow.slice(3, 9) as [number, number, number, string, number, string]; //return total points, CSA points, JT & Sport Points, Winter Formal Eligibility
+    //return Name, Total Points, CSA points, JT & Sport Points, Winter Formal Eligibility (T/F), GM Credits, and 3-Point Event Credit (T/F)
+    return [foundRow[0], foundRow[3], foundRow[4], foundRow[5], foundRow[6], foundRow[7], foundRow[8]] as [string, number, number, number, string, number, string];
 }
 
 export async function GET(request: NextRequest, {params}: { params: Promise<{ name: string }> }) {
-    const name = (await params).name;
+    const inputName = (await params).name;
 
     const now = Date.now();
-    const cached = cache[name];
+    const cached = cache[inputName];
     if (cached && now - cached.timestamp < CACHE_DURATION) {
         // return NextResponse.json({ total: cached.total, csa: cached.csa, jt: cached.jt, cached: true });
     }
 
     try {
-        const [totalPoints, csaPoints, jtSportsPoints, semiformalEligibility, gmCredits, threePtEventCredit] = await fetchRowByName(name);
-        cache[name] = { totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, timestamp: now };
-        console.log(`Cached points for ${name}: ${JSON.stringify(cache[name])}`);
-        return NextResponse.json({ totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, cached: false });
+        const [name, totalPoints, csaPoints, jtSportsPoints, semiformalEligibility, gmCredits, threePtEventCredit] = await fetchRowByName(inputName);
+        cache[inputName] = { name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, timestamp: now };
+        return NextResponse.json({ name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, cached: false }, {status: 200});
     } catch (error: any) {
         if (error.cause === 404) {
             return NextResponse.json({ error: error.message }, { status: 404 });
