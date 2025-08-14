@@ -19,8 +19,12 @@ export const AlbumList2023_24: Album[] = [
         id: 20,
         title: "JT Reveal",
         url: "https://drive.google.com/drive/folders/1-000m7JKIyvgs_YglPmaVoEZw_zIC4RB",
-        years: "2023-2024"
-    },  
+        years: "2023-2024",
+        groupInfo: {
+            group: "Jiating Reveal",
+            titleForGroup: "Jiating Reveal 2023"
+        }
+    },
     {
         id: 21,
         title: "Field Day Mixer",
@@ -31,7 +35,11 @@ export const AlbumList2023_24: Album[] = [
         id: 22,
         title: "Pumpkin Patch",
         url: "https://drive.google.com/drive/folders/1-DSPXhAj5q5GOZ4TTYSXPOZXIuJUkw0_?usp=share_link",
-        years: "2023-2024"
+        years: "2023-2024",
+        groupInfo: {
+            group: "Pumpkin Patch",
+            titleForGroup: "Pumpkin Patch 2023"
+        }
     },
     {
         id: 23,
@@ -51,22 +59,30 @@ export const AlbumList2023_24: Album[] = [
         url: "https://drive.google.com/drive/folders/1NG-r9Yoe8v2fq3bK5ePumST-OhEs2ssJ?usp=sharing",
         years: "2023-2024"
     },
-    { //access denied right now, will remove if not fixed
-        id: 26,
-        title: "CSA X PhilSA Karaoke Mixer",
-        url: "https://drive.google.com/drive/folders/1-fbgIofGay8IOD939EZ1utu3pETQIISX?usp=drive_link",
-        years: "2023-2024"
-    },
+    // { //access denied right now, will remove if not fixed
+    //     id: 26,
+    //     title: "CSA X PhilSA Karaoke Mixer",
+    //     url: "https://drive.google.com/drive/folders/1-fbgIofGay8IOD939EZ1utu3pETQIISX?usp=drive_link",
+    //     years: "2023-2024"
+    // },
     {
         id: 27,
         title: "Ni-Howdy 2024",
         url: "https://drive.google.com/drive/folders/15ZtP5jQFR1qdmWDIUvaMH-JdGXatWjjt",
-        years: "2023-2024"
+        years: "2023-2024",
+        groupInfo: {
+            group: "Ni-Howdy",
+            titleForGroup: "Ni-Howdy 2024"
+        }
     },
     {
         id: 28,
         title: "2024 CSA Formals",
         url: "https://drive.google.com/drive/folders/1E9ww0EsfK5qeLdHLhBgeyAKoanuJVUu-?usp=drive_link",
-        years: "2023-2024"
+        years: "2023-2024",
+        groupInfo: {
+            group: "Formals",
+            titleForGroup: "Formals 2024"
+        }
     }
 ];

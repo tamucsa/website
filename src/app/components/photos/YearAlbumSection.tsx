@@ -3,7 +3,7 @@ import { Album } from "@/utils/types";
 import AlbumLinkButton from "@/app/components/photos/AlbumLinkButton";
 
 import React, { useState } from "react";
-import { RiArrowDownSLine, RiArrowUpSLine} from "react-icons/ri";
+import { RiArrowUpSLine } from "react-icons/ri";
 import classNames from "classnames";
 
 interface YearAlbumSectionProps {
@@ -40,15 +40,15 @@ export default function YearAlbumSection({ albumList, year, thisYear, className 
                         "flex": !thisYear,
                         "hidden": thisYear
                     })}>
-                    {isVisible ? (
-                        <>
-                            <RiArrowUpSLine className="text-2xl" />
-                        </>
-                    ) : (
-                        <>
-                            <RiArrowDownSLine className="text-2xl" />
-                        </>
-                    )}
+                    <span
+                        className={classNames(
+                            "inline-block transition-transform duration-100",
+                            {
+                                "scale-y-[-1]": !isVisible,
+                            }
+                        )}>
+                        <RiArrowUpSLine className="text-2xl" />
+                    </span>
                 </button>
             </div>
             <p className={classNames(
