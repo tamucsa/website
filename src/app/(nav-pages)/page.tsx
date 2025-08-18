@@ -1,16 +1,12 @@
+import HomeCard from "@/app/components/home/HomeCard";
+
 import { Metadata } from "next";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center">
-        <Image
-        src="/under-construction.png"
-        alt="Site is under construction"
-        width={800}
-        height={800}
-        className="items-center justify-center"
-      />
+    <div className="flex flex-col items-center justify-center m-7">
+        {/* <UnderConstruction /> */}
+        <HomeCard className=""/>
     </div>
   );
 }
