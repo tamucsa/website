@@ -20,9 +20,9 @@ const Navbar = () => {
         { label: 'Membership', href: '/membership' },
         { label: 'General Meetings', href: '/gm' },
         { label: 'Jiatings', href: '/jiatings' },
-        { label: 'Nihowdy', href: '/nihowdy' },
+        // { label: 'Nihowdy', href: '/nihowdy' },
         { label: 'Photos', href: '/photos' },
-        { label: 'Contact', href: '/contact' },
+        // { label: 'Contact', href: '/contact' },
     ];
   return (
     <nav className='fixed top-0 w-full bg-white shadow-md/25 shadow-gray-600 z-10'>
