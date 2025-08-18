@@ -1,7 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react";
-import { set } from "react-hook-form";
+import React, { useState} from "react";
 
 export default function PointTracker() {
     const [inputName, setInputName] = useState<string>("");
