@@ -3,29 +3,44 @@
 import React, { useState} from "react";
 
 export default function PointTracker() {
-    const [inputName, setInputName] = useState<string>("");
+    // const [inputName, setInputName] = useState<string>("");
     const [loading, setLoading] = useState<boolean>(false);
-
-    const [resultExists, setResultExists] = useState<boolean>(false);
+    const [submitted, setSubmitted] = useState<boolean>(false);
+    const [noInput, setNoInput] = useState<boolean>(false);
+    const [found, setFound] = useState<boolean>(false);
+    
     const [result, setResult] = useState<any>(null);
     const [semiformalEligibility, setSemiformalEligibility] = useState<string | null>(null);
     const [threePtEventCredit, setThreePtEventCredit] = useState<string | null>(null);
 
+    function checkIfValid(inputName: string) {
+        if (!inputName || inputName.trim() === "") {
+            setNoInput(true);
+            return false;
+        }
+        setNoInput(false);
+        return true;
+    }
 
-    async function fetchPoints() {
-        setResultExists(false);
+    async function fetchPoints(inputName: string) {
+        //reset variables
+        setFound(false);
         setResult(null);
         setSemiformalEligibility(null);
         setThreePtEventCredit(null);
 
+        //set new variables
+        setSubmitted(true);
         setLoading(true);
+
+        //fetch response
         const response = await fetch(`/api/points/${inputName}`);
         const result = await response.json();
 
-        if(response.status !== 200) {
-            setResultExists(false);
+        if (response.status == 404) {
+            setFound(false);
         } else if (response.status === 200) {
-            setResultExists(true);
+            setFound(true);
             setResult(result);
             if (result.semiformalEligibility == "Yes") {
                 setSemiformalEligibility("Eligible");
@@ -40,7 +55,7 @@ export default function PointTracker() {
             }
         }
         setLoading(false); // Stop loading (reset Button text to "Search")
-        setInputName(""); // Clear input field
+        // setInputName(""); // Clear input field
     }
 
     return (
@@ -51,25 +66,46 @@ export default function PointTracker() {
                 <input
                     className="border border-gray-400 text-sm md:text-base rounded-lg px-3 py-2 w-3/4 lg:w-3/5"
                     type="text"
-                    value={inputName}
+                    defaultValue={""}
                     autoComplete="on"
-                    onChange={e => setInputName(e.target.value)}
                     placeholder="Enter your name!"
                     onKeyDown={e => {
-                        if (e.key === "Enter" && inputName && !loading) {
-                            fetchPoints();
+                        if (e.key === "Enter" && !loading) {
+                            const value = (e.target as HTMLInputElement).value;
+                            // setInputName(value);
+                            const valid = value && value.trim() !== "";
+                            setNoInput(!valid);
+                            setSubmitted(true);
+                            if (valid) {
+                                fetchPoints(value);
+                            }
                         }
                     }}
                 />
                 <button 
-                    onClick={fetchPoints}
-                    disabled={!inputName || loading}
+                    onClick={() => {
+                        const input = document.querySelector<HTMLInputElement>('input[type="text"]');
+                        const value = input ? input.value : "";
+                        // setInputName(value);
+                        const valid = value && value.trim() !== "";
+                        setNoInput(!valid);
+                        setSubmitted(true);
+                        if (valid && !loading) {
+                            fetchPoints(value);
+                        }
+                    }}
                     className="p-2 outline outline-black border-2 rounded-lg font-primary tracking-wider transition-colors hover:text-primary hover:outline-primary text-base md:text-xl w-3/4 lg:w-3/5"
                 >
                     {loading ? "Searching..." : "Search"}
                 </button>
+                {noInput && !loading && submitted && (
+                    <span className="text-red-500 text-md mt-2">Please enter a name</span>
+                )}
+                {!noInput && !found && !loading && submitted && (
+                    <span className="text-red-500 text-md mt-2">Member not found</span>
+                )}
             </div>
-            {resultExists && result && (
+            {found && result && (
                 <div className="flex flex-col gap-5 md:text-nowrap w-xl">
                     <h1 className="font-secondary text-xl md:text-2xl text-center"><b> Name:</b> {result.name}</h1>
                     <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-2 h-full lg:w-lg">
