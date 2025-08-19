@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
         <Navbar />
         <div className="flex flex-col min-h-screen pt-18">
-          <main className="grow">{children}</main>
+          <main className="grow overflow-x-hidden">{children}</main>
           <Footer />
         </div>
       </body>
