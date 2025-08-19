@@ -25,6 +25,11 @@ export default function HomeCard({ className }: HomeCardProps) {
                     Texas A&M University | EST. 1963
                 </h2>
             </div>
+            <div className="absolute bottom-3 right-3 p-3 bg-black/50 rounded-lg">
+                <p className="text-gray-300 text-xs sm:text-sm md:text-base">
+                    NiHowdy 2025! (w/ UT, UTD, and Rice)
+                </p>
+            </div>
         </div>
     );
 }
