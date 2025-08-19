@@ -44,10 +44,10 @@ export const AlbumList2022_23: Album[] = [
         title: "GM#1",
         url: "https://photos.app.goo.gl/pypbdYx5kSHsqCvi9",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "GM",
             titleForGroup: "GM #1 2022"
-        }
+        }]
     },
     {
         id: 7,
@@ -60,56 +60,60 @@ export const AlbumList2022_23: Album[] = [
         title: "GM#2",
         url: "https://photos.app.goo.gl/Gb7z1BBadVrFnVPf6",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "GM",
             titleForGroup: "GM #2 2022"
-        }
+        }]
     },
     {
         id: 9,
         title: "Jiating Reveal",
         url: "https://photos.app.goo.gl/UJbh1br2PRNtNtPHA",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Jiating Reveal",
             titleForGroup: "Jiating Reveal 2022"
-        }
+        }]
     },
     {
         id: 10,
         title: "[JC] Pumpkin Patch",
         url: "https://photos.app.goo.gl/T3kKV74gsQmfMfDq9",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Pumpkin Patch",
             titleForGroup: "[JC] Pumpkin Patch 2022"
-        }
+        }]
     },
     {
         id: 11,
         title: "[JL] Pumpkin Patch",
         url: "https://photos.app.goo.gl/ZQXnA73U4CnHj4BR8",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Pumpkin Patch",
             titleForGroup: "[JL] Pumpkin Patch 2022"
-        }
+        }]
     },
     {
         id: 12,
         title: "[EP] Pumpkin Patch",
         url: "https://drive.google.com/drive/folders/1n_V1-Zqg2J16ZsPPuekMs7Hn5zf9AD69",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Pumpkin Patch",
             titleForGroup: "[EP] Pumpkin Patch 2022"
-        }
+        }]
     },
     {
         id: 13,
         title: "CSA X VSA Halloween Mixer Photobooth",
         url: "https://photos.app.goo.gl/u2uD6ks5AHG1nooQA",
-        years: "2022-2023"
+        years: "2022-2023",
+        groupInfo: [{
+            group: "VSA Mixer",
+            titleForGroup: "CSA X VSA Halloween Mixer 2022"
+        }]
     },
     {
         id: 14,
@@ -121,7 +125,11 @@ export const AlbumList2022_23: Album[] = [
         id: 15,
         title: "CSA X EPIC Valentine Mixer",
         url: "https://photos.app.goo.gl/xY3gHvLgnwMkK2bbA",
-        years: "2022-2023"
+        years: "2022-2023",
+        groupInfo: [{
+            group: "EPIC Mixer",
+            titleForGroup: "CSA X EPIC Valentine Mixer 2023"
+        }]
     },
     {
         id: 16,
@@ -134,19 +142,19 @@ export const AlbumList2022_23: Album[] = [
         title: "Ni-Howdy!",
         url: "https://photos.app.goo.gl/G2ZiDTZppT2kXp5s5",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Ni-Howdy",
             titleForGroup: "Ni-Howdy 2023"
-        }
+        }]
     },
     {
         id: 18,
         title: "Formals - Photobooth",
         url: "https://theflashyphotobooth.smugmug.com/CSA-FORMALS/Pictures/",
         years: "2022-2023",
-        groupInfo: {
+        groupInfo: [{
             group: "Formals",
             titleForGroup: "Formals 2023 (Photobooth)"
-        }
+        }]
     },
 ];

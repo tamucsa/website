@@ -20,10 +20,10 @@ export const AlbumList2023_24: Album[] = [
         title: "JT Reveal",
         url: "https://drive.google.com/drive/folders/1-000m7JKIyvgs_YglPmaVoEZw_zIC4RB",
         years: "2023-2024",
-        groupInfo: {
+        groupInfo: [{
             group: "Jiating Reveal",
             titleForGroup: "Jiating Reveal 2023"
-        }
+        }]
     },
     {
         id: 21,
@@ -36,16 +36,26 @@ export const AlbumList2023_24: Album[] = [
         title: "Pumpkin Patch",
         url: "https://drive.google.com/drive/folders/1-DSPXhAj5q5GOZ4TTYSXPOZXIuJUkw0_?usp=share_link",
         years: "2023-2024",
-        groupInfo: {
+        groupInfo: [{
             group: "Pumpkin Patch",
             titleForGroup: "Pumpkin Patch 2023"
-        }
+        }]
     },
     {
         id: 23,
         title: "Broomball Mixer CSA X VSA X PhilSA",
         url: "https://drive.google.com/drive/folders/1-DcrhNWVkATqk-ow19pVEIdv8PM2LBXv?usp=drive_link",
-        years: "2023-2024"
+        years: "2023-2024",
+        groupInfo: [
+            {
+                group: "VSA Mixer",
+                titleForGroup: "Broomball Mixer CSA X VSA X PhilSA 2023"
+            },
+            {
+                group: "PhilSA Mixer",
+                titleForGroup: "Broomball Mixer CSA X VSA X PhilSA 2023"
+            }
+        ]
     },
     {
         id: 24,
@@ -70,19 +80,19 @@ export const AlbumList2023_24: Album[] = [
         title: "Ni-Howdy 2024",
         url: "https://drive.google.com/drive/folders/15ZtP5jQFR1qdmWDIUvaMH-JdGXatWjjt",
         years: "2023-2024",
-        groupInfo: {
+        groupInfo: [{
             group: "Ni-Howdy",
             titleForGroup: "Ni-Howdy 2024"
-        }
+        }]
     },
     {
         id: 28,
         title: "2024 CSA Formals",
         url: "https://drive.google.com/drive/folders/1E9ww0EsfK5qeLdHLhBgeyAKoanuJVUu-?usp=drive_link",
         years: "2023-2024",
-        groupInfo: {
+        groupInfo: [{
             group: "Formals",
             titleForGroup: "Formals 2024"
-        }
+        }]
     }
 ];

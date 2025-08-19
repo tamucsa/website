@@ -29,12 +29,12 @@ const JiatingsPage = () => {
                 For this year, our jiating theme is Chiikawa! Below are all the jiatings & their parents for the 2025-2026 school year.
               </p>
               <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                <p className="">Chiikawa: Parent 1, Parent 2, Parent 3, Parent 4</p>
-                <p className="">Usagi: Parent 1, Parent 2, Parent 3, Parent 4</p>
-                <p className="">Hachiware: Parent 1, Parent 2, Parent 3, Parent 4</p>
-                <p className="">Kurimanju: Parent 1, Parent 2, Parent 3, Parent 4</p>
-                <p className="">Momonga: Parent 1, Parent 2, Parent 3, Parent 4</p>
-                <p className="">Rakko: Parent 1, Parent 2, Parent 3, Parent 4</p>
+                <p className="">Chiikawa:</p>
+                <p className="">Usagi:</p>
+                <p className="">Hachiware:</p>
+                <p className="">Kurimanju:</p>
+                <p className="">Momonga:</p>
+                <p className="">Rakko:</p>
               </div>
             </div>
             {/* Current Jiating Olympics Standings */}

@@ -1,5 +1,6 @@
 "use client";
 import YearAlbumSection from "@/app/components/photos/YearAlbumSection";
+import { AlbumList2021_22 } from "@/content/albums/2021-22";
 import { AlbumList2022_23 } from "@/content/albums/2022-23";
 import { AlbumList2023_24 } from "@/content/albums/2023-24";
 import { AlbumList2024_25 } from "@/content/albums/2024-25";
@@ -65,6 +66,7 @@ export default function PastYearSection({ className, toggable }: PastYearSection
                 <YearAlbumSection year="2024-2025" thisYear={false} albumList={AlbumList2024_25} />
                 <YearAlbumSection year="2023-2024" thisYear={false} albumList={AlbumList2023_24} />
                 <YearAlbumSection year="2022-2023" thisYear={false} albumList={AlbumList2022_23} />
+                <YearAlbumSection year="2021-2022" thisYear={false} albumList={AlbumList2021_22} />
             </div>
         </div>
         

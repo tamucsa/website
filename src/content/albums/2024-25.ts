@@ -26,10 +26,10 @@ export const AlbumList2024_25: Album[] = [
         title: "Informational #1",
         url: "https://drive.google.com/drive/folders/1bBhzriG0CKtEo_IdY1E4qSaIvHgiKzMt",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "GM",
             titleForGroup: "Informational #1 2024"
-        }
+        }]
     },
     {
         id: 32,
@@ -42,10 +42,10 @@ export const AlbumList2024_25: Album[] = [
         title: "JT Reveal",
         url: "https://drive.google.com/drive/folders/11XmVClmUtMsUkqv2SYC-FwK0EVsr58Dt",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "Jiating Reveal",
             titleForGroup: "Jiating Reveal 2024"
-        }
+        }]
     },
     {
         id: 34,
@@ -58,10 +58,10 @@ export const AlbumList2024_25: Album[] = [
         title: "Pumpkin Patch",
         url: "https://drive.google.com/drive/folders/1-2MaluTHWvoUCa3FwnOikHxiiTGSsJJQ",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "Pumpkin Patch",
             titleForGroup: "Pumpkin Patch 2024"
-        }
+        }]
     },
     {
         id: 36,
@@ -80,29 +80,29 @@ export const AlbumList2024_25: Album[] = [
         title: "Winter Semi-Formals",
         url: "https://drive.google.com/drive/folders/1HvANqcgj2aIVzsN_qiAz5Oq08XvgjmjH",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "Formals",
             titleForGroup: "Winter Semi-Formals 2024"
-        }
+        }]
     },
     { 
         id: 39,
         title: "Ni-Howdy 2025",
         url: "https://drive.google.com/drive/folders/1c0J-uHUQs6eUOkcs6zyLrCEy0ejpogbV",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "Ni-Howdy",
             titleForGroup: "Ni-Howdy 2025"
-        }
+        }]
     },
     {
         id: 40,
         title: "Spring Formals",
         url: "https://drive.google.com/drive/folders/1sx4mWQcp8WBvOPBme3l6nsLR-zG1ARgZ",
         years: "2024-2025",
-        groupInfo: {
+        groupInfo: [{
             group: "Formals",
             titleForGroup: "Spring Formals 2025"
-        }
+        }]
     }
 ];
