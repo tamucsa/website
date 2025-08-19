@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center m-7">
+    <div className="flex flex-col items-center justify-center md:m-7">
         {/* <UnderConstruction /> */}
         <HomeCard className=""/>
     </div>
