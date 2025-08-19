@@ -6,7 +6,7 @@ type HomeCardProps = {
 
 export default function HomeCard({ className }: HomeCardProps) {
     return (
-        <div className={`relative h-[90vh] md:h-auto md:w-full ${className} overflow-hidden`}>
+        <div className={`md:rounded-xl relative h-[90vh] md:h-auto md:w-full ${className} overflow-hidden`}>
             <Image
                 src="/stockImages/cropped-NiHowdy-1.jpg"
                 alt=""
