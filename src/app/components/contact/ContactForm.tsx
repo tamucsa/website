@@ -2,6 +2,7 @@
 
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 import { sendEmail } from '@/utils/send-email';
 
 export type FormData = {
@@ -11,11 +12,18 @@ export type FormData = {
     subject: string;
 }
 
-const ContactForm: FC = () => {
-    const {register, handleSubmit} = useForm<FormData>();
+export default function ContactForm() {
+    const {register, handleSubmit, reset} = useForm<FormData>();
+    const [status, setStatus] = useState<boolean | null | "Unsubmitted">("Unsubmitted");
 
-    function onSubmit(data: FormData) {
-        sendEmail(data);
+    const onSubmit = async (data: FormData) => {
+        setStatus(null);
+
+        const result = await sendEmail(data);
+        setStatus(result);
+        if(result){
+            reset();
+        }
     }
 
   return (
@@ -70,7 +78,15 @@ const ContactForm: FC = () => {
             Submit
             </button>
         </div>
+        {status === true && (
+            <span className="text-green-600 text-xl mt-2 flex justify-center">Sent!</span>
+        )}
+        {status === false && (
+            <span className="text-red-500 text-md mt-2 flex justify-center">Not Sent</span>
+        )}
+        {status === null && (
+            <span className="text-red-500 text-md mt-2 flex justify-center">Error sending email</span>
+        )}
     </form>
   )
 }
-export default ContactForm;

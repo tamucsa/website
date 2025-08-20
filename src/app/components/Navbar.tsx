@@ -22,7 +22,7 @@ const Navbar = () => {
         { label: 'Jiatings', href: '/jiatings' },
         // { label: 'Nihowdy', href: '/nihowdy' },
         { label: 'Photos', href: '/photos' },
-        // { label: 'Contact', href: '/contact' },
+        { label: 'Contact', href: '/contact' },
     ];
   return (
     <nav className='fixed top-0 w-full bg-white shadow-md/25 shadow-gray-600 z-10'>

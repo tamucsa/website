@@ -13,15 +13,6 @@ export default function PointTracker() {
     const [semiformalEligibility, setSemiformalEligibility] = useState<string | null>(null);
     const [threePtEventCredit, setThreePtEventCredit] = useState<string | null>(null);
 
-    function checkIfValid(inputName: string) {
-        if (!inputName || inputName.trim() === "") {
-            setNoInput(true);
-            return false;
-        }
-        setNoInput(false);
-        return true;
-    }
-
     async function fetchPoints(inputName: string) {
         //reset variables
         setFound(false);
