@@ -14,7 +14,7 @@ export default function JiatingCard({ jiating }: { jiating: Jiating }) {
                     <Image
                         src={`/jiatingImages/${jiating.years}/${jiating.name}.webp`}
                         alt=""  
-                        className="rounded-2xl hover:scale-105 duration-200 brightness-90 hover:brightness-100 transition w-full h-auto"
+                        className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-100 transition w-full h-auto"
                         width={300}
                         height={300}
                     />

@@ -14,7 +14,7 @@ export default function OfficerCard({ officer }: { officer: Megateam }) {
                     <Image
                         src={`/officerImages/cropped/${officer.id}.JPG`}
                         alt=""
-                        className="rounded-2xl hover:scale-105 duration-200 brightness-90 hover:brightness-110 transition w-full h-auto"
+                        className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-110 transition w-full h-auto"
                         width={300}
                         height={300}
                     />
