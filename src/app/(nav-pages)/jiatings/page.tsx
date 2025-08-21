@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 const JiatingsPage = () => {
     return (
-      <main className="flex items-center justify-center mx-10 md:mx-10 mt-10 md:mt-15 mb-10">
+      <main className="flex items-center justify-center mx-10 md:mx-25 mt-10 md:mt-15 mb-10">
         <div className="grid grid-cols-1 gap-10 md:gap-8 lg:grid-cols-2 lg:grid-rows-2 lg:items-start lg:gap-y-15 items-center justify-center">
             {/* Jiatings? paragraph*/}
           <div className="flex flex-col items-center lg:w-md xl:w-xl gap-5">
