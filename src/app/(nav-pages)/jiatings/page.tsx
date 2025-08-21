@@ -22,7 +22,7 @@ const JiatingsPage = () => {
               For this year, our jiating theme is Chiikawa! 
               {/* Click each jiating to learn more about them and their parents! */}
             </p>
-            <div className="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-6 font-secondary gap-2">
+            <div className="grid grid-rows-2 grid-cols-3 font-secondary gap-2">
               { 
                 JiatingList.map((jiating) => (
                     <JiatingCard key={jiating.id} jiating={jiating} />
