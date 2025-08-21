@@ -1,11 +1,11 @@
-import { Officer } from "@/utils/types";
+import { Megateam } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
 import { RiArrowLeftCircleFill, RiArrowRightCircleFill, RiArrowLeftSLine, RiArrowRightSLine, RiDownloadLine, RiCloseLine} from "react-icons/ri";
 
 interface ImageModalProps {
-    officer: Officer;
+    officer: Megateam;
     className?: string;
 }
 

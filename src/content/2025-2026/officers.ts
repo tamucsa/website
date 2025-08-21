@@ -1,6 +1,8 @@
-import { Officer } from "@/utils/types";
+import { Megateam } from "@/utils/types";
 
-export const OfficerList: Officer[] = [
+// 2025-2026 Officers!!
+
+export const OfficerList: Megateam[] = [
     {
         name: "Sarah Ward",
         position: "Co-President",

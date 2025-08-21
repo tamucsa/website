@@ -1,10 +1,18 @@
-export interface Officer {
+export interface Megateam {
     id: number;
     name: string;
-    position: string;
+    position?: string;
     major: string;
     instagram: string;
     rawImgOrientation: "horizontal" | "vertical";
+}
+
+export interface Jiating{
+    id: number;
+    name: string;
+    parents: [Megateam, Megateam, Megateam, Megateam];
+    instagram: string;
+    years: string;
 }
 
 export interface Album {

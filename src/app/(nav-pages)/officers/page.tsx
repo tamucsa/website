@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { OfficerList } from "@/content/officers";
+import { OfficerList } from "@/content/2025-2026/officers";
 import OfficerCard from "@/app/components/officers/OfficerCard";
 
 const OfficerPage = () => {
@@ -8,8 +8,8 @@ const OfficerPage = () => {
           {/* <header className="flex flex-col text-center mt-10 md:mt-15 gap-3">
             <h1 className="font-primary tracking-wider text-3xl md:text-4xl">Officers</h1>
           </header> */}
-          <main className="mt-10 md:mt-15 mb-10 md:mb-15">
-            <div className='grid gap-5 grid-cols-2 sm:grid-rows-9 sm:gap-12 lg:grid-cols-3 lg:grid-rows-6 lg:gap-12'>
+          <main className="my-10 md:my-15">
+            <div className='grid grid-cols-2 gap-5 sm:grid-rows-9 sm:gap-12 lg:grid-cols-3 lg:grid-rows-6 lg:gap-12'>
               {
                   OfficerList.map((officer) => (
                       <OfficerCard key={officer.name} officer={officer} />
