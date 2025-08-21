@@ -1,15 +1,34 @@
+import JiatingCard from "@/app/components/jiatings/JiatingCard";
+import { JiatingList } from "@/content/2025-2026/jiatings";
+
 import { Metadata } from "next";
 
 const JiatingsPage = () => {
     return (
-        <div className="grid grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 items-center justify-center lg:items-start lg:gap-0 px-10 mt-10 md:mt-15 mb-10">
-          
-          {/* Jiatings? paragraph*/}
+      <main className="flex items-center justify-center mx-10 md:mx-10 mt-10 md:mt-15 mb-10">
+        <div className="grid grid-cols-1 gap-10 md:gap-8 lg:grid-cols-2 lg:grid-rows-2 lg:items-start lg:gap-y-15 items-center justify-center">
+            {/* Jiatings? paragraph*/}
           <div className="flex flex-col items-center lg:w-md xl:w-xl gap-5">
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>jiatings?</h1>
             <p className="font-secondary text-lg md:text-2xl tracking-wide">
               Jiating (家庭) is a term used to refer to a family unit in Chinese. In this case, it represents our family system, where members are grouped into jiatings (families) based on a preference form! Each jiating has its own unique identity and activities, fostering a sense of community and support among members. CSA will have 6 jiatings, each with 4 parents!
             </p>
+          </div>
+
+          {/* This year's paragraph */}
+          <div className="flex flex-col items-center lg:w-lg xl:w-2xl gap-5">
+            <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>2025-2026 jiatings</h1>
+            <p className="font-secondary text-lg md:text-2xl tracking-wide">
+              For this year, our jiating theme is Chiikawa! 
+              {/* Click each jiating to learn more about them and their parents! */}
+            </p>
+            <div className="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-6 font-secondary gap-2">
+              { 
+                JiatingList.map((jiating) => (
+                    <JiatingCard key={jiating.id} jiating={jiating} />
+                ))
+            }
+            </div>
           </div>
 
           {/* Jiating Olympics paragraph */}
@@ -21,24 +40,8 @@ const JiatingsPage = () => {
             </p>
           </div>
 
-          {/* This year's paragraph */}
-          <div className="flex flex-col items-center lg:w-lg xl:w-xl gap-5">
-            <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>this year's jiatings</h1>
-            <p className="font-secondary text-lg md:text-2xl tracking-wide">
-              For this year, our jiating theme is Chiikawa! Below are all the jiatings & their parents for the 2025-2026 school year.
-            </p>
-            <div className="font-secondary text-lg md:text-2xl tracking-wide">
-              <p className="">Chiikawa:</p>
-              <p className="">Usagi:</p>
-              <p className="">Hachiware:</p>
-              <p className="">Kurimanju:</p>
-              <p className="">Momonga:</p>
-              <p className="">Rakko:</p>
-            </div>
-          </div>
-
           {/* Current Jiating Olympics Standings */}
-          <div className="flex flex-col items-center lg:w-lg xl:w-xl gap-5">
+          <div className="flex flex-col items-center lg:w-lg xl:w-2xl gap-5">
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>jt olympics standings</h1>
             <p className="font-secondary text-lg md:text-2xl tracking-wide">
               The current standings for the Jiating Olympics:
@@ -54,6 +57,7 @@ const JiatingsPage = () => {
           </div>
 
         </div>
+      </main>
     );
 }
 
