@@ -21,7 +21,7 @@ export interface ParentRole {
 export interface Jiating {
     id: number;
     name: string;   
-    parents: [Megateam, Megateam, Megateam, Megateam] | [{ name: string }, { name: string }, { name: string }, { name: string }];
+    parents: [Megateam, Megateam, Megateam, Megateam];
     instagram: string;
     years: string;
 }
