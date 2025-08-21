@@ -1,14 +1,14 @@
 "use client";
 
 import ImageModal from "@/app/components/officers/ImageModal";
-import { Officer } from "@/utils/types";
+import { Megateam } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function OfficerFullImage({ officer }: { officer: Officer }) {
+export default function OfficerFullImage({ officer }: { officer: Megateam }) {
     const router = useRouter();
 
     useEffect(() => {
