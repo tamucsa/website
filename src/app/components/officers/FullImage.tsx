@@ -35,7 +35,7 @@ export default function OfficerFullImage({ officer }: { officer: Megateam }) {
         return (
             <div className="relative flex items-center justify-center bg-black z-20">
                 <Link href={`/officers#${officer.id}`} className="static z-20 max-w-full h-screen">
-                    <Image alt={`${officer.name} Blurred Background`} src={`/officerImages/raw/${officer.id}.JPG`} fill 
+                    <Image alt={`${officer.name} Blurred Background`} src={`/2025-2026/officerImages/raw/${officer.id}.JPG`} fill
                     className="blur-xl brightness-75"/>
                 </Link>
                 <ImageModal officer={officer} className="z-30"/>

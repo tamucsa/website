@@ -11,7 +11,9 @@ const JiatingsPage = () => {
           <div className="flex flex-col items-center lg:w-md xl:w-xl gap-5">
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>jiatings?</h1>
             <p className="font-secondary text-lg md:text-2xl tracking-wide">
-              Jiating (家庭) is a term used to refer to a family unit in Chinese. In this case, it represents our family system, where members are grouped into jiatings (families) based on a preference form! Each jiating has its own unique identity and activities, fostering a sense of community and support among members. CSA will have 6 jiatings, each with 4 parents!
+              Jiating (家庭) is a term used to refer to a family unit in Chinese. In this case, it represents our family system, where members are grouped into jiatings (families) based on a preference form! 
+              <br /><br />
+              Each jiating has its own unique identity and activities, fostering a sense of community and support among members. CSA will have 6 jiatings, each with 4 parents!
             </p>
           </div>
 
@@ -22,7 +24,7 @@ const JiatingsPage = () => {
               For this year, our jiating theme is Chiikawa! 
               {/* Click each jiating to learn more about them and their parents! */}
             </p>
-            <div className="grid grid-rows-2 grid-cols-3 font-secondary gap-2">
+            <div className="grid grid-rows-2 grid-cols-3 font-secondary gap-3">
               { 
                 JiatingList.map((jiating) => (
                     <JiatingCard key={jiating.id} jiating={jiating} />
