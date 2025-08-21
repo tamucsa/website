@@ -10,7 +10,7 @@ export default function JiatingCard({ jiating }: { jiating: Jiating }) {
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}
-                {/* <Link href={`/jiatings/${jiating.id}`} className=""> */}
+                <Link href={`/jiatings/${jiating.id}`} className="">
                     <Image
                         src={`/jiatingImages/${jiating.years}/${jiating.name}.webp`}
                         alt=""  
@@ -18,7 +18,7 @@ export default function JiatingCard({ jiating }: { jiating: Jiating }) {
                         width={300}
                         height={300}
                     />
-                {/* </Link> */}
+                </Link>
                 {/* Instagram icon overlayed as clickable button */}
                 {/* <Link
                     target="_blank"

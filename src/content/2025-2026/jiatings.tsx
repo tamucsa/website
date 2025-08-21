@@ -141,7 +141,7 @@ export const JiatingList: Jiating[] = [
             {
                 id: 29,
                 name: "Lia Chen",
-                major: "i forgot '27",
+                major: "Accounting '27",
                 instagram: "lcennies",
                 rawImgOrientation: "horizontal" //change
             }
@@ -192,7 +192,7 @@ export const JiatingList: Jiating[] = [
             {
                 id: 31,
                 name: "Jamie Lee",
-                major: "idk", //change
+                major: "idk '27", //change
                 instagram: "j_lee.h",
                 rawImgOrientation: "horizontal" //change
             },
@@ -213,7 +213,7 @@ export const JiatingList: Jiating[] = [
             {
                 id: 34,
                 name: "Jacob Pham",
-                major: "Applied Math '28", //change
+                major: "Mathematics '28", //change
                 instagram: "phamtjacob",
                 rawImgOrientation: "horizontal"
             }
