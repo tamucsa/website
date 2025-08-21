@@ -1,4 +1,4 @@
-import { Megateam } from "@/utils/types";
+import { OfficerRole, Megateam } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,20 +12,31 @@ interface ImageModalProps {
 export default function ImageModal({ officer, className }: ImageModalProps) {
     // Set width and height based on the officer's raw image orientation
     let width, height;
-    if(officer.rawImgOrientation == "horizontal") {
+    // Type guard to check if officer.yearEntries["2025-2026"][0] is of type OfficerRole
+    const isOfficerRole = (entry: any): entry is OfficerRole => {
+        return entry && typeof entry.rawImgOrientation === "string";
+    };
+    // Find the first OfficerRole entry in the year "2025-2026"
+    let entry: OfficerRole | undefined;
+    const entries = officer.yearEntries["2025-2026"] || [];
+    entry = entries.find(isOfficerRole);
+    if (isOfficerRole(entry) && entry.rawImgOrientation === "horizontal") {
         width = 1000;
         height = 1000;
-    } else if(officer.rawImgOrientation == "vertical") {
+    } else if (isOfficerRole(entry) && entry.rawImgOrientation === "vertical") {
         width = 450;
         height = 450;
+    } else {
+        width = 0;
+        height = 0;
     }
-    
+
     return (
         <div className={`relative ${className}`}>
             {/* Actual Image */}
 
             <div className="m-7">
-                <Image alt={`${officer.name}'s Full Image`} src={`/officerImages/raw/${officer.id}.JPG`} width={width} height={height}
+                <Image alt={`${officer.name}'s Full Image`} src={`/2025-2026/officerImages/raw/${officer.id}.JPG`} width={width} height={height}
                     className="rounded-2xl shadow-lg" style={{ objectFit: "contain" }} sizes=""
                 />  
             </div>

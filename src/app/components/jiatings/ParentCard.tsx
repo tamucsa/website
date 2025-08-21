@@ -10,15 +10,15 @@ export default function OfficerCard({ parent }: { parent: Megateam }) {
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}
-                <Link href={`/officers/${parent.id}`} className="">
+                {/* <Link href={`/officers/${parent.id}`} className="">
                     <Image
-                        src={`/officerImages/cropped/${parent.id}.JPG`}
+                        src={`/2025-2026/parentImages/cropped/${parent.id}.JPG`}
                         alt=""
                         className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-110 transition w-full h-auto"
                         width={300}
                         height={300}
                     />
-                </Link>
+                </Link> */}
                 {/* Instagram icon overlayed as clickable button */}
                 <Link
                     target="_blank"
@@ -31,8 +31,8 @@ export default function OfficerCard({ parent }: { parent: Megateam }) {
             </div>
             {/* Text section with name, position, major, and year */}
             <div className="flex flex-col gap-1 sm:gap-2 md:gap-3">
-            <h3 className="font-primary tracking-widest text-base sm:text-2xl md:text-3xl">{parent.name}</h3>
-            <p className="font-secondary text-xs sm:text-lg md:text-xl">{parent.major}</p>
+            <h3 className="font-primary tracking-wider text-base sm:text-2xl md:text-3xl">{parent.name}</h3>
+            <p className="font-secondary text-xs sm:text-lg md:text-lg">{parent.major}</p>
             </div>
         </div>
     );

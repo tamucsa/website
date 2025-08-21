@@ -1,16 +1,27 @@
 export interface Megateam {
-    id: number;
+    id: number; //unique ID for each megateam member
     name: string;
-    position?: string;
     major: string;
     instagram: string;
+    yearEntries: { // all of the entries
+        [year: string]: Array<OfficerRole | ParentRole>; // list of Officer, Parent, or both for that year
+    }
+}
+
+export interface OfficerRole {
+    position: string;
     rawImgOrientation: "horizontal" | "vertical";
 }
 
-export interface Jiating{
+export interface ParentRole {
+    jiating: Jiating | { name: string };
+    rawImgOrientation: "horizontal" | "vertical";
+}
+
+export interface Jiating {
     id: number;
-    name: string;
-    parents: [Megateam, Megateam, Megateam, Megateam];
+    name: string;   
+    parents: [Megateam, Megateam, Megateam, Megateam] | [{ name: string }, { name: string }, { name: string }, { name: string }];
     instagram: string;
     years: string;
 }
