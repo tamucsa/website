@@ -1,10 +1,10 @@
-import { Officer } from "@/utils/types";
+import { Megateam } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
 import { RiInstagramFill} from "react-icons/ri";
 
-export default function OfficerCard({ officer }: { officer: Officer }) {
+export default function OfficerCard({ officer }: { officer: Megateam }) {
     return (
         <div id={`${officer.id}`} className="flex flex-col gap-3 sm:gap-5 p-6 sm:p-8 md:p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
