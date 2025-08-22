@@ -325,7 +325,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 20,
         name: "Zachary Yang",
-        major: "Business '28", //change
+        major: "Accounting '28",
         instagram: "zach_.y",
         yearEntries: {
             "2025-2026": [
@@ -479,7 +479,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 31,
         name: "Jamie Lee",
-        major: "idk '27", //change
+        major: "Architecture '27",
         instagram: "j_lee.h",
         yearEntries: {
             "2025-2026": [
@@ -493,7 +493,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 32,
         name: "Vivian Chen",
-        major: "idk '28",
+        major: "Business '28", //change
         instagram: "vvivianchenn",
         yearEntries: {
             "2025-2026": [
