@@ -4,7 +4,7 @@ import OfficerCard from "@/app/components/officers/OfficerCard";
 
 const OfficerPage = () => {
     return (
-        <div className="flex flex-col items-center mx-20 sm:mx-15">
+        <div className="flex flex-col items-center mx-15 sm:mx-15">
           {/* <header className="flex flex-col text-center mt-10 md:mt-15 gap-3">
             <h1 className="font-primary tracking-wider text-3xl md:text-4xl">Officers</h1>
           </header> */}
