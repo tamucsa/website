@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Bayon, Akshar } from "next/font/google";
- import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/next"
 
 import "@/app/globals.css";
 import Navbar from "@/app/components/Navbar";

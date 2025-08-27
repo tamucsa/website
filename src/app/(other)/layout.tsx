@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bayon, Akshar } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "@/app/globals.css";
 
 const bayon = Bayon({
@@ -27,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
-        {children }
+        {children}
+        <Analytics />
       </body>
     </html>
     
