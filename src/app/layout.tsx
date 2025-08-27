@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bayon, Akshar } from "next/font/google";
 import "@/app/globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bayon.className} ${akshar.className} antialiased bg-white text-black`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
