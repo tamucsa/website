@@ -9,10 +9,20 @@ export const AlbumList2025_26: Album[] = [
 
     // 2025-2026 Albums
 
-    // { 
-    //     id: 47,
-    //     title: "Title",
-    //     url: "URL",
-    //     years: "2025-2026"
-    // }
+    { 
+        id: 47,
+        title: "TASA X CSA Field Day Mixer (Howdy Week) 8/25/25",
+        url: "https://drive.google.com/drive/folders/1wshbuQvYCfb0paI-B79X1WUPE1PtfjD3",
+        years: "2025-2026",
+        groupInfo: [
+            {
+                group: "TASA Mixer",
+                titleForGroup: "TASA X CSA Field Day Mixer (Howdy Week) 8/25/25"
+            },
+            {   
+                group: "Howdy Week",
+                titleForGroup: "TASA X CSA Field Day Mixer 8/25/25"
+            }
+        ]
+    }
 ];

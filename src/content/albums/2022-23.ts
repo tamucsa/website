@@ -19,7 +19,11 @@ export const AlbumList2022_23: Album[] = [
         id: 2,
         title: "Howdy Week Tabling",
         url: "https://photos.app.goo.gl/CwGrHNLTUN6o8Txq8",
-        years: "2022-2023"
+        years: "2022-2023",
+        groupInfo: [{
+            group: "Howdy Week",
+            titleForGroup: "Howdy Week Tabling 2022"
+        }]
     },
     {
         id: 3,
