@@ -31,8 +31,8 @@ export default function OfficerCard({ officer }: { officer: Megateam }) {
             </div>
             {/* Text section with name, position, major, and year */}
             <div className="flex flex-col gap-1 sm:gap-2 md:gap-3">
-            <h3 className="font-primary tracking-widest text-base sm:text-2xl md:text-3xl">{officer.name}</h3>
-            <p className="font-secondary text-xs sm:text-lg md:text-xl">
+            <h3 className="font-primary tracking-widest text-xl sm:text-2xl md:text-3xl">{officer.name}</h3>
+            <p className="font-secondary text-base sm:text-lg md:text-xl">
                 {
                     officer.yearEntries["2025-2026"]
                         ?.filter((entry): entry is OfficerRole => "position" in entry)
@@ -40,7 +40,7 @@ export default function OfficerCard({ officer }: { officer: Megateam }) {
                         ?.join(", ")
                 }
             </p>
-            <p className="font-secondary text-xs sm:text-lg md:text-xl">{officer.major}</p>
+            <p className="font-secondary text-base sm:text-lg md:text-xl">{officer.major}</p>
             </div>
         </div>
     );
