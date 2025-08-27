@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Bayon, Akshar } from "next/font/google";
+ import { Analytics } from '@vercel/analytics/react';
+
 import "@/app/globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
@@ -34,6 +36,7 @@ export default function RootLayout({
           <main className="grow overflow-x-hidden">{children}</main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
