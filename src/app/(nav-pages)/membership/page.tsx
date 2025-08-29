@@ -14,8 +14,8 @@ const MembershipPage = () => {
             <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10'>
                 {/* Left Text */}
                 <div className="flex flex-col items-center justify-center font-secondary text-md md:text-2xl/10 tracking-wide gap-5">
-                    <p>CSA has a membership form to fill out before you can become a member! Just click the membership form button on the right to fill it out with your information.</p>
-                    <p> Make sure to Venmo or Zelle to the correct contact listed on the membership form! Note that there is a different cost for semester vs. full year, and if you need to pay in cash, talk to our Treasurer at a General Meeting!</p>
+                    <p>CSA has a membership form to fill out before you can become a member! Just click the membership form button to fill it out with your information.</p>
+                    <p> Make sure to Venmo/Zelle to the correct contact listed on the membership form! Note that there is a different cost for semester vs. full year, and if you need to pay in cash, talk to our Treasurer at a General Meeting!</p>
                 </div>
                 {/* Right Payment Info & Form */}
                 <div className="flex flex-col w-full items-center justify-center gap-3 md:gap-5">
