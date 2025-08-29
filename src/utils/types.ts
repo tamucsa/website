@@ -34,7 +34,7 @@ export interface Album {
     url: string;
     years: string;
     groupInfo?: Array<{
-        group: "GM" | "Jiating Reveal" | "Pumpkin Patch" | "Ni-Howdy" | "Formals" | "VSA Mixer" | "PhilSA Mixer" | "EPIC Mixer";
+        group: "Howdy Week" | "GM" | "Jiating Reveal" | "Pumpkin Patch" | "Ni-Howdy" | "Formals" | "VSA Mixer" | "PhilSA Mixer" | "EPIC Mixer" | "TASA Mixer" | "SASE Mixer";
         titleForGroup?: string; // Optional field for providing a different title for the group
     }>;
 }

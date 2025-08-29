@@ -14,12 +14,20 @@ export const AlbumList2024_25: Album[] = [
         title: "Board Game Night (Howdy Week)",
         url: "https://drive.google.com/drive/folders/1Av-djTtMEGydRxfPXGecI4paVaDUtzt0",
         years: "2024-2025",
+        groupInfo: [{
+            group: "Howdy Week",
+            titleForGroup: "Board Game Night 2024"
+        }]
     },
     {
         id: 30,
         title: "Boba Social (Howdy Week)",
         url: "https://drive.google.com/drive/folders/1eolAZelq4IDD7ZSosbfcSPT3aK5pXITT",
         years: "2024-2025",
+        groupInfo: [{
+            group: "Howdy Week",
+            titleForGroup: "Boba Social 2024"
+        }]
     },
     {
         id: 31,
@@ -36,6 +44,10 @@ export const AlbumList2024_25: Album[] = [
         title: "CSA X PhilSA Painting Mixer",
         url: "https://drive.google.com/drive/folders/1FJHFPdmf3y_Xfhf5hZrVT7y_MNfK7R9q",
         years: "2024-2025",
+        groupInfo: [{
+            group: "PhilSA Mixer",
+            titleForGroup: "CSA X PhilSA Painting Mixer 2024"
+        }]
     },
     {
         id: 33,
@@ -52,6 +64,16 @@ export const AlbumList2024_25: Album[] = [
         title: "SASE X TASA X CSA Field Day Mixer",
         url: "https://drive.google.com/drive/folders/17ahrxv1Z3R9bcr7jewMp6YvO-f8XWO9n",
         years: "2024-2025",
+        groupInfo: [
+            {
+                group: "SASE Mixer",
+                titleForGroup: "SASE X TASA X CSA Field Day Mixer 2024"
+            },
+            {
+                group: "TASA Mixer",
+                titleForGroup: "SASE X TASA X CSA Field Day Mixer 2024"
+            }
+        ]
     },
     {
         id: 35,
@@ -68,6 +90,16 @@ export const AlbumList2024_25: Album[] = [
         title: "TASA X CSA X VSA Halloween Costume Contest",
         url: "https://drive.google.com/drive/folders/1-BGJY40tS5jZOq3gPyt4JNo04QwZ3z_P",
         years: "2024-2025",
+        groupInfo: [
+            {
+                group: "TASA Mixer",
+                titleForGroup: "TASA X CSA X VSA Halloween Costume Contest 2024"
+            },
+            {
+                group: "VSA Mixer",
+                titleForGroup: "TASA X CSA X VSA Halloween Costume Contest 2024"
+            }
+        ]
     },
     {
         id: 37,

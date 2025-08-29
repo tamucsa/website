@@ -73,7 +73,11 @@ export const AlbumList2023_24: Album[] = [
     //     id: 26,
     //     title: "CSA X PhilSA Karaoke Mixer",
     //     url: "https://drive.google.com/drive/folders/1-fbgIofGay8IOD939EZ1utu3pETQIISX?usp=drive_link",
-    //     years: "2023-2024"
+    //     years: "2023-2024",
+    //     groupInfo: [{
+    //         group: "PhilSA Mixer",
+    //         titleForGroup: "CSA X PhilSA Karaoke Mixer 2024"
+    //     }]
     // },
     {
         id: 27,
