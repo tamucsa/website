@@ -1,4 +1,5 @@
 import JiatingCard from "@/app/components/jiatings/JiatingCard";
+import LinkButton from "@/app/components/LinkButton";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 
 import { Metadata } from "next";
@@ -40,6 +41,10 @@ const JiatingsPage = () => {
               The Jiating Olympics are a school year long event where all jiatings compete in various fun and engaging activities. Members of each jiating compete in various competitions to earn points for their jiating. 
               {/* At the end of the school year, the jiating with the most points will receive ___________! */}
             </p>
+            <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfeSFlCR0FFmE4YAumxUZCtnHDQV2WJ9S29WIjHD5rTC6cfpA/viewform" newTab={true}
+                className="w-full md:w-lg text-nowrap text-xl md:text-2xl"
+                text="Fall '25 JT Olympics Sports Suggestions"
+            />
           </div>
 
           {/* Current Jiating Olympics Standings */}

@@ -8,13 +8,13 @@ const MembershipPage = () => {
         <div className='flex flex-col items-center gap-5 md:gap-15 mb-10 mx-13 md:mx-13'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15'>How to Join CSA!</h1>
             <LinkButton href="https://forms.gle/De3cQX2uC17khfsB6" newTab={true}
-                        className="w-full md:w-lg text-nowrap text-xl md:text-2xl"
-                        text="CSA Interest Form (2025-2026)"
-                    />
+                className="w-full md:w-lg text-nowrap text-xl md:text-2xl"
+                text="CSA Interest Form (2025-2026)"
+            />
             <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10'>
                 {/* Left Text */}
                 <div className="flex flex-col items-center justify-center font-secondary text-md md:text-2xl/10 tracking-wide gap-5">
-                    <p>CSA has a membership form to fill out before you can become a member! Just click the membership form button on the right (once it releases) to fill it out with your information.</p>
+                    <p>CSA has a membership form to fill out before you can become a member! Just click the membership form button on the right to fill it out with your information.</p>
                     <p> Make sure to Venmo or Zelle to the correct contact listed on the membership form! Note that there is a different cost for semester vs. full year, and if you need to pay in cash, talk to our Treasurer at a General Meeting!</p>
                 </div>
                 {/* Right Payment Info & Form */}
@@ -30,13 +30,13 @@ const MembershipPage = () => {
                         <p className="md:text-nowrap"><b>Cash:</b> Talk to our Treasurer at our General Meetings!</p>
                         */}
                     </div>
-                    {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSe71PBHTionWEc17KzuQ0SiR-SwbS8g-wLPOSY4cOR0DR-CHA/viewform" newTab={true}
+                    <LinkButton href="https://tx.ag/csamembership" newTab={true}
                         className="w-full text-nowrap text-xl md:text-2xl"
-                        text="CSA Membership Form (2024-2025)"
-                    /> */}
+                        text="CSA Membership Form!"
+                    />
                 </div>
             </div>
-            <PointTracker />
+            {/* <PointTracker /> */}
         </div>
     );
 }
