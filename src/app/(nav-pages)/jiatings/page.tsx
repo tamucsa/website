@@ -42,7 +42,7 @@ const JiatingsPage = () => {
               {/* At the end of the school year, the jiating with the most points will receive ___________! */}
             </p>
             <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfeSFlCR0FFmE4YAumxUZCtnHDQV2WJ9S29WIjHD5rTC6cfpA/viewform" newTab={true}
-                className="w-full md:w-lg text-nowrap text-xl md:text-2xl"
+                className="w-full md:w-lg text-xl md:text-2xl"
                 text="Fall '25 JT Olympics Sports Suggestions"
             />
           </div>

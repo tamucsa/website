@@ -11,7 +11,7 @@ export default function JiatingCard({ jiating }: { jiating: Jiating }) {
                 {/* Large image as clickable button */}
                 <Link href={`/jiatings/${jiating.id}`} className="">
                     <Image
-                        src={`/${jiating.years}/jiatingImages/${jiating.name}.webp`}
+                        src={`/${jiating.years}/jiatingImages/characters/${jiating.name}.webp`}
                         alt=""  
                         className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-100 transition w-full h-auto"
                         width={300}

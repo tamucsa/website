@@ -22,12 +22,11 @@ const EventsPage = () => {
                 />
             </div>
             <iframe
-            src="https://embed.styledcalendar.com/#sT0DkMbkqE91fqfz5gle"
-            title="Styled Calendar"
-            className="styled-calendar-container sm:h-172"
-            style={{ width: "80%", border: "none", minHeight: "310px" }}
-            // height="800px"
-            data-cy="calendar-embed-iframe"
+                src="https://embed.styledcalendar.com/#sT0DkMbkqE91fqfz5gle"
+                title="Styled Calendar"
+                className="styled-calendar-container h-[50vh] sm:h-180"
+                style={{ width: "80%", border: "none"}}
+                data-cy="calendar-embed-iframe"
             />
             <h1 className='container text-center font-primary tracking-wider text-2xl sm:text-3xl md:text-4xl'>Add to Your Google Calendar <Link target='_blank' href='https://calendar.google.com/calendar/u/1?cid=Y18zZmJmZjZkZWU1NDY0YzQ4Y2QzM2Q5ZTMyYmE5OTMzZGRkNmMwOWI2MjhhYmVlNzNkZjc2YzM5ZDkzMWRhNjJmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20' className="underline hover:text-primary transition-colors">Here</Link>!</h1>
         </div>
