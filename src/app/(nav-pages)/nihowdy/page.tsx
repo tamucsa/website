@@ -4,16 +4,11 @@ import Image from "next/image";
 const NihowdyPage = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-                <Image
-                src="/under-construction.png"
-                alt="Site is under construction"
-                width={800}
-                height={800}
-                className="items-center justify-center"
-              />
-            </div>
-    );
-}
+          <h1 className="text-4xl">Nihowdy</h1>
+          <p className="mt-4 text-lg">Welcome to the Nihowdy event!</p>
+        </div>
+      );
+  }
 
 export const metadata: Metadata = {
   title: "TAMU CSA - Nihowdy",
