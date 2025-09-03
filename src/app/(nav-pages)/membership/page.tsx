@@ -7,10 +7,10 @@ const MembershipPage = () => {
     return (
         <div className='flex flex-col items-center gap-5 md:gap-15 mb-10 mx-13 md:mx-13'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15'>How to Join CSA!</h1>
-            <LinkButton href="https://forms.gle/De3cQX2uC17khfsB6" newTab={true}
+            {/* <LinkButton href="https://forms.gle/De3cQX2uC17khfsB6" newTab={true}
                 className="w-full md:w-lg text-nowrap text-xl md:text-2xl"
                 text="CSA Interest Form (2025-2026)"
-            />
+            /> */}
             <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10'>
                 {/* Left Text */}
                 <div className="flex flex-col items-center justify-center font-secondary text-md md:text-2xl/10 tracking-wide gap-5">
