@@ -24,7 +24,7 @@ const EventsPage = () => {
             <iframe
                 src="https://embed.styledcalendar.com/#sT0DkMbkqE91fqfz5gle"
                 title="Styled Calendar"
-                className="styled-calendar-container h-[50vh] sm:h-180"
+                className="styled-calendar-container h-[50vh] sm:h-185"
                 style={{ width: "80%", border: "none"}}
                 data-cy="calendar-embed-iframe"
             />
