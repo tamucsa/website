@@ -9,11 +9,25 @@ export const AlbumList2025_26: Album[] = [
 
     // 2025-2026 Albums
 
-    { 
+    {
         id: 47,
+        title: "CSA Trivia Night (Howdy Week)",
+        url: "https://photos.app.goo.gl/yFWhNzPjfivgTrtH9",
+        years: "2025-2026",
+        date: "8/22/2025",
+        groupInfo: [
+            {   
+                group: "Howdy Week",
+                titleForGroup: "CSA Trivia Night 8/22/25"
+            }
+        ]
+    },
+    { 
+        id: 48,
         title: "TASA X CSA Field Day Mixer (Howdy Week)",
         url: "https://drive.google.com/drive/folders/1wshbuQvYCfb0paI-B79X1WUPE1PtfjD3",
         years: "2025-2026",
+        date: "8/25/2025",
         groupInfo: [
             {
                 group: "TASA Mixer",
@@ -26,10 +40,11 @@ export const AlbumList2025_26: Album[] = [
         ]
     },
     {
-        id: 48,
+        id: 49,
         title: "CSA X PhilSA Painting Mixer (Howdy Week)",
         url: "https://photos.google.com/u/1/share/AF1QipO1vqVASEv6aFkucG8Bv9E7Zo6l8pJrXH3OhLff5Nog-vIWMs2denpDOYyfASt7Xg?pli=1&key=b183dDNabkctMWlWTHphd2djdTlMbUhmUW9MdEVn",
         years: "2025-2026",
+        date: "8/26/2025",
         groupInfo: [
             {
                 group: "PhilSA Mixer",
@@ -40,5 +55,5 @@ export const AlbumList2025_26: Album[] = [
                 titleForGroup: "CSA X PhilSA Painting Mixer 8/26/25"
             }
         ]
-    }
+    },
 ];
