@@ -9,7 +9,7 @@ const OfficerPage = () => {
             <h1 className="font-primary tracking-wider text-3xl md:text-4xl">Officers</h1>
           </header> */}
           <main className="my-10 md:my-15">
-            <div className='grid grid-cols-1 gap-7 sm:grid-rows-18 sm:gap-12 md:grid-cols-2 md:grid-rows-9 md:gap-10 lg:grid-cols-3 lg:grid-rows-6 lg:gap-12'>
+            <div className='grid gap-7 grid-cols-1 grid-rows-18 sm:gap-12 md:grid-cols-2 md:grid-rows-9 md:gap-10 lg:grid-cols-3 lg:grid-rows-6 lg:gap-12'>
               {
                   OfficerList.map((officer) => (
                       <OfficerCard key={officer.name} officer={officer} />

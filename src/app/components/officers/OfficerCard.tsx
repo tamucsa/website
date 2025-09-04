@@ -6,7 +6,7 @@ import { RiInstagramFill} from "react-icons/ri";
 
 export default function OfficerCard({ officer }: { officer: Megateam }) {
     return (
-        <div id={`${officer.id}`} className="flex flex-col gap-3 sm:gap-5 p-6 sm:p-8 md:p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
+        <div id={`${officer.id}`} className="flex flex-col gap-3 sm:gap-5 p-9 md:p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}
@@ -23,10 +23,10 @@ export default function OfficerCard({ officer }: { officer: Megateam }) {
                 <Link
                     target="_blank"
                     href={`https://www.instagram.com/${officer.instagram}/`}
-                    className="absolute top-3 right-3 hover:scale-110 bg-white/75 hover:bg-white transition shadow p-1 rounded-md sm:p-2 sm:rounded-xl"
+                    className="absolute top-3 right-3 hover:scale-110 bg-white/75 hover:bg-white transition shadow p-2 rounded-xl"
                     aria-label={`Visit ${officer.name}'s Instagram`}
                 >
-                    <RiInstagramFill className="h-4 w-4 sm:h-6 sm:w-6 text-primary" />
+                    <RiInstagramFill className="size-6 text-primary" />
                 </Link>
             </div>
             {/* Text section with name, position, major, and year */}
