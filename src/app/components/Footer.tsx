@@ -5,10 +5,6 @@ import { RiInstagramFill, RiYoutubeFill, RiMailFill, RiDiscordFill} from "react-
 import Link from 'next/link';
 
 const Footer = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    }
     const menuItems = [
         { href: 'https://www.instagram.com/tamu.csa/', child:  <RiInstagramFill className='h-8 w-8 text-primary' /> },
         { href: 'mailto:tamu.csa1963@gmail.com', child: <RiMailFill className='h-8 w-8 text-primary' /> },
