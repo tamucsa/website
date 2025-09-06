@@ -34,7 +34,7 @@ export default function OfficerFullImage({ officer }: { officer: Megateam }) {
     else {
         return (
             <div className="relative flex items-center justify-center bg-black z-20">
-                <Link href={`/officers#${officer.id}`} scroll={false} className="static z-20 max-w-full h-screen">
+                <Link href={`/officers#${officer.id}`} className="static z-20 max-w-full h-screen">
                     <Image alt={`${officer.name} Blurred Background`} src={`/2025-2026/officerImages/raw/${officer.id}.JPG`} fill
                     className="blur-xl brightness-75"/>
                 </Link>
