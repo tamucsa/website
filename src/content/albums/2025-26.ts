@@ -56,4 +56,17 @@ export const AlbumList2025_26: Album[] = [
             }
         ]
     },
+    {
+        id: 50,
+        title: "CSA Informational",
+        url: "https://photos.app.goo.gl/QXbiPgdrhseXB5PL7",
+        years: "2025-2026",
+        date: "8/28/2025",
+        groupInfo: [
+            {
+                group: "GM",
+                titleForGroup: "Informational Fall 2025"
+            }
+        ]
+    }
 ];
