@@ -63,7 +63,7 @@ export default function YearAlbumSection({ albumList, year, thisYear, className 
                     "hidden": !isVisible,
                     "mb-5": !thisYear,
                 })}>
-                {albumList.toReversed().map((album) => (
+                {(thisYear ? albumList.toReversed() : albumList).map((album) => (
                     <AlbumLinkButton key={album.url} album={album} className="w-full text-lg md:text-xl" />
                 ))}
             </div>
