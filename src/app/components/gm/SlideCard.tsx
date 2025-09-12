@@ -2,16 +2,16 @@ import Link from "next/link";
 
 interface SlideCardProps {
     title: string;
-    embedLink: string;
-    slideLink: string
+    baseUrl: string;
 }
-
-export default function SlideCard({ title, embedLink, slideLink }: SlideCardProps) {
+``
+export default function SlideCard({ title, baseUrl }: SlideCardProps) {
+    const finalProps = "?start=true&loop=true&delayms=10000"
     return (
         <div className="flex flex-col items-center gap-3 w-full">
             <h1 className="font-primary tracking-wider text-2xl lg:text-4xl">{title}</h1>
-            <iframe className="rounded-xl w-full lg:w-3xl h-auto" style={{ aspectRatio: "960/569" }} src={embedLink} width="960" height="569" allowFullScreen={true}></iframe>
-            <Link href={slideLink} target="_blank" className="font-primary tracking-wider text-lg lg:text-2xl underline hover:text-primary transition-colors">View Slides</Link>
+            <iframe className="rounded-xl w-full lg:w-3xl h-auto" style={{ aspectRatio: "960/569" }} src={baseUrl + "pubembed" + finalProps} width="960" height="569" allowFullScreen={true}></iframe>
+            <Link href={baseUrl + "pub" + finalProps} target="_blank" className="font-primary tracking-wider text-lg lg:text-2xl underline hover:text-primary transition-colors">View Slides</Link>
         </div>
     );
 }

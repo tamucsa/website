@@ -39,3 +39,10 @@ export interface Album {
         titleForGroup?: string; // Optional field for providing a different title for the group
     }>;
 }
+
+export interface GMSlideshow {
+    title: string;
+    baseUrl: string; // Base URL without query parameters
+    years: string;
+    date?: string; // Optional field for the date of the GM
+}
