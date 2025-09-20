@@ -26,8 +26,8 @@ const MembershipPage = () => {
                 {/* Right Payment Info & Form */}
                 <div className="flex flex-col w-full items-center justify-center gap-3 md:gap-5">
                     <div className="flex flex-col w-full outline outline-black rounded-xl font-secondary border-2 p-3 md:p-5 text-md md:text-2xl gap-1 md:gap-4">
-                        <p className=""><b>Semester:</b> $35</p>
-                        <p className=""><b>Full Year:</b> $45</p>
+                        <p className=""><b>Semester:</b> Late - $40 ($35 originally)</p>
+                        <p className=""><b>Full Year:</b> Late - $50 ($45 originally)</p>
                         {/* <p className="">Payment Methods will be listed in the form below!</p> */}
                         <p className="">Payment Methods will be listed in the form!</p>
                         {/*
@@ -38,7 +38,7 @@ const MembershipPage = () => {
                     </div>
                     <LinkButton href="https://tx.ag/csamembership" newTab={true}
                         className="w-full text-xl md:text-2xl"
-                        text="CSA Membership Form! (Due 9/19)"
+                        text="Late Membership Form! (Due 9/21)"
                     />
                 </div>
             </div>
