@@ -9,7 +9,7 @@ interface ImageModalProps {
     className?: string;
 }
 
-export default function ImageModal({ officer, className }: ImageModalProps) {
+export default function OfficerImageModal({ officer, className }: ImageModalProps) {
     // Set width and height based on the officer's raw image orientation
     let width, height;
     // Type guard to check if officer.yearEntries["2025-2026"][0] is of type OfficerRole

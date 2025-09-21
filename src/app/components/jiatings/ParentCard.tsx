@@ -1,24 +1,24 @@
-import { Megateam } from "@/utils/types";
+import { Megateam, Jiating } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
 import { RiInstagramFill} from "react-icons/ri";
 
-export default function OfficerCard({ parent }: { parent: Megateam }) {
+export default function ParentCard({ parent, jiating }: { parent: Megateam; jiating: Jiating }) {
     return (
         <div id={`${parent.id}`} className="flex flex-col gap-3 sm:gap-5 p-6 sm:p-8 md:p-11 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}
-                {/* <Link href={`/officers/${parent.id}`} className="">
+                <Link href={`/jiatings/${jiating.id}/${parent.id}`} className="">
                     <Image
-                        src={`/2025-2026/parentImages/cropped/${parent.id}.JPG`}
+                        src={`/${jiating.years}/jiatings/${jiating.name}/parents/cropped/${parent.id}.JPG`}
                         alt=""
                         className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-110 transition w-full h-auto"
                         width={300}
                         height={300}
                     />
-                </Link> */}
+                </Link>
                 {/* Instagram icon overlayed as clickable button */}
                 <Link
                     target="_blank"
