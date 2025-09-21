@@ -10,7 +10,7 @@ export default function ParentCard({ parent, jiating }: { parent: Megateam; jiat
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}
-                <Link href={`/jiatings/${jiating.id}/${parent.id}`} className="">
+                <Link href={`/jiatings/${jiating.id}/parents/${parent.id}`} className="">
                     <Image
                         src={`/${jiating.years}/jiatings/${jiating.name}/parents/cropped/${parent.id}.JPG`}
                         alt=""
