@@ -101,8 +101,8 @@ export default function PointTracker() {
                     <h1 className="font-secondary text-xl md:text-2xl text-center"><b> Name:</b> {result.name}</h1>
                     <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-2 h-full lg:w-lg">
                         <h2 className="font-secondary text-xl md:text-2xl"><b> Total Points:</b> {result.totalPoints}</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> CSA Points:</b> {result.csaPoints}</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> JT Sports Points:</b> {result.jtSportsPoints}</h2>
+                        <h2 className="font-secondary text-xl md:text-2xl"><b> CSA Wide Points:</b> {result.csaPoints}</h2>
+                        <h2 className="font-secondary text-xl md:text-2xl"><b> JT & Sports Points:</b> {result.jtSportsPoints}</h2>
                         {/* <h2 className="font-secondary text-xl md:text-2xl"><b> Semi-Formal Eligibility:</b> {semiformalEligibility}</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> GM Credits:</b> {result.gmCredits}/3</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> Three-Point Event Credit:</b> {threePtEventCredit}</h2> */}
