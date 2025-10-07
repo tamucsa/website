@@ -44,5 +44,6 @@ export interface GMSlideshow {
     title: string;
     baseUrl: string; // Base URL without query parameters
     years: string;
+    slug: string;
     date?: string; // Optional field for the date of the GM
 }
