@@ -8,10 +8,10 @@ const MembershipPage = () => {
         <div className='flex flex-col items-center gap-5 md:gap-15 mb-10 mx-13 md:mx-13'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15'>How to Join CSA!</h1>
             <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
-                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSecQc7JYAfMWQ634FLjHDyj6NEhga-4MrU_PCJQSQpEaJe-rw/viewform" newTab={true}
+                {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSecQc7JYAfMWQ634FLjHDyj6NEhga-4MrU_PCJQSQpEaJe-rw/viewform" newTab={true}
                     className="w-full md:w-md text-nowrap text-xl md:text-2xl"
                     text="CSA Media Team Application! (Due 9/25)"
-                />
+                /> */}
                 <LinkButton href="https://tx.ag/csaintern25" newTab={true}
                     className="w-full md:w-md text-nowrap text-xl md:text-2xl"
                     text="CSA Intern Application! (Due 10/12)"
@@ -26,20 +26,15 @@ const MembershipPage = () => {
                 {/* Right Payment Info & Form */}
                 <div className="flex flex-col w-full items-center justify-center gap-3 md:gap-5">
                     <div className="flex flex-col w-full outline outline-black rounded-xl font-secondary border-2 p-3 md:p-5 text-md md:text-2xl gap-1 md:gap-4">
-                        <p className=""><b>Semester:</b> Late - $40 ($35 originally)</p>
-                        <p className=""><b>Full Year:</b> Late - $50 ($45 originally)</p>
-                        {/* <p className="">Payment Methods will be listed in the form below!</p> */}
-                        <p className="">Payment Methods will be listed in the form!</p>
-                        {/*
-                        <p className="text-nowrap"><b>Venmo:</b> <Link href="https://venmo.com/?txn=pay&recipients=Kody-Chu" className="underline">@Kody-Chu</Link></p>
-                        <p className="text-nowrap"><b>Zelle:</b> 832-859-2588</p>
-                        <p className="md:text-nowrap"><b>Cash:</b> Talk to our Treasurer at our General Meetings!</p>
-                        */}
+                        <p className=""><b>Semester:</b> $35</p>
+                        <p className=""><b>Full Year:</b> $45</p>
+                        {/* <p className="">Payment Methods will be listed in the form!</p> */}
+                        <p className="">Membership will be available next semester!</p>
                     </div>
-                    <LinkButton href="https://tx.ag/csamembership" newTab={true}
+                    {/* <LinkButton href="https://tx.ag/csamembership" newTab={true}
                         className="w-full text-xl md:text-2xl"
                         text="Late Membership Form! (Due 9/21)"
-                    />
+                    /> */}
                 </div>
             </div>
             {/* <PointTracker /> */}

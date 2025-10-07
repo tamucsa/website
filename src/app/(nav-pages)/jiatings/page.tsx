@@ -40,10 +40,10 @@ const JiatingsPage = () => {
               The Jiating Olympics are a school year long event where all jiatings compete in various fun and engaging activities. Members of each jiating compete in various competitions to earn points for their jiating. 
               {/* At the end of the school year, the jiating with the most points will receive ___________! */}
             </p>
-            <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfeSFlCR0FFmE4YAumxUZCtnHDQV2WJ9S29WIjHD5rTC6cfpA/viewform" newTab={true}
+            {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfeSFlCR0FFmE4YAumxUZCtnHDQV2WJ9S29WIjHD5rTC6cfpA/viewform" newTab={true}
                 className="w-full text-xl md:text-2xl"
                 text="Fall '25 JT Olympics Sports Suggestions"
-            />
+            /> */}
           </div>
 
           {/* Current Jiating Olympics Standings */}
@@ -69,12 +69,12 @@ const JiatingsPage = () => {
               The current standings for the Jiating Olympics:
             </p>
             <div className="font-secondary text-lg md:text-2xl tracking-wide">
-              {/* <p className="">1st Place: Chiikawa - 100 points</p>
-              <p className="">2nd Place: Usagi - 90 points</p>
-              <p className="">3rd Place: Hachiware - 80 points</p>
-              <p className="">4th Place: Kurimanju - 70 points</p>
-              <p className="">5th Place: Momonga - 60 points</p>
-              <p className="">6th Place: Rakko - 50 points</p> */}
+              <p className="">🥇: Hachiware - 5 medals</p>
+              <p className="">🥈: Usagi - 3 medals</p>
+              <p className="">🥉: Kurimanju - 2 medals</p>
+              <p className="">🏅: Momonga - 1 medal</p>
+              <p className="">🏅: Chiikawa - 1 medal</p>
+              <p className="">🏅: Rakko - 1 medal</p>
             </div>
           </div>
 

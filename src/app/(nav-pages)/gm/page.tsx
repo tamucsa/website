@@ -12,7 +12,7 @@ const GMPage = () => {
                 Check out the calendar on <Link href='/events' className="underline hover:text-primary transition-colors">Events</Link> for more accurate dates!
             </h2>
             {GMSlideshowList.toReversed().map((album) => (
-                <SlideCard key={album.title} title={album.title} baseUrl={album.baseUrl} />
+                <SlideCard key={album.title} title={album.title} baseUrl={album.baseUrl} slug={album.slug} />
             ))}
             {/* Image Placeholders */}
             {/* <div className="flex flex-col md:flex-row gap-10 sm:gap-15 mb-10">

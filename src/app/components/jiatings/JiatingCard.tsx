@@ -2,6 +2,7 @@ import { Jiating } from "@/utils/types";
 
 import Image from "next/image";
 import Link from "next/link";
+import { RiInstagramFill} from "react-icons/ri";
 
 export default function JiatingCard({ jiating }: { jiating: Jiating }) {
     return (
@@ -11,7 +12,7 @@ export default function JiatingCard({ jiating }: { jiating: Jiating }) {
                 {/* Large image as clickable button */}
                 <Link href={`/jiatings/${jiating.id}`} className="">
                     <Image
-                        src={`/${jiating.years}/jiatingImages/characters/${jiating.name}.webp`}
+                        src={`/${jiating.years}/jiatings/${jiating.name}/character.webp`}
                         alt=""  
                         className="rounded-2xl hover:scale-105 duration-200 brightness-100 md:brightness-90 md:hover:brightness-100 transition w-full h-auto"
                         width={300}

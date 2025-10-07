@@ -7,7 +7,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 1,
         name: "Usagi",
-        instagram: "usagi", // change
+        instagram: "usagifam",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Dominic Hidayat")!,
@@ -19,7 +19,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 2,
         name: "Chiikawa",
-        instagram: "chiikawa", // change
+        instagram: "chiikawa_fam",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Christian Argenbright")!,
@@ -31,7 +31,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 3,
         name: "Kurimanju",
-        instagram: "kurimanju", // change
+        instagram: "kurimanjufam",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Maximillian Hsu")!,
@@ -43,7 +43,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 4,
         name: "Momonga",
-        instagram: "momonga", // change
+        instagram: "momonga.jt",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Erith Won")!,
@@ -55,7 +55,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 5,
         name: "Rakko",
-        instagram: "rakko", // change
+        instagram: "rakko.fam",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Keilon Carrier")!,
@@ -67,7 +67,7 @@ export const JiatingList: Jiating[] = [
     {
         id: 6,
         name: "Hachiware",
-        instagram: "hachiware", // change
+        instagram: "hachiwarefam",
         years: "2025-2026",
         parents: [
             MegateamList.find(parent => parent.name === "Jamie Lee")!,

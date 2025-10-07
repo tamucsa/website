@@ -1,7 +1,7 @@
-import FullImage from "@/app/components/officers/FullImage";
+import OfficerFullImage from "@/app/components/officers/OfficerFullImage";
 import { OfficerList } from "@/content/2025-2026/officers";
 
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import NotFound from "@/app/not-found"
 
 export default async function OfficerImagePage({
@@ -15,11 +15,11 @@ export default async function OfficerImagePage({
         return <NotFound showNavbar={false} />;
     }
     return (
-        <FullImage officer={officer} />
+        <OfficerFullImage officer={officer} />
     );
 }
 
-export async function generateMetadata ({ params }: { params: Promise<{ imageId: number }>}, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata ({ params }: { params: Promise<{ imageId: number }>}): Promise<Metadata> {
     const { imageId } = await params;
     const officer = OfficerList.find(o => o.id === Number(imageId));
     if (!officer) {

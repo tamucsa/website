@@ -68,5 +68,18 @@ export const AlbumList2025_26: Album[] = [
                 titleForGroup: "Informational Fall 2025"
             }
         ]
+    },
+    {
+        id: 51,
+        title: "Jiating Reveal",
+        url: "https://photos.google.com/u/1/share/AF1QipPzwDspzIZeIMdP4Pl35p5BRvSWYbduTt5RGM1B70pn01DDTw22tIwuQtqnjRKw0g?pli=1&key=QXNlWnRPVVdGa1F5Q1ktbm1FY0VrLWNTalZlYTRB",
+        years: "2025-2026",
+        date: "9/28/2025",
+        groupInfo: [
+            {
+                group: "Jiating Reveal",
+                titleForGroup: "Jiating Reveal 2025"
+            }
+        ]
     }
 ];
