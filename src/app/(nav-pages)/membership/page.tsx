@@ -37,7 +37,7 @@ const MembershipPage = () => {
                     /> */}
                 </div>
             </div>
-            {/* <PointTracker /> */}
+            <PointTracker />
         </div>
     );
 }

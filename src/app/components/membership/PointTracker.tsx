@@ -10,15 +10,15 @@ export default function PointTracker() {
     const [found, setFound] = useState<boolean>(false);
     
     const [result, setResult] = useState<any>(null);
-    const [semiformalEligibility, setSemiformalEligibility] = useState<string | null>(null);
-    const [threePtEventCredit, setThreePtEventCredit] = useState<string | null>(null);
+    // const [semiformalEligibility, setSemiformalEligibility] = useState<string | null>(null);
+    // const [threePtEventCredit, setThreePtEventCredit] = useState<string | null>(null);
 
     async function fetchPoints(inputName: string) {
         //reset variables
         setFound(false);
         setResult(null);
-        setSemiformalEligibility(null);
-        setThreePtEventCredit(null);
+        // setSemiformalEligibility(null);
+        // setThreePtEventCredit(null);
 
         //set new variables
         setSubmitted(true);
@@ -33,17 +33,17 @@ export default function PointTracker() {
         } else if (response.status === 200) {
             setFound(true);
             setResult(result);
-            if (result.semiformalEligibility == "Yes") {
-                setSemiformalEligibility("Eligible");
-            } else if (result.semiformalEligibility == "No") {
-                setSemiformalEligibility("Not Eligible");
-            }
+            // if (result.semiformalEligibility == "Yes") {
+            //     setSemiformalEligibility("Eligible");
+            // } else if (result.semiformalEligibility == "No") {
+            //     setSemiformalEligibility("Not Eligible");
+            // }
 
-            if (result.threePtEventCredit == "Yes") {
-                setThreePtEventCredit("✓");
-            } else if (result.threePtEventCredit == "No") {
-                setThreePtEventCredit("x");
-            }
+            // if (result.threePtEventCredit == "Yes") {
+            //     setThreePtEventCredit("✓");
+            // } else if (result.threePtEventCredit == "No") {
+            //     setThreePtEventCredit("x");
+            // }
         }
         setLoading(false); // Stop loading (reset Button text to "Search")
         // setInputName(""); // Clear input field
@@ -103,9 +103,9 @@ export default function PointTracker() {
                         <h2 className="font-secondary text-xl md:text-2xl"><b> Total Points:</b> {result.totalPoints}</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> CSA Points:</b> {result.csaPoints}</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> JT Sports Points:</b> {result.jtSportsPoints}</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> Semi-Formal Eligibility:</b> {semiformalEligibility}</h2>
+                        {/* <h2 className="font-secondary text-xl md:text-2xl"><b> Semi-Formal Eligibility:</b> {semiformalEligibility}</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> GM Credits:</b> {result.gmCredits}/3</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> Three-Point Event Credit:</b> {threePtEventCredit}</h2>
+                        <h2 className="font-secondary text-xl md:text-2xl"><b> Three-Point Event Credit:</b> {threePtEventCredit}</h2> */}
                     </div>
                 </div>
             )}

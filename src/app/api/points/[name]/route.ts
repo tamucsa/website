@@ -6,9 +6,6 @@ export type CacheEntry = {
     totalPoints: number;
     csaPoints: number;
     jtSportsPoints: number;
-    semiformalEligibility: string;
-    gmCredits: number;
-    threePtEventCredit: string;
     timestamp: number;
 }
 
@@ -26,7 +23,7 @@ async function fetchRowByName(name: string) {
 
     // Sets up Google Sheets API client and fetches entire sheet
     const sheets = google.sheets({ version: "v4", auth });
-    const range = "Fall 24-25 Points!A2:I400";
+    const range = "Fall 25-26 Points!A2:F215";
     const res = await sheets.spreadsheets.values.get({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
         range,
@@ -42,8 +39,8 @@ async function fetchRowByName(name: string) {
 
     // Debugging (Prints contents of found row)
     // console.log(`${name}: ${JSON.stringify(foundRow)}`);
-    //return Name, Total Points, CSA points, JT & Sport Points, Winter Formal Eligibility (T/F), GM Credits, and 3-Point Event Credit (T/F)
-    return [foundRow[0], foundRow[3], foundRow[4], foundRow[5], foundRow[6], foundRow[7], foundRow[8]] as [string, number, number, number, string, number, string];
+    //return Name, Total Points, CSA points, JT & Sport Points
+    return [foundRow[0], foundRow[3], foundRow[4], foundRow[5]] as [string, number, number, number];
 }
 
 export async function GET(request: NextRequest, {params}: { params: Promise<{ name: string }> }) {
@@ -56,9 +53,9 @@ export async function GET(request: NextRequest, {params}: { params: Promise<{ na
     }
 
     try {
-        const [name, totalPoints, csaPoints, jtSportsPoints, semiformalEligibility, gmCredits, threePtEventCredit] = await fetchRowByName(inputName);
-        cache[inputName] = { name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, timestamp: now };
-        return NextResponse.json({ name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, semiformalEligibility: semiformalEligibility, gmCredits: gmCredits, threePtEventCredit: threePtEventCredit, cached: false }, {status: 200});
+        const [name, totalPoints, csaPoints, jtSportsPoints] = await fetchRowByName(inputName);
+        cache[inputName] = { name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, timestamp: now };
+        return NextResponse.json({ name: name, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, cached: false }, {status: 200});
     } catch (error: any) {
         if (error.cause === 404) {
             return NextResponse.json({ error: error.message }, { status: 404 });
