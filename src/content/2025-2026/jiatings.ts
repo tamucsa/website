@@ -14,7 +14,8 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Peter Ha")!,
             MegateamList.find(parent => parent.name === "Zachary Yang")!,
             MegateamList.find(parent => parent.name === "Ethan Lam")!
-        ]
+        ],
+        groupImgOrientation: "horizontal"
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Eric Liu")!,
             MegateamList.find(parent => parent.name === "Kailee Yee")!,
             MegateamList.find(parent => parent.name === "Sydney Guy")!
-        ]
+        ],
+        groupImgOrientation: "horizontal"
     },
     {
         id: 3,
@@ -38,7 +40,8 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Ray Cheng")!,
             MegateamList.find(parent => parent.name === "Akhil Kasamsetty")!,
             MegateamList.find(parent => parent.name === "Matthew Yen")!
-        ]
+        ],
+        groupImgOrientation: "horizontal"
     },
     {
         id: 4,
@@ -50,7 +53,8 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Reilly Mize")!,
             MegateamList.find(officer => officer.name === "Sarah Ward")!,
             MegateamList.find(officer => officer.name === "Lia Chen")!
-        ]
+        ],
+        groupImgOrientation: "horizontal" //change
     },
     {
         id: 5,
@@ -62,7 +66,8 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Steve Zhang")!,
             MegateamList.find(parent => parent.name === "Evan Chang")!,
             MegateamList.find(parent => parent.name === "Kody Chu")!
-        ]
+        ],
+        groupImgOrientation: "vertical"
     },
     {
         id: 6,
@@ -74,6 +79,7 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(parent => parent.name === "Vivian Chen")!,
             MegateamList.find(parent => parent.name === "Peixuan Jiang")!,
             MegateamList.find(parent => parent.name === "Jacob Pham")!
-        ]
+        ],
+        groupImgOrientation: "horizontal"
     }
 ]

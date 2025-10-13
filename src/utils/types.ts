@@ -24,6 +24,7 @@ export interface Jiating {
     parents: [Megateam, Megateam, Megateam, Megateam];
     instagram: string;
     years: string;
+    groupImgOrientation: "horizontal" | "vertical";
 }
 
 export interface Album {

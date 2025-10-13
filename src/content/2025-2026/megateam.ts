@@ -97,7 +97,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     jiating: { name: "Momonga" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -115,7 +115,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     jiating: { name: "Rakko" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -197,7 +197,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     jiating: { name: "Rakko" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -215,7 +215,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     jiating: { name: "Rakko" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -317,7 +317,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Usagi" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -331,7 +331,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Usagi" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -443,7 +443,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Momonga" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -471,7 +471,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Rakko" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -485,7 +485,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Hachiware" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         },
@@ -499,7 +499,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Hachiware" },
-                    rawImgOrientation: "vertical" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         },
@@ -513,7 +513,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Hachiware" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         },
@@ -527,7 +527,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     jiating: { name: "Hachiware" },
-                    rawImgOrientation: "horizontal" //change
+                    rawImgOrientation: "vertical"
                 }
             ]
         }

@@ -8,8 +8,10 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image"
 import { RiArrowGoBackFill, RiInstagramFill } from "react-icons/ri";
+import classNames from 'classnames';
 
 export default function FullJTPopup({ jiating }: { jiating: Jiating }) {
+    
     const router = useRouter();
 
     useEffect(() => {
@@ -66,17 +68,23 @@ export default function FullJTPopup({ jiating }: { jiating: Jiating }) {
                     }
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full">
-                    <div className="relative lg:w-1/2 hover:scale-102 brightness-90 transition-transform duration-300">
+                    <div className={classNames('relative hover:scale-102 brightness-90 transition-transform duration-300', {
+                            'lg:w-1/2': (jiating.groupImgOrientation === "horizontal"),
+                            'lg:w-30/100': (jiating.groupImgOrientation === "vertical")
+                        })}>
                         <Image
                             src={`/${jiating.years}/jiatings/${jiating.name}/parents/group.JPG`}
                             alt=""
                             width={750}
-                            height={500}
+                            height={450}
                             className="object-cover rounded-lg shadow-md"
                             style={{ width: "100%", height: "auto" }}
                         />
                     </div>
-                    <div className="relative lg:w-1/2 hover:scale-102 brightness-90 transition-transform duration-300">
+                    <div className={classNames('relative hover:scale-102 brightness-90 transition-transform duration-300', {
+                            'lg:w-1/2': (jiating.groupImgOrientation === "horizontal"),
+                            'lg:w-70/100': (jiating.groupImgOrientation === "vertical")
+                        })}>
                         <Image
                             src={`/${jiating.years}/jiatings/${jiating.name}/infoslide.jpg`}
                             alt=""
