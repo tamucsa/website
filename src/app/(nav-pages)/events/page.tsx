@@ -18,7 +18,7 @@ const EventsPage = () => {
                 /> */}
                 <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeFtlEuedU5CF74JTTbCwnqMq4dvgfYggYBixY8cBaszXaSig/viewform" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
-                    text="Concessions Interest Form"
+                    text="Concessions Signup Form"
                 />
             </div>
             <iframe

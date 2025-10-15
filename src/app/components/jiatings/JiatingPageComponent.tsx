@@ -70,12 +70,12 @@ const JiatingPageComponent: React.FC = () => {
                             The current point standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            {/* <p className="">1st Place: Chiikawa - 100 points</p>
-                            <p className="">2nd Place: Usagi - 90 points</p>
-                            <p className="">3rd Place: Hachiware - 80 points</p>
-                            <p className="">4th Place: Kurimanju - 70 points</p>
-                            <p className="">5th Place: Momonga - 60 points</p>
-                            <p className="">6th Place: Rakko - 50 points</p> */}
+                            <p className="">1st: Usagi - 232 points</p>
+                            <p className="">2nd: Hachiware - 188 points</p>
+                            <p className="">3rd: Usagi - 156 points</p>
+                            <p className="">4th: Kurimanju - 149 points</p>
+                            <p className="">5th: Chiikawa - 144 points</p>
+                            <p className="">6th: Rakko - 143 points</p>
                         </div>
                     </div>
         

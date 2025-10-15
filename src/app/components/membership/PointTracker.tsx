@@ -49,6 +49,18 @@ export default function PointTracker() {
         // setInputName(""); // Clear input field
     }
 
+    const menuItems = [
+        [
+            { label: 'Jiating', value: result?.jt },
+            { label: 'Total Points', value: result?.totalPoints },
+        ],
+        [
+            { label: 'CSA Wide Points', value: result?.csaPoints },
+            { label: 'JT & Sports Points', value: result?.jtSportsPoints },
+            { label: '# of Concessions', value: result?.concessionNumber }
+        ]
+    ];
+
     return (
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 w-full">
             {/* Search for Points Card */}
@@ -97,12 +109,22 @@ export default function PointTracker() {
                 )}
             </div>
             {found && result && (
-                <div className="flex flex-col gap-5 md:text-nowrap w-xl">
-                    <h1 className="font-secondary text-xl md:text-2xl text-center"><b> Name:</b> {result.name}</h1>
-                    <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-2 h-full lg:w-lg">
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> Total Points:</b> {result.totalPoints}</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> CSA Wide Points:</b> {result.csaPoints}</h2>
-                        <h2 className="font-secondary text-xl md:text-2xl"><b> JT & Sports Points:</b> {result.jtSportsPoints}</h2>
+                <div className="flex flex-col gap-5 md:gap-10 md:text-nowrap w-xl">
+                    <h1 className="font-secondary text-2xl md:text-4xl text-center">{result.name}</h1>
+                    <div className={`grid grid-cols-1 md:grid-cols-${menuItems.length} text-center md:text-left justify-center gap-5 md:gap-0`}>
+                        {
+                            menuItems.map((column, colIndex) => (
+                                <div key={colIndex} className="flex flex-col items-center">
+                                    <div className="flex flex-col gap-1 w-fit">
+                                        {column.map((item, itemIndex) => (
+                                            <h2 key={itemIndex} className="font-secondary text-xl md:text-2xl">
+                                                <b> {item.label}:</b> {item.value !== undefined ? item.value : '0'}
+                                            </h2>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))
+                        }
                         {/* <h2 className="font-secondary text-xl md:text-2xl"><b> Semi-Formal Eligibility:</b> {semiformalEligibility}</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> GM Credits:</b> {result.gmCredits}/3</h2>
                         <h2 className="font-secondary text-xl md:text-2xl"><b> Three-Point Event Credit:</b> {threePtEventCredit}</h2> */}
