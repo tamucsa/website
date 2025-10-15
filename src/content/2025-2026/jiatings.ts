@@ -54,7 +54,7 @@ export const JiatingList: Jiating[] = [
             MegateamList.find(officer => officer.name === "Sarah Ward")!,
             MegateamList.find(officer => officer.name === "Lia Chen")!
         ],
-        groupImgOrientation: "horizontal" //change
+        groupImgOrientation: "horizontal"
     },
     {
         id: 5,
