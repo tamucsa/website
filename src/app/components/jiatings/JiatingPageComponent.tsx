@@ -72,7 +72,7 @@ const JiatingPageComponent: React.FC = () => {
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
                             <p className="">1st: Usagi - 232 points</p>
                             <p className="">2nd: Hachiware - 188 points</p>
-                            <p className="">3rd: Usagi - 156 points</p>
+                            <p className="">3rd: Momonga - 156 points</p>
                             <p className="">4th: Kurimanju - 149 points</p>
                             <p className="">5th: Chiikawa - 144 points</p>
                             <p className="">6th: Rakko - 143 points</p>
