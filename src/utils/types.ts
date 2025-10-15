@@ -24,6 +24,7 @@ export interface Jiating {
     parents: [Megateam, Megateam, Megateam, Megateam];
     instagram: string;
     years: string;
+    groupImgOrientation: "horizontal" | "vertical";
 }
 
 export interface Album {
@@ -46,4 +47,22 @@ export interface GMSlideshow {
     years: string;
     slug: string;
     date?: string; // Optional field for the date of the GM
+}
+
+export interface JTOEvent {
+    title: string;
+    semester: "Fall 2025" | "Spring 2025";
+    oneDay: boolean; // True if the event is a one-day event, false if it spans multiple days
+    dayEntries: Array<{
+        title: string;
+        date: string; // Date in Month Day format (e.g., "Oct 3rd")
+        day: string; // Day of the week (e.g., "Fri")
+        time: string; // Time in HH:MMam/pm - HH:MMam/pm format (e.g., "6:30pm - 8:30pm")
+    }>;
+    location: string;
+    completed: boolean;
+    placements?: {
+        [place: number]: Jiating | undefined; // e.g., "1st": JiatingList.find(jiating => jiating.name === "Hachiware")
+    }
+
 }
