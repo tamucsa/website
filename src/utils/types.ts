@@ -64,5 +64,10 @@ export interface JTOEvent {
     placements?: {
         [place: number]: Jiating | undefined; // e.g., "1st": JiatingList.find(jiating => jiating.name === "Hachiware")
     }
+}
 
+export interface NiHowdySchool {
+    school: string;
+    shortname: string;
+    instagram: string;
 }

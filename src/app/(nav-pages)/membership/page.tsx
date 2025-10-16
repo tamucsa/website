@@ -12,12 +12,14 @@ const MembershipPage = () => {
             {/* <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
                 <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSecQc7JYAfMWQ634FLjHDyj6NEhga-4MrU_PCJQSQpEaJe-rw/viewform" newTab={true}
                     className="w-full md:w-md text-nowrap text-xl md:text-2xl"
-                    text="CSA Media Team Application! (Due 9/25)"
-                />
+                >
+                    CSA Media Team Application! (Due 9/25)
+                </LinkButton>
                 <LinkButton href="https://tx.ag/csaintern25" newTab={true}
                     className="w-full md:w-md text-nowrap text-xl md:text-2xl"
-                    text="CSA Intern Application! (Due 10/12)"
-                />
+                >
+                    CSA Intern Application! (Due 10/12)
+                </LinkButton>
             </div> */}
             <div className='flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-10'>
                 {/* Left Text */}
@@ -35,8 +37,10 @@ const MembershipPage = () => {
                     </div>
                     {/* <LinkButton href="https://tx.ag/csamembership" newTab={true}
                         className="w-full text-xl md:text-2xl"
-                        text="Late Membership Form! (Due 9/21)"
-                    /> */}
+                    >
+                        Membership Form! (Due 9/21)
+                    </LinkButton>
+                    */}
                 </div>
             </div>
             <PointTracker />
