@@ -1,5 +1,7 @@
 import LinkButton from "@/app/components/LinkButton";
 import PointTracker from "@/app/components/membership/PointTracker";
+import RewardsCard from "@/app/components/membership/Rewards";
+import PointTableCard from "@/app/components/membership/PointTable";
 
 import { Metadata } from "next";
 
@@ -38,6 +40,10 @@ const MembershipPage = () => {
                 </div>
             </div>
             <PointTracker />
+            <div className="flex flex-col lg:flex-row w-full gap-5">
+                <PointTableCard />
+                <RewardsCard />
+            </div>
         </div>
     );
 }

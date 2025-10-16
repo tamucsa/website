@@ -1,4 +1,5 @@
 import LinkButton from "@/app/components/LinkButton";
+import StyledCalendarEmbed from "@/app/components/events/StyledCalendarEmbed";
 
 import { Metadata } from "next";
 import Link from "next/link";
@@ -18,16 +19,14 @@ const EventsPage = () => {
                 /> */}
                 <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeFtlEuedU5CF74JTTbCwnqMq4dvgfYggYBixY8cBaszXaSig/viewform" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
-                    text="Concessions Signup Form"
+                    text="Concessions Signup"
+                />
+                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSdafasNW8Q2t-F6vm9vVOf3UdpV3uJuohxcfk0VSkrPY9JtrQ/viewform" newTab={true}
+                    className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
+                    text="Basketball Concessions Signup"
                 />
             </div>
-            <iframe
-                src="https://embed.styledcalendar.com/#sT0DkMbkqE91fqfz5gle"
-                title="Styled Calendar"
-                className="styled-calendar-container h-[50vh] sm:h-185"
-                style={{ width: "80%", border: "none"}}
-                data-cy="calendar-embed-iframe"
-            />
+            <StyledCalendarEmbed />
             <h1 className='container text-center font-primary tracking-wider text-2xl sm:text-3xl md:text-4xl'>Add to Your Google Calendar <Link target='_blank' href='https://calendar.google.com/calendar/u/1?cid=Y18zZmJmZjZkZWU1NDY0YzQ4Y2QzM2Q5ZTMyYmE5OTMzZGRkNmMwOWI2MjhhYmVlNzNkZjc2YzM5ZDkzMWRhNjJmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20' className="underline hover:text-primary transition-colors">Here</Link>!</h1>
         </div>
     );

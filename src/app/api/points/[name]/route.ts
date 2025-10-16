@@ -51,7 +51,7 @@ export async function GET(request: NextRequest, {params}: { params: Promise<{ na
     const now = Date.now();
     const cached = cache[inputName];
     if (cached && now - cached.timestamp < CACHE_DURATION) {
-        return NextResponse.json({ name: cached.name, jt: cached.jt, totalPoints: cached.totalPoints, csaPoints: cached.csaPoints, jtSportsPoints: cached.jtSportsPoints, concessionNumber: cached.concessionNumber, cached: true }, {status: 200});
+        return NextResponse.json({ name: cached.name, jt: cached.jt, totalPoints: cached.totalPoints, csaPoints: cached.csaPoints, jtSportsPoints: cached.jtSportsPoints, concessionNumber: cached.concessionNumber, cached: true }, {status: 200, headers: { "X-Cache": "HIT" }});
     }
 
     try {

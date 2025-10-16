@@ -54,14 +54,8 @@ export const Fall2025JTOList: JTOEvent[] = [
     {
         title: "Volleyball",
         semester: "Fall 2025",
-        oneDay: false,
+        oneDay: true,
         dayEntries: [
-            {
-                title: "Seeding",
-                date: "Oct 18th",
-                day: "Sat",
-                time: "11:00am - 1:00pm"
-            },
             {
                 title: "Official",
                 date: "Oct 19th",
