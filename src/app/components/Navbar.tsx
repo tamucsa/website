@@ -20,7 +20,7 @@ const Navbar = () => {
         { label: 'Membership', href: '/membership' },
         { label: 'General Meetings', href: '/gm' },
         { label: 'Jiatings', href: '/jiatings' },
-        // { label: 'Nihowdy', href: '/nihowdy' },
+        { label: 'Nihowdy', href: '/nihowdy' },
         { label: 'Photos', href: '/photos' },
         { label: 'Contact', href: '/contact' },
     ];
