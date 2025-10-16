@@ -37,8 +37,9 @@ export default function NotFoundBox({showNavbar}: {showNavbar: boolean}) {
                     href="/"
                     newTab={false}
                     className="w-full text-3xl lg:text-4xl"
-                    text="Home"
-                />
+                >
+                    Home
+                </LinkButton>
             </div>
         </div>
     );
