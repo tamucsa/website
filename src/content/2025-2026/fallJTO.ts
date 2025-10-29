@@ -57,35 +57,19 @@ export const Fall2025JTOList: JTOEvent[] = [
         oneDay: true,
         dayEntries: [
             {
-                title: "Official",
+                title: "Volleyball",
                 date: "Oct 19th",
                 day: "Sun",
                 time: "12:30pm - 2:30pm"
             }
         ],
         location: "Main Rec Center",
-        completed: false,
-    },
-    {
-        title: "Valorant",
-        semester: "Fall 2025",
-        oneDay: false,
-        dayEntries: [
-            {
-                title: "Seeding",
-                date: "Oct 21st",
-                day: "Tues",
-                time: "6:00pm - 8:00pm"
-            },
-            {
-                title: "Official",
-                date: "Oct 22nd",
-                day: "Wed",
-                time: "6:00pm - 8:00pm"
-            }
-        ],
-        location: "Discord",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Hachiware"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
     },
     {
         title: "Dodgeball",
@@ -100,6 +84,26 @@ export const Fall2025JTOList: JTOEvent[] = [
             }
         ],
         location: "Main Rec Center",
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Momonga"),
+            2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            3: JiatingList.find(jiating => jiating.name === "Kurimanju")
+        }
+    },
+    {
+        title: "Valorant",
+        semester: "Fall 2025",
+        oneDay: true,
+        dayEntries: [
+            {
+                title: "Valorant",
+                date: "Oct 30th",
+                day: "Thurs",
+                time: "8:30pm - 11:30pm"
+            }
+        ],
+        location: "Discord",
         completed: false,
     },
     {

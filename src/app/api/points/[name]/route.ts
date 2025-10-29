@@ -18,8 +18,8 @@ const CACHE_DURATION = 1000 * 60 * 10;
 async function fetchRowByName(name: string) {
     // set up authentication for Google Sheets API
     const auth = new google.auth.JWT({
-            email: process.env.GOOGLE_CLIENT_EMAIL,
-            key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+            email: process.env.GOOGLE_CLIENT_EMAIL_PTTRACKER,
+            key: process.env.GOOGLE_PRIVATE_KEY_PTTRACKER?.replace(/\\n/g, '\n'),
             scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"]
     });
 
@@ -27,7 +27,7 @@ async function fetchRowByName(name: string) {
     const sheets = google.sheets({ version: "v4", auth });
     const range = "Fall 25-26 Points!A2:L215";
     const res = await sheets.spreadsheets.values.get({
-        spreadsheetId: process.env.GOOGLE_SHEET_ID,
+        spreadsheetId: "1DUvJFHtOIy_ZfK1YeSs_0MwjABfTHFX5ILZd-vqqP7Q",
         range,
     });
 
