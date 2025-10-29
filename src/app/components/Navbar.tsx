@@ -18,13 +18,13 @@ const Navbar = () => {
         { label: 'Home', href: '/', submenu: false },
         { label: 'Officers', href: '/officers', submenu: false },
         { label: 'Events', href: '/events', submenu: true, submenuItems: [
-            { label: 'Concessions', href: '/concessions' },
+            // { label: 'Concessions', href: '/concessions' },
             { label: 'Nihowdy', href: '/nihowdy' },
         ]},
         { label: 'Membership', href: '/membership', submenu: false },
         { label: 'General Meetings', href: '/gm', submenu: false },
         { label: 'Jiatings', href: '/jiatings', submenu: false },
-        { label: 'Nihowdy', href: '/nihowdy', submenu: false },
+        // { label: 'Nihowdy', href: '/nihowdy', submenu: false },
         { label: 'Photos', href: '/photos', submenu: false },
         { label: 'Contact', href: '/contact', submenu: false },
     ];
@@ -43,14 +43,14 @@ const Navbar = () => {
                         menuItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
-                                <div key={item.href} className="relative">
+                                <div key={item.href} className="relative transition hover:scale-110">
                                     {item.submenu ? (
                                         <Dropdown item={item} />
                                     ) : (
-                                        <Link className={classNames('transition tracking-wider text-xl text-black hover:scale-110 hover:text-primary', {
+                                        <Link className={classNames('tracking-wider text-xl text-black hover:text-primary', {
                                             'scale-110 text-primary': isActive
                                             })} 
-                                            href={item.href}>{item.label}
+                                        href={item.href} key={item.href}>{item.label}
                                         </Link>
                                     )}
                                 </div>
