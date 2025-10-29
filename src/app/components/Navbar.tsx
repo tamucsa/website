@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { RiMenuLine, RiCloseLargeLine } from "react-icons/ri";
 import classNames from 'classnames';
+import Dropdown from './NavDropdown';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -14,15 +15,18 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
     const menuItems = [
-        { label: 'Home', href: '/' },
-        { label: 'Officers', href: '/officers' },
-        { label: 'Events', href: '/events' },
-        { label: 'Membership', href: '/membership' },
-        { label: 'General Meetings', href: '/gm' },
-        { label: 'Jiatings', href: '/jiatings' },
-        { label: 'Nihowdy', href: '/nihowdy' },
-        { label: 'Photos', href: '/photos' },
-        { label: 'Contact', href: '/contact' },
+        { label: 'Home', href: '/', submenu: false },
+        { label: 'Officers', href: '/officers', submenu: false },
+        { label: 'Events', href: '/events', submenu: true, submenuItems: [
+            // { label: 'Concessions', href: '/concessions' },
+            { label: 'Nihowdy', href: '/nihowdy' },
+        ]},
+        { label: 'Membership', href: '/membership', submenu: false },
+        { label: 'General Meetings', href: '/gm', submenu: false },
+        { label: 'Jiatings', href: '/jiatings', submenu: false },
+        // { label: 'Nihowdy', href: '/nihowdy', submenu: false },
+        { label: 'Photos', href: '/photos', submenu: false },
+        { label: 'Contact', href: '/contact', submenu: false },
     ];
   return (
     <nav className='fixed top-0 w-full bg-white shadow-md/25 shadow-gray-600 z-10'>
@@ -39,10 +43,17 @@ const Navbar = () => {
                         menuItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
-                                <Link className={classNames('transition tracking-wider text-xl text-black hover:scale-110 hover:text-primary', {
-                                    'scale-110 text-primary': isActive
-                                })} 
-                                href={item.href} key={item.href}>{item.label}</Link>
+                                <div key={item.href} className="relative transition hover:scale-110">
+                                    {item.submenu ? (
+                                        <Dropdown item={item} />
+                                    ) : (
+                                        <Link className={classNames('tracking-wider text-xl text-black hover:text-primary', {
+                                            'scale-110 text-primary': isActive
+                                            })} 
+                                        href={item.href} key={item.href}>{item.label}
+                                        </Link>
+                                    )}
+                                </div>
                             )
                         })
                     }

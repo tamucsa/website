@@ -71,3 +71,8 @@ export interface NiHowdySchool {
     shortname: string;
     instagram: string;
 }
+
+export interface JTMedalCount {
+    jiatingName: string;
+    medals: number;
+}

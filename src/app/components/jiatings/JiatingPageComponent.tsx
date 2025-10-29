@@ -7,8 +7,15 @@ import { JiatingList } from "@/content/2025-2026/jiatings";
 
 import React, { useState } from 'react';
 
-const JiatingPageComponent: React.FC = () => {
+interface JiatingPageComponentProps {
+    initialMedalsByJiating?: Record<string, any> | null;
+    // server-provided sorted jiating list (most medals -> least)
+    initialSortedJiatingList?: Array<any> | null;
+}
+
+const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMedalsByJiating = null, initialSortedJiatingList = null } ) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [medalsByJiating, setMedalsByJiating] = useState<Record<string, any> | null>(initialMedalsByJiating);
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
@@ -54,10 +61,6 @@ const JiatingPageComponent: React.FC = () => {
                             className="w-full text-xl md:text-2xl"
                             text="Fall '25 JT Olympics Sports Suggestions"
                         /> */}
-                        {/* <LinkButton href="" newTab={true}
-                            className="w-full text-xl md:text-2xl"
-                            text="JTO Fall '25 Schedule"
-                        /> */}
                         <button onClick={openModal} className="w-full text-xl md:text-2xl p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors hover:text-primary hover:outline-primary">
                             Jiating Olympics Schedule
                         </button>
@@ -70,12 +73,12 @@ const JiatingPageComponent: React.FC = () => {
                             The current point standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            <p className="">1st: Usagi - 232 points</p>
-                            <p className="">2nd: Hachiware - 188 points</p>
-                            <p className="">3rd: Momonga - 156 points</p>
-                            <p className="">4th: Kurimanju - 149 points</p>
-                            <p className="">5th: Chiikawa - 144 points</p>
-                            <p className="">6th: Rakko - 143 points</p>
+                            <p className="">1st: Usagi - 477 points</p>
+                            <p className="">2nd: Hachiware - 380 points</p>
+                            <p className="">3rd: Momonga - 349 points</p>
+                            <p className="">4th: Kurimanju - 267 points</p>
+                            <p className="">5th: Chiikawa - 244 points</p>
+                            <p className="">6th: Rakko - 217 points</p>
                         </div>
                     </div>
         
@@ -86,13 +89,40 @@ const JiatingPageComponent: React.FC = () => {
                             The current standings for the Jiating Olympics:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            <p className="">🥇: Hachiware - 10 medals</p>
-                            <p className="">🥈: Usagi - 7 medals</p>
-                            <p className="">🥈: Kurimanju - 7 medals</p>
-                            <p className="">🏅: Momonga - 2 medals</p>
-                            <p className="">🏅: Chiikawa - 1 medal</p>
-                            <p className="">🏅: Rakko - 1 medal</p>
-                            {/* 🥉 */}
+                            {medalsByJiating ? (
+                                    (() => {
+                                        // Compute standings ordered by numeric medal counts (desc)
+                                        const standings = [...JiatingList].slice().sort((a, b) => {
+                                            const aData = medalsByJiating[a.name];
+                                            const bData = medalsByJiating[b.name];
+                                            const aCount = (aData && typeof aData === 'object' && typeof aData.medals === 'number') ? aData.medals : Number.NEGATIVE_INFINITY;
+                                            const bCount = (bData && typeof bData === 'object' && typeof bData.medals === 'number') ? bData.medals : Number.NEGATIVE_INFINITY;
+                                            if (bCount === aCount) return a.id - b.id;
+                                            return bCount - aCount;
+                                        });
+
+                                        return standings.map((j, idx) => {
+                                            const data = medalsByJiating[j.name];
+                                            // If helper returned an error object, show the message
+                                            if (data && typeof data === 'object' && 'error' in data) {
+                                                return <p key={j.id} className="">{j.name}: Error — {String((data as any).error)}</p>;
+                                            }
+                                            // If we have a numeric medals count
+                                            const count = data?.medals;
+                                            const medalEmoji = (typeof count === 'number')
+                                                ? (idx === 0 ? '🥇 ' : idx === 1 ? '🥈 ' : idx === 2 ? '🥉 ' : (idx >= 3 ? '🏅 ' : ''))
+                                                : '';
+                                                if (typeof count === 'number') {
+                                                    return <p key={j.id}>{medalEmoji}{j.name}: {count} medal{count === 1 ? '' : 's'}</p>;
+                                                }
+                                            // If explicitly null (fetch returned null) show dash; otherwise still loading
+                                            if (data === null) return <p key={j.id}>{j.name}: —</p>;
+                                            return <p key={j.id}>{j.name}: Loading…</p>;
+                                        });
+                                    })()
+                            ) : (
+                                <p>Loading medals…</p>
+                            )}
                         </div>
                     </div>
                 </div>
