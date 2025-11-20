@@ -38,5 +38,19 @@ export const GMSlideshowList: GMSlideshow[] = [
         years: "2025-2026",
         slug: "4",
         date: "10/23/2025"
-    }
+    },
+    {
+        title: "General Meeting #5",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSfal3kWzNbRFwrGPQKTjIAfNIWzh_T_ZOqRV2RMgbQ0t-bO_-q0_F9XiQb2T_RTVQVjsOvqhkgsXvB/",
+        years: "2025-2026",
+        slug: "5",
+        date: "11/6/2025"
+    },
+    // {
+    //     title: "General Meeting #6",
+    //     baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQlYh8vATAjz_u8F435w8f0iXI24W4s00ErcmMuvlO9OO1MyE95ffAVmBa16xwK65KeccTQwJ2ldRzA/",
+    //     years: "2025-2026",
+    //     slug: "6",
+    //     date: "11/20/2025"
+    // },
 ];

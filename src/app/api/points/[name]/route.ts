@@ -42,7 +42,7 @@ async function fetchRowByName(name: string) {
     // Debugging (Prints contents of found row)
     // console.log(`${name}: ${JSON.stringify(foundRow)}`);
     //return Name, JT, Total Points, CSA points, JT & Sport Points, Concession Number
-    return [foundRow[0], foundRow[2],foundRow[3], foundRow[4], foundRow[5], foundRow[10]] as [string, string, number, number, number, number];
+    return [foundRow[0], foundRow[2],foundRow[3], foundRow[4], foundRow[5], foundRow[11]] as [string, string, number, number, number, number];
 }
 
 export async function GET(request: NextRequest, {params}: { params: Promise<{ name: string }> }) {

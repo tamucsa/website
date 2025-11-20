@@ -82,4 +82,6 @@ export const AlbumList2025_26: Album[] = [
             }
         ]
     }
+    // SASE X CSA Mahjong Mixer - 10/17/25
+    // Pumpkin Patch - 10/18/25
 ];

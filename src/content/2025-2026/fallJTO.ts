@@ -104,7 +104,12 @@ export const Fall2025JTOList: JTOEvent[] = [
             }
         ],
         location: "Discord",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Usagi"),
+            2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            3: JiatingList.find(jiating => jiating.name === "Chiikawa")
+        }
     },
     {
         title: "Badminton",
@@ -119,7 +124,12 @@ export const Fall2025JTOList: JTOEvent[] = [
             }
         ],
         location: "Main Rec Center",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Usagi"),
+            2: JiatingList.find(jiating => jiating.name === "Rakko"),
+            3: JiatingList.find(jiating => jiating.name === "Momonga")
+        }
     },
     {
         title: "Food Competition",
@@ -134,7 +144,12 @@ export const Fall2025JTOList: JTOEvent[] = [
             }
         ],
         location: "Sushi Masa",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Momonga"),
+            2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            3: JiatingList.find(jiating => jiating.name === "Hachiware")
+        }
     },
     {
         title: "Basketball",
@@ -149,7 +164,12 @@ export const Fall2025JTOList: JTOEvent[] = [
             }
         ],
         location: "A&M United Methodist Church",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Hachiware"),
+            3: JiatingList.find(jiating => jiating.name === "Momonga")
+        }
     },
     {
         title: "Brawl Stars",
@@ -164,6 +184,11 @@ export const Fall2025JTOList: JTOEvent[] = [
             },
         ],
         location: "Discord",
-        completed: false,
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Momonga"),
+            3: JiatingList.find(jiating => jiating.name === "Hachiware")
+        }
     }
 ];
