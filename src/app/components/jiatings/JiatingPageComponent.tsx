@@ -57,13 +57,13 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                             The Jiating Olympics are a school year long event where all jiatings compete in various fun and engaging activities. Members of each jiating compete in various competitions to earn points for their jiating. 
                             {/* At the end of the school year, the jiating with the most points will receive ___________! */}
                         </p>
-                        {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfeSFlCR0FFmE4YAumxUZCtnHDQV2WJ9S29WIjHD5rTC6cfpA/viewform" newTab={true}
-                            className="w-full text-xl md:text-2xl"
-                            text="Fall '25 JT Olympics Sports Suggestions"
-                        /> */}
                         <button onClick={openModal} className="w-full text-xl md:text-2xl p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors hover:text-primary hover:outline-primary">
-                            Jiating Olympics Schedule
+                            Fall '25 JT Olympics Schedule
                         </button>
+                        <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
+                            className="w-full text-xl md:text-2xl">
+                            Spring '26 JT Olympics Interest Form
+                        </LinkButton>
                     </div>
         
                     {/* Current Jiating Olympics Standings */}
