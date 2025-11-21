@@ -3,7 +3,7 @@ import classNames from "classnames";
 export default function RewardsCard() {
     const rewards = [
         { points: 20, label: "Sticker", color: "rose" },
-        { points: 30, label: "Keychain", color: "slate" },
+        { points: 30, label: "2nd Sticker", color: "slate" },
         { points: 50, label: "Past Merch", color: "rose" },
         { points: 65, label: "25' CSA Hoodie", color: "slate" },
         { points: 75, label: "Pie an Officer", color: "rose" },

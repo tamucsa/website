@@ -14,10 +14,14 @@ const EventsPage = () => {
                 >
                     Concessions Signup
                 </LinkButton>
-                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSdafasNW8Q2t-F6vm9vVOf3UdpV3uJuohxcfk0VSkrPY9JtrQ/viewform" newTab={true}
+                {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSdafasNW8Q2t-F6vm9vVOf3UdpV3uJuohxcfk0VSkrPY9JtrQ/viewform" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
                 >
                     Basketball Concessions Signup
+                </LinkButton> */}
+                <LinkButton href="https://forms.gle/nowhBfQsYJpx2Tfn9" newTab={true}
+                    className="w-full md:w-sm text-nowrap text-xl md:text-2xl">
+                    Spring '26 IM Interest Form
                 </LinkButton>
             </div>
             <StyledCalendarEmbed />
