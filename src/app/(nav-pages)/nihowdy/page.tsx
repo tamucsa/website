@@ -57,7 +57,7 @@ const NihowdyPage = () => {
             <div className="flex flex-col gap-5 p-8 col-span-5 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
               <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM OR PLAY SPORTS FOR NI-HOWDY?</h1>
               <div className="flex flex-col gap-1">
-                <h2 className="text-base md:text-xl">Sports and Performer applications open in <b>December</b>! Keep an eye out!</h2>
+                <h2 className="text-base md:text-xl">Sports and Performer applications open in <b>January</b>! Keep an eye out!</h2>
                 <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3>
               </div>
             </div>
@@ -68,7 +68,7 @@ const NihowdyPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-rows-3 grid-cols-2 sm:grid-rows-2 sm:grid-cols-3 lg:grid-rows-1 lg:grid-cols-5 gap-7 w-full max-w-5xl mx-auto">
+          <div className="grid grid-rows-2 grid-cols-2 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-7 w-full max-w-5xl mx-auto">
           { 
               nihowdySchools2026.map((school) => (
                   <SchoolCard key={school.shortname} school={school} />
