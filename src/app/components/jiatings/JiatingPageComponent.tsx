@@ -62,7 +62,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                         </button>
                         <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
                             className="w-full text-xl md:text-2xl">
-                            Spring '26 JT Olympics Interest Form
+                            JT Olympics Interest Form (due 1/17)
                         </LinkButton>
                     </div>
         

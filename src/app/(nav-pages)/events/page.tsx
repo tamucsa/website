@@ -21,7 +21,7 @@ const EventsPage = () => {
                 </LinkButton> */}
                 <LinkButton href="https://forms.gle/nowhBfQsYJpx2Tfn9" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl">
-                    Spring '26 IM Interest Form
+                    IM Interest Form (due 1/17)
                 </LinkButton>
             </div>
             <StyledCalendarEmbed />
