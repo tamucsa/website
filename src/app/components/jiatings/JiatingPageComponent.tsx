@@ -62,7 +62,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                         </button>
                         <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
                             className="w-full text-xl md:text-2xl">
-                            Spring '26 JT Olympics Interest Form
+                            JT Olympics Interest Form (due 1/17)
                         </LinkButton>
                     </div>
         
@@ -70,15 +70,15 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The current point standings for each Jiating:
+                            The Fall 2025 standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            <p className="">1st: Usagi - 477 points</p>
-                            <p className="">2nd: Hachiware - 380 points</p>
-                            <p className="">3rd: Momonga - 349 points</p>
-                            <p className="">4th: Kurimanju - 267 points</p>
-                            <p className="">5th: Chiikawa - 244 points</p>
-                            <p className="">6th: Rakko - 217 points</p>
+                            <p className="">1st: Usagi - 809 points</p>
+                            <p className="">2nd: Momonga - 619 points</p>
+                            <p className="">3rd: Hachiware - 538 points</p>
+                            <p className="">4th: Kurimanju - 505 points</p>
+                            <p className="">5th: Chiikawa - 412 points</p>
+                            <p className="">6th: Rakko - 312 points</p>
                         </div>
                     </div>
         
@@ -86,7 +86,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Olympics Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The current standings for the Jiating Olympics:
+                            The Fall 2025 standings for the Jiating Olympics:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
                             {medalsByJiating ? (

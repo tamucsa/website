@@ -2,11 +2,11 @@ import classNames from "classnames";
 
 export default function RewardsCard() {
     const rewards = [
-        { points: 20, label: "Sticker", color: "rose" },
-        { points: 30, label: "2nd Sticker", color: "slate" },
+        { points: 25, label: "Sticker", color: "rose" },
+        { points: 35, label: "Free Boba", color: "slate" },
         { points: 50, label: "Past Merch", color: "rose" },
-        { points: 65, label: "25' CSA Hoodie", color: "slate" },
-        { points: 75, label: "Pie an Officer", color: "rose" },
+        { points: 65, label: "Formals Reimbursed", color: "slate" },
+        // { points: 75, label: "Pie an Officer", color: "rose" },
     ]
     return (
         <div className="flex flex-col gap-5 items-center p-8 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl w-full max-w-4xl mx-auto">

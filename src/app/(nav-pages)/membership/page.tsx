@@ -32,15 +32,14 @@ const MembershipPage = () => {
                     <div className="flex flex-col w-full outline outline-black rounded-xl font-secondary border-2 p-3 md:p-5 text-md md:text-2xl gap-1 md:gap-4">
                         <p className=""><b>Semester:</b> $35</p>
                         <p className=""><b>Full Year:</b> $45</p>
-                        {/* <p className="">Payment Methods will be listed in the form!</p> */}
-                        <p className="">Membership will be available next semester!</p>
+                        <p className="">Payment Methods will be listed in the form!</p>
+                        {/* <p className="">Membership will be available next semester!</p> */}
                     </div>
-                    {/* <LinkButton href="https://tx.ag/csamembership" newTab={true}
+                    <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfLgIOk44m5nT5L82dpdxPL71TESjYk7jXve-q8CWNVOSL6HQ/viewform?usp=header" newTab={true}
                         className="w-full text-xl md:text-2xl"
                     >
-                        Membership Form! (Due 9/21)
+                        Membership Form! (Due 1/23)
                     </LinkButton>
-                    */}
                 </div>
             </div>
             <PointTracker />

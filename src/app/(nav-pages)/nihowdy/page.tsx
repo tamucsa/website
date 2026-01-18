@@ -5,12 +5,12 @@ import { nihowdySchools2026 } from "@/content/2025-2026/nihowdy";
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { RiInstagramFill, RiMailFill} from "react-icons/ri";
+import { RiInstagramFill, RiMailFill, RiBallPenFill} from "react-icons/ri";
 
 const NihowdyPage = () => {
     return (
         <div className="flex flex-col items-center mt-10 gap-7 pb-5 md:mt-15 md:gap-15 md:pb-15 mx-15">
-          <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>Ni-howdy!</h1>
+          {/* <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>Ni-howdy!</h1> */}
           <div className='grid grid-cols-0 md:grid-cols-2 justify-center gap-5 md:gap-20 w-full lg:w-5xl'>
             <div className="flex flex-col justify-center gap-3">
               <h1 className="font-primary tracking-wider text-2xl md:text-4xl">WHAT IS NI-HOWDY?</h1>
@@ -55,10 +55,20 @@ const NihowdyPage = () => {
 
           <div className="grid grid-cols-0 md:grid-cols-8 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
             <div className="flex flex-col gap-5 p-8 col-span-5 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
-              <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM OR PLAY SPORTS FOR NI-HOWDY?</h1>
+              <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM FOR NI-HOWDY?</h1>
               <div className="flex flex-col gap-1">
-                <h2 className="text-base md:text-xl">Sports and Performer applications open in <b>December</b>! Keep an eye out!</h2>
-                <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3>
+                <h2 className="text-base md:text-xl">If you are committed to performing for Ni-Howdy, please fill out the sign-up form below!</h2>
+                {/* <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3> */}
+              </div>
+              <div className="flex flex-row gap-5">
+                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeQlsMJ47_721_U3dJo1OpillxYAZjCZnsak8T4mCJoUGkxAw/viewform" newTab={true}
+                    className="text-base md:text-lg"
+                >
+                  <div className="flex flex-row gap-2 items-center">
+                    <RiBallPenFill className='size-6'/>
+                    Sign up Form (Due 2/28)
+                  </div>
+                </LinkButton>
               </div>
             </div>
             <div className="flex flex-row w-full items-center justify-center col-span-3">
@@ -68,7 +78,7 @@ const NihowdyPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-rows-3 grid-cols-2 sm:grid-rows-2 sm:grid-cols-3 lg:grid-rows-1 lg:grid-cols-5 gap-7 w-full max-w-5xl mx-auto">
+          <div className="grid grid-rows-2 grid-cols-2 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-7 w-full max-w-5xl mx-auto">
           { 
               nihowdySchools2026.map((school) => (
                   <SchoolCard key={school.shortname} school={school} />

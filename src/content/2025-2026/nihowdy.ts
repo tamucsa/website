@@ -16,11 +16,11 @@ export const nihowdySchools2026: NiHowdySchool[] = [
     shortname: "utd",
     instagram: "utdcsa"
   },
-  {
-    school: "Rice",
-    shortname: "rice",
-    instagram: "rice.csa"
-  },
+  // {
+  //   school: "Rice",
+  //   shortname: "rice",
+  //   instagram: "rice.csa"
+  // },
   {
     school: "SMU",
     shortname: "smu",
