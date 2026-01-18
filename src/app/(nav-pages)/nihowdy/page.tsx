@@ -5,7 +5,7 @@ import { nihowdySchools2026 } from "@/content/2025-2026/nihowdy";
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { RiInstagramFill, RiMailFill} from "react-icons/ri";
+import { RiInstagramFill, RiMailFill, RiBallPenFill} from "react-icons/ri";
 
 const NihowdyPage = () => {
     return (
@@ -55,10 +55,20 @@ const NihowdyPage = () => {
 
           <div className="grid grid-cols-0 md:grid-cols-8 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
             <div className="flex flex-col gap-5 p-8 col-span-5 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
-              <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM OR PLAY SPORTS FOR NI-HOWDY?</h1>
+              <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM FOR NI-HOWDY?</h1>
               <div className="flex flex-col gap-1">
-                <h2 className="text-base md:text-xl">Sports and Performer applications open in <b>January</b>! Keep an eye out!</h2>
-                <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3>
+                <h2 className="text-base md:text-xl">If you are committed to performing for Ni-Howdy, please fill out the sign-up form below!</h2>
+                {/* <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3> */}
+              </div>
+              <div className="flex flex-row gap-5">
+                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeQlsMJ47_721_U3dJo1OpillxYAZjCZnsak8T4mCJoUGkxAw/viewform" newTab={true}
+                    className="text-base md:text-lg"
+                >
+                  <div className="flex flex-row gap-2 items-center">
+                    <RiBallPenFill className='size-6'/>
+                    Sign up Form (Due 2/28)
+                  </div>
+                </LinkButton>
               </div>
             </div>
             <div className="flex flex-row w-full items-center justify-center col-span-3">

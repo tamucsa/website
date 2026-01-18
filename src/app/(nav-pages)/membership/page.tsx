@@ -40,7 +40,6 @@ const MembershipPage = () => {
                     >
                         Membership Form! (Due 1/23)
                     </LinkButton>
-                   
                 </div>
             </div>
             <PointTracker />
