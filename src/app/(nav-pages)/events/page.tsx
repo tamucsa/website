@@ -9,11 +9,11 @@ const EventsPage = () => {
         <div className='flex flex-col items-center mt-10 gap-7 pb-5 md:mt-15 md:gap-10 md:pb-15'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>Upcoming Events!</h1>
             <div className="flex flex-col xl:flex-row gap-3 xl:gap-10">
-                <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeFtlEuedU5CF74JTTbCwnqMq4dvgfYggYBixY8cBaszXaSig/viewform" newTab={true}
+                {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeFtlEuedU5CF74JTTbCwnqMq4dvgfYggYBixY8cBaszXaSig/viewform" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
                 >
                     Concessions Signup
-                </LinkButton>
+                </LinkButton> */}
                 {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSdafasNW8Q2t-F6vm9vVOf3UdpV3uJuohxcfk0VSkrPY9JtrQ/viewform" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl"
                 >
