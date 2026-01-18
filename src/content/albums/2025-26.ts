@@ -72,7 +72,7 @@ export const AlbumList2025_26: Album[] = [
     {
         id: 51,
         title: "Jiating Reveal",
-        url: "https://photos.google.com/u/1/share/AF1QipPzwDspzIZeIMdP4Pl35p5BRvSWYbduTt5RGM1B70pn01DDTw22tIwuQtqnjRKw0g?pli=1&key=QXNlWnRPVVdGa1F5Q1ktbm1FY0VrLWNTalZlYTRB",
+        url: "https://photos.app.goo.gl/TC9nn7wEieufhJFj9",
         years: "2025-2026",
         date: "9/28/2025",
         groupInfo: [
@@ -81,7 +81,44 @@ export const AlbumList2025_26: Album[] = [
                 titleForGroup: "Jiating Reveal 2025"
             }
         ]
+    },
+    {
+        id: 52,
+        title: "SASE X CSA Mahjong Mixer",
+        url: "https://photos.google.com/u/1/share/AF1QipPe1nODNE3acJSZqxG5SGX7hsdRRdDTxybNI6ECgcu7X-aO2DQ9SeC6McQJ4bL-Cw?pli=1&key=QXloY2c4M1h4Y2hDaU9xRHBoTHNkeEdkdG54dVJR",
+        years: "2025-2026",
+        date: "10/17/2025",
+        groupInfo: [
+            {
+                group: "SASE Mixer",
+                titleForGroup: "SASE X CSA Mahjong Mixer 10/17/25"
+            }
+        ]
+    },
+    {
+        id: 53,
+        title: "Pumpkin Patch",
+        url: "https://photos.app.goo.gl/di2mj4QFXbYK65yb8",
+        years: "2025-2026",
+        date: "10/18/2025",
+        groupInfo: [
+            {
+                group: "Pumpkin Patch",
+                titleForGroup: "Pumpkin Patch 2025"
+            }
+        ]
+    },
+    {
+        id: 54,
+        title: "CSA End of Semester Brunch",
+        url: "https://photos.app.goo.gl/PKMLo9N3FYjuWAHDA",
+        years: "2025-2026",
+        date: "11/23/2025",
+        groupInfo: [
+            {
+                group: "Formals",
+                titleForGroup: "CSA Brunch 2025"
+            }
+        ]
     }
-    // SASE X CSA Mahjong Mixer - 10/17/25
-    // Pumpkin Patch - 10/18/25
 ];

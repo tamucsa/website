@@ -70,7 +70,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The current point standings for each Jiating:
+                            The Fall 2025 standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
                             <p className="">1st: Usagi - 809 points</p>
@@ -86,7 +86,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Olympics Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The current standings for the Jiating Olympics:
+                            The Fall 2025 standings for the Jiating Olympics:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
                             {medalsByJiating ? (
