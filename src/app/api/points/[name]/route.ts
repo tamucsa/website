@@ -7,7 +7,7 @@ export type CacheEntry = {
     totalPoints: number;
     csaPoints: number;
     jtSportsPoints: number;
-    concessionNumber: number;
+    // concessionNumber: number;
     timestamp: number;
 }
 
@@ -25,9 +25,9 @@ async function fetchRowByName(name: string) {
 
     // Sets up Google Sheets API client and fetches entire sheet
     const sheets = google.sheets({ version: "v4", auth });
-    const range = "Fall 25-26 Points!A2:L215";
+    const range = "CSA Point Sheet Spring 26!A2:L250";
     const res = await sheets.spreadsheets.values.get({
-        spreadsheetId: "1DUvJFHtOIy_ZfK1YeSs_0MwjABfTHFX5ILZd-vqqP7Q",
+        spreadsheetId: "18uSIEirQpqSBfNIbItxst3R1S8RqwKn34KYzjF48Et8",
         range,
     });
 
@@ -41,8 +41,8 @@ async function fetchRowByName(name: string) {
 
     // Debugging (Prints contents of found row)
     // console.log(`${name}: ${JSON.stringify(foundRow)}`);
-    //return Name, JT, Total Points, CSA points, JT & Sport Points, Concession Number
-    return [foundRow[0], foundRow[2],foundRow[3], foundRow[4], foundRow[5], foundRow[11]] as [string, string, number, number, number, number];
+    //return Name, JT, Total Points, CSA points, JT & Sport Points (add Concession number back in the Fall)
+    return [foundRow[0], foundRow[2],foundRow[3], foundRow[4], foundRow[5]] as [string, string, number, number, number];
 }
 
 export async function GET(request: NextRequest, {params}: { params: Promise<{ name: string }> }) {
@@ -51,13 +51,13 @@ export async function GET(request: NextRequest, {params}: { params: Promise<{ na
     const now = Date.now();
     const cached = cache[inputName];
     if (cached && now - cached.timestamp < CACHE_DURATION) {
-        return NextResponse.json({ name: cached.name, jt: cached.jt, totalPoints: cached.totalPoints, csaPoints: cached.csaPoints, jtSportsPoints: cached.jtSportsPoints, concessionNumber: cached.concessionNumber, cached: true }, {status: 200, headers: { "X-Cache": "HIT" }});
+        return NextResponse.json({ name: cached.name, jt: cached.jt, totalPoints: cached.totalPoints, csaPoints: cached.csaPoints, jtSportsPoints: cached.jtSportsPoints, cached: true }, {status: 200, headers: { "X-Cache": "HIT" }});
     }
 
     try {
-        const [name, jt, totalPoints, csaPoints, jtSportsPoints, concessionNumber] = await fetchRowByName(inputName);
-        cache[inputName] = { name: name, jt: jt, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, concessionNumber: concessionNumber, timestamp: now };
-        return NextResponse.json({ name: name, jt: jt, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, concessionNumber: concessionNumber, cached: false }, {status: 200});
+        const [name, jt, totalPoints, csaPoints, jtSportsPoints] = await fetchRowByName(inputName);
+        cache[inputName] = { name: name, jt: jt, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, timestamp: now };
+        return NextResponse.json({ name: name, jt: jt, totalPoints: totalPoints, csaPoints: csaPoints, jtSportsPoints: jtSportsPoints, cached: false }, {status: 200});
     } catch (error: any) {
         if (error.cause === 404) {
             return NextResponse.json({ error: error.message }, { status: 404 });
