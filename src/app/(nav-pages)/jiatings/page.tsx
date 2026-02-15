@@ -1,4 +1,4 @@
-import JiatingPageComponent from "@/app/components/jiatings/JiatingPageComponent";
+import JiatingPageComponent from "@/app/(nav-pages)/jiatings/components/JiatingPageComponent";
 import { getJTOMedals } from "@/lib/medals.server";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 

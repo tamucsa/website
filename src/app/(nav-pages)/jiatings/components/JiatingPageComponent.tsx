@@ -1,8 +1,8 @@
 "use client";
 
-import JiatingCard from "@/app/components/jiatings/JiatingCard";
-import JTOScheduleCard from "@/app/components/jiatings/JTOSchedule";
-import LinkButton from "@/app/components/LinkButton";
+import JiatingCard from "@/app/(nav-pages)/jiatings/components/JiatingCard";
+import JTOScheduleCard from "@/app/(nav-pages)/jiatings/components/JTOSchedule";
+import LinkButton from "@/app/ui/LinkButton";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 
 import React, { useState } from 'react';
@@ -58,12 +58,12 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                             {/* At the end of the school year, the jiating with the most points will receive ___________! */}
                         </p>
                         <button onClick={openModal} className="w-full text-xl md:text-2xl p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors hover:text-primary hover:outline-primary">
-                            Fall '25 JT Olympics Schedule
+                            Spring '26 JT Olympics Schedule
                         </button>
-                        <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
+                        {/* <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
                             className="w-full text-xl md:text-2xl">
                             JT Olympics Interest Form (due 1/17)
-                        </LinkButton>
+                        </LinkButton> */}
                     </div>
         
                     {/* Current Jiating Olympics Standings */}
@@ -127,7 +127,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     </div>
                 </div>
             </div>
-            <JTOScheduleCard isOpen={isModalOpen} onClose={closeModal} 
+            <JTOScheduleCard semester="Spring 2026" isOpen={isModalOpen} onClose={closeModal} 
             // className="w-1/2 left-1/2 -translate-x-1/2 h-1/2 top-1/2 -translate-y-1/2"
             />
         </main>

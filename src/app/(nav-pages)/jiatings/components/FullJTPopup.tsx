@@ -1,7 +1,7 @@
 "use client";
 
 import { Jiating} from "@/utils/types";
-import ParentCard from "@/app/components/jiatings/ParentCard";
+import ParentCard from "@/app/(nav-pages)/jiatings/components/ParentCard";
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";

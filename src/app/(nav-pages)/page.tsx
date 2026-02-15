@@ -1,4 +1,4 @@
-import HomeCard from "@/app/components/home/HomeCard";
+import HomeCard from "@/app/(nav-pages)/home/components/HomeCard";
 
 import { Metadata } from "next";
 

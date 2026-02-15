@@ -3,8 +3,8 @@ import { Bayon, Akshar } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 
 import "@/app/globals.css";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
+import Navbar from "@/app/ui/Navbar";
+import Footer from "@/app/ui/Footer";
 
 const bayon = Bayon({
   // variable: "--font-bayon",

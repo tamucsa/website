@@ -1,6 +1,6 @@
 "use client";
 import { Album } from "@/utils/types";
-import AlbumLinkButton from "@/app/components/photos/AlbumLinkButton";
+import AlbumLinkButton from "@/app/(nav-pages)/photos/components/AlbumLinkButton";
 
 import React, { useState } from "react";
 import { RiArrowUpSLine } from "react-icons/ri";

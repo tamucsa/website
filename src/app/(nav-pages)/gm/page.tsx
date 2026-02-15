@@ -1,4 +1,4 @@
-import SlideCard from "@/app/components/gm/SlideCard";
+import SlideCard from "@/app/(nav-pages)/gm/components/SlideCard";
 import { GMSlideshowList } from "@/content/2025-2026/slides";
 
 import { Metadata } from "next";

@@ -1,5 +1,5 @@
-import LinkButton from "@/app/components/LinkButton";
-import SchoolCard from "@/app/components/nihowdy/SchoolCard";
+import LinkButton from "@/app/ui/LinkButton";
+import SchoolCard from "@/app/(nav-pages)/nihowdy/components/SchoolCard";
 import { nihowdySchools2026 } from "@/content/2025-2026/nihowdy";
 
 import { Metadata } from "next";

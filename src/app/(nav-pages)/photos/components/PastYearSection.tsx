@@ -1,5 +1,5 @@
 "use client";
-import YearAlbumSection from "@/app/components/photos/YearAlbumSection";
+import YearAlbumSection from "@/app/(nav-pages)/photos/components/YearAlbumSection";
 import { AlbumList2021_22 } from "@/content/albums/2021-22";
 import { AlbumList2022_23 } from "@/content/albums/2022-23";
 import { AlbumList2023_24 } from "@/content/albums/2023-24";

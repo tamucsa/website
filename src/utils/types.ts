@@ -51,7 +51,7 @@ export interface GMSlideshow {
 
 export interface JTOEvent {
     title: string;
-    semester: "Fall 2025" | "Spring 2025";
+    semester: "Fall 2025" | "Spring 2026"; 
     oneDay: boolean; // True if the event is a one-day event, false if it spans multiple days
     dayEntries: Array<{
         title: string;
