@@ -60,4 +60,18 @@ export const GMSlideshowList: GMSlideshow[] = [
         slug: "informational-spring",
         date: "1/15/2026"
     },
+    {
+        title: "GM #8",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQrgG6wkCopzAiPuRLYjuFXS83Y1pg_RlsE7p5yiCGBdPFvwIPRAnQ1vPHvCROAmWsBwz3GAQZtq7W5/",
+        years: "2025-2026",
+        slug: "8",
+        date: "1/29/2026"
+    },
+    {
+        title: "GM #9",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vRoWU_FiUBlzK6q8SAuXbAJ_VNkRVZs4I4btwrn4obKmM4du60sesUJ8AJ_65bszKKPXB-mcyaUcp9Y/",
+        years: "2025-2026",
+        slug: "9",
+        date: "2/12/2026"
+    },
 ];

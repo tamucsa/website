@@ -1,5 +1,5 @@
-import LinkButton from "@/app/components/LinkButton";
-import StyledCalendarEmbed from "@/app/components/events/StyledCalendarEmbed";
+import LinkButton from "@/app/ui/LinkButton";
+import StyledCalendarEmbed from "@/app/(nav-pages)/events/components/StyledCalendarEmbed";
 
 import { Metadata } from "next";
 import Link from "next/link";
@@ -19,10 +19,10 @@ const EventsPage = () => {
                 >
                     Basketball Concessions Signup
                 </LinkButton> */}
-                <LinkButton href="https://forms.gle/nowhBfQsYJpx2Tfn9" newTab={true}
+                {/* <LinkButton href="https://forms.gle/nowhBfQsYJpx2Tfn9" newTab={true}
                     className="w-full md:w-sm text-nowrap text-xl md:text-2xl">
                     IM Interest Form (due 1/17)
-                </LinkButton>
+                </LinkButton> */}
             </div>
             <StyledCalendarEmbed />
             <h1 className='container text-center font-primary tracking-wider text-2xl sm:text-3xl md:text-4xl'>Add to Your Google Calendar <Link target='_blank' href='https://calendar.google.com/calendar/u/1?cid=Y18zZmJmZjZkZWU1NDY0YzQ4Y2QzM2Q5ZTMyYmE5OTMzZGRkNmMwOWI2MjhhYmVlNzNkZjc2YzM5ZDkzMWRhNjJmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20' className="underline hover:text-primary transition-colors">Here</Link>!</h1>

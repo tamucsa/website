@@ -1,8 +1,8 @@
 "use client";
 
-import JiatingCard from "@/app/components/jiatings/JiatingCard";
-import JTOScheduleCard from "@/app/components/jiatings/JTOSchedule";
-import LinkButton from "@/app/components/LinkButton";
+import JiatingCard from "@/app/(nav-pages)/jiatings/components/JiatingCard";
+import JTOScheduleCard from "@/app/(nav-pages)/jiatings/components/JTOSchedule";
+import LinkButton from "@/app/ui/LinkButton";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 
 import React, { useState } from 'react';
@@ -58,27 +58,27 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                             {/* At the end of the school year, the jiating with the most points will receive ___________! */}
                         </p>
                         <button onClick={openModal} className="w-full text-xl md:text-2xl p-3 outline outline-black border-2 rounded-lg text-center font-primary tracking-wider transition-colors hover:text-primary hover:outline-primary">
-                            Fall '25 JT Olympics Schedule
+                            Spring '26 JT Olympics Schedule
                         </button>
-                        <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
+                        {/* <LinkButton href="https://forms.gle/WGYVgSRffbgDS7iH9" newTab={true}
                             className="w-full text-xl md:text-2xl">
                             JT Olympics Interest Form (due 1/17)
-                        </LinkButton>
+                        </LinkButton> */}
                     </div>
         
                     {/* Current Jiating Olympics Standings */}
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The Fall 2025 standings for each Jiating:
+                            The Spring 2026 standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            <p className="">1st: Usagi - 809 points</p>
-                            <p className="">2nd: Momonga - 619 points</p>
-                            <p className="">3rd: Hachiware - 538 points</p>
-                            <p className="">4th: Kurimanju - 505 points</p>
-                            <p className="">5th: Chiikawa - 412 points</p>
-                            <p className="">6th: Rakko - 312 points</p>
+                            <p className="">1st: Momonga - 307 points</p>
+                            <p className="">2nd: Usagi - 254 points</p>
+                            <p className="">3rd: Kurimanju- 140 points</p>
+                            <p className="">4th: Chiikawa - 119 points</p>
+                            <p className="">5th: Rakko - 113 points</p>
+                            <p className="">6th: Hachiware - 98 points</p>
                         </div>
                     </div>
         
@@ -86,7 +86,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     <div className="flex flex-col items-center gap-5">
                         <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>JT Olympics Standings</h1>
                         <p className="font-secondary text-lg md:text-2xl tracking-wide">
-                            The Fall 2025 standings for the Jiating Olympics:
+                            The Spring 2026 standings for the Jiating Olympics:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
                             {medalsByJiating ? (
@@ -127,7 +127,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                     </div>
                 </div>
             </div>
-            <JTOScheduleCard isOpen={isModalOpen} onClose={closeModal} 
+            <JTOScheduleCard semester="Spring 2026" isOpen={isModalOpen} onClose={closeModal} 
             // className="w-1/2 left-1/2 -translate-x-1/2 h-1/2 top-1/2 -translate-y-1/2"
             />
         </main>

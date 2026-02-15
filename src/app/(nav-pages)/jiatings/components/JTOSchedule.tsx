@@ -1,18 +1,19 @@
 "use client";
 
-import { Fall2025JTOList } from '@/content/2025-2026/fallJTO';
+import { Spring2026JTOList } from '@/content/2025-2026/springJTO';
 
 import React, { FC, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import classNames from 'classnames';
 
 interface FullScreenModalProps {
+  semester: string;
   isOpen: boolean;
   onClose: () => void;
   className?: string
 }
 
-const JTOScheduleCard: FC<FullScreenModalProps> = ({ isOpen, onClose, className }) => {
+const JTOScheduleCard: FC<FullScreenModalProps> = ({ semester, isOpen, onClose, className }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   // Lock background scrolling when modal is open
@@ -84,10 +85,10 @@ const JTOScheduleCard: FC<FullScreenModalProps> = ({ isOpen, onClose, className 
           &times;
         </button>
         <h1 className='text-center text-lg md:text-2xl'>
-            Official Fall 2025 JTO Schedule
+            Official {semester} JTO Schedule
         </h1>
         <ul>
-          {Fall2025JTOList.map((event, index) =>
+          {Spring2026JTOList.map((event, index) =>
             event.oneDay ? (
               <li key={index} className="text-sm md:text-base border-b last:border-0 py-2">
                 <strong>{`${event.dayEntries[0].date} (${event.dayEntries[0].day})`}:</strong> {`${event.title} ${event.dayEntries[0].time} @ ${event.location}`}

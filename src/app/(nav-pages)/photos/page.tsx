@@ -1,5 +1,5 @@
-import PastYearSection from "@/app/components/photos/PastYearSection";
-import YearAlbumSection from "@/app/components/photos/YearAlbumSection";
+import PastYearSection from "@/app/(nav-pages)/photos/components/PastYearSection";
+import YearAlbumSection from "@/app/(nav-pages)/photos/components/YearAlbumSection";
 import { AlbumList2025_26 } from "@/content/albums/2025-26";
 
 import { Metadata } from "next";

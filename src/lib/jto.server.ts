@@ -12,7 +12,7 @@ export async function fetchMedals(jiating: string) {
     const sheets = google.sheets({ version: "v4", auth });
     const range = "Sheet1!B1:G11";
     const res = await sheets.spreadsheets.values.get({
-        spreadsheetId: "1XmtJIzNyXW7XqRVLMHbaluHVwhXXP_NwGLTlg2C7nnE",
+        spreadsheetId: "1pNp0Zw8SVQb2KWw6RKRjuzSfOf0reLVLDpSRWRDH65U",
         range,
     });
 
