@@ -1,4 +1,4 @@
-import ParentFullImage from "@/app/components/jiatings/ParentFullImage";
+import ParentFullImage from "@/app/(other)/jiatings/components/ParentFullImage";
 import { MegateamList } from "@/content/2025-2026/megateam";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 import NotFound from "@/app/not-found"
