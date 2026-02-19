@@ -51,8 +51,8 @@ export const JiatingList: Jiating[] = [
         parents: [
             MegateamList.find(parent => parent.name === "Erith Won")!,
             MegateamList.find(parent => parent.name === "Reilly Mize")!,
-            MegateamList.find(officer => officer.name === "Sarah Ward")!,
-            MegateamList.find(officer => officer.name === "Lia Chen")!
+            MegateamList.find(parent => parent.name === "Sarah Ward")!,
+            MegateamList.find(parent => parent.name === "Lia Chen")!
         ],
         groupImgOrientation: "horizontal"
     },
