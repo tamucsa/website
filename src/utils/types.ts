@@ -4,17 +4,24 @@ export interface Megateam {
     major: string;
     instagram: string;
     yearEntries: { // all of the entries
-        [year: string]: Array<OfficerRole | ParentRole>; // list of Officer, Parent, or both for that year
+        [year: string]: Array<OfficerRole | ParentRole | InternRole>; // list of Officer, Parent, Intern, or any combination for that year
     }
 }
 
 export interface OfficerRole {
+    type: "officer";
     position: string;
     rawImgOrientation: "horizontal" | "vertical";
 }
 
 export interface ParentRole {
+    type: "parent";
     jiating: Jiating | { name: string };
+    rawImgOrientation: "horizontal" | "vertical";
+}
+
+export interface InternRole {
+    type: "intern";
     rawImgOrientation: "horizontal" | "vertical";
 }
 
