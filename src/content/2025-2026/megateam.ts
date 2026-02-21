@@ -466,6 +466,10 @@ export const MegateamList: Megateam[] = [
                     type: "parent",
                     jiating: { name: "Kurimanju" },
                     rawImgOrientation: "vertical"
+                },
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
                 }
             ]
         }
@@ -511,6 +515,10 @@ export const MegateamList: Megateam[] = [
                     type: "parent",
                     jiating: { name: "Rakko" },
                     rawImgOrientation: "vertical"
+                },
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
                 }
             ]
         }
@@ -575,5 +583,130 @@ export const MegateamList: Megateam[] = [
             ]
         }
     },
-    
+    {
+        id: 35,
+        name: "Miky Zheng",
+        major: "Mathematics '28", //todo
+        instagram: "phamtjacob", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 36,
+        name: "Evangeline Su",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 37,
+        name: "Dylan Mire",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 38,
+        name: "Kai Hammel",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 39,
+        name: "Andrew Zhang",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 40,
+        name: "Marho Akpenyi",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 41,
+        name: "Harrison Li",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 42,
+        name: "Shangqing Li",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 43,
+        name: "Chloe Cheong",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
 ]
