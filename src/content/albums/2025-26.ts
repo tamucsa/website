@@ -120,5 +120,18 @@ export const AlbumList2025_26: Album[] = [
                 titleForGroup: "CSA Brunch 2025"
             }
         ]
+    },
+    {
+        id: 55,
+        title: "Chinese New Year 2026",
+        url: "https://photos.app.goo.gl/jyLyDHMqHomekbig6",
+        years: "2025-2026",
+        date: "2/15/2026",
+        groupInfo: [
+            {
+                group: "Chinese New Year",
+                titleForGroup: "Chinese New Year 2026"
+            }
+        ]
     }
 ];

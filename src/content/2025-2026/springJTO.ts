@@ -86,33 +86,13 @@ export const Spring2026JTOList: JTOEvent[] = [
         // }
     },
     {
-        title: "Volleyball",
-        semester: "Spring 2026",
-        oneDay: true,
-        dayEntries: [
-            {
-                title: "Volleyball",
-                date: "Mar 1st",
-                day: "Sun",
-                time: "12:30pm - 2:30pm"
-            }
-        ],
-        location: "Main Rec Center",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Usagi"),
-        //     2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     3: JiatingList.find(jiating => jiating.name === "Chiikawa")
-        // }
-    },
-    {
         title: "Badminton",
         semester: "Spring 2026",
         oneDay: true,
         dayEntries: [
             {
                 title: "Badminton",
-                date: "Mar 15th",
+                date: "Mar 1st",
                 day: "Sun",
                 time: "12:30pm - 1:30pm"
             }
@@ -123,6 +103,26 @@ export const Spring2026JTOList: JTOEvent[] = [
         //     1: JiatingList.find(jiating => jiating.name === "Usagi"),
         //     2: JiatingList.find(jiating => jiating.name === "Rakko"),
         //     3: JiatingList.find(jiating => jiating.name === "Momonga")
+        // }
+    },
+    {
+        title: "Volleyball",
+        semester: "Spring 2026",
+        oneDay: true,
+        dayEntries: [
+            {
+                title: "Volleyball",
+                date: "Mar 15th",
+                day: "Sun",
+                time: "12:30pm - 2:30pm"
+            }
+        ],
+        location: "Main Rec Center",
+        completed: false,
+        // placements: {
+        //     1: JiatingList.find(jiating => jiating.name === "Usagi"),
+        //     2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+        //     3: JiatingList.find(jiating => jiating.name === "Chiikawa")
         // }
     },
     {

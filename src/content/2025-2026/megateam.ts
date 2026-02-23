@@ -28,10 +28,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Co-President",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Momonga" },
                     rawImgOrientation: "horizontal"
                 }
@@ -46,6 +48,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Co-President",
                     rawImgOrientation: "horizontal"
                 }
@@ -60,6 +63,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Vice President Internal",
                     rawImgOrientation: "vertical"
                 }
@@ -74,10 +78,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Vice President External",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Usagi" },
                     rawImgOrientation: "vertical"
                 }
@@ -92,10 +98,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Secretary",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Momonga" },
                     rawImgOrientation: "vertical"
                 }
@@ -110,10 +118,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Treasurer",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Rakko" },
                     rawImgOrientation: "horizontal"
                 }
@@ -128,10 +138,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Public Relations Chair",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Kurimanju" },
                     rawImgOrientation: "vertical"
                 }
@@ -146,6 +158,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Public Relations Chair",
                     rawImgOrientation: "horizontal"
                 }
@@ -160,6 +173,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Event Coordinator",
                     rawImgOrientation: "vertical"
                 }
@@ -174,10 +188,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Event Coordinator",
                     rawImgOrientation: "vertical"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Momonga" },
                     rawImgOrientation: "vertical"
                 }
@@ -192,10 +208,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Fundraising Chair",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Rakko" },
                     rawImgOrientation: "horizontal"
                 }
@@ -210,10 +228,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Fundraising Chair",
-                    rawImgOrientation: "vertical"
+                    rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Rakko" },
                     rawImgOrientation: "vertical"
                 }
@@ -228,6 +248,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Sports Chair",
                     rawImgOrientation: "horizontal"
                 }
@@ -242,6 +263,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Sports Chair",
                     rawImgOrientation: "vertical"
                 }
@@ -256,6 +278,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Graphics Chair",
                     rawImgOrientation: "horizontal"
                 }
@@ -270,10 +293,12 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
-                    position: "Graphics Chair",
+                    type: "officer",
+                    position: "Secretary",
                     rawImgOrientation: "horizontal"
                 },
                 {
+                    type: "parent",
                     jiating: { name: "Chiikawa" },
                     rawImgOrientation: "vertical"
                 }
@@ -288,6 +313,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Culture Chair",
                     rawImgOrientation: "vertical"
                 }
@@ -302,6 +328,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "officer",
                     position: "Historian",
                     rawImgOrientation: "horizontal"
                 }
@@ -316,6 +343,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Usagi" },
                     rawImgOrientation: "vertical"
                 }
@@ -330,6 +358,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Usagi" },
                     rawImgOrientation: "vertical"
                 }
@@ -344,6 +373,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Usagi" },
                     rawImgOrientation: "vertical"
                 }
@@ -358,6 +388,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Chiikawa" },
                     rawImgOrientation: "vertical"
                 }
@@ -372,6 +403,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Chiikawa" },
                     rawImgOrientation: "vertical"
                 }
@@ -386,6 +418,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Chiikawa" },
                     rawImgOrientation: "vertical"
                 }
@@ -400,6 +433,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Kurimanju" },
                     rawImgOrientation: "vertical"
                 }
@@ -414,6 +448,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Kurimanju" },
                     rawImgOrientation: "vertical"
                 }
@@ -428,8 +463,13 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Kurimanju" },
                     rawImgOrientation: "vertical"
+                },
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
                 }
             ]
         }
@@ -442,6 +482,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Momonga" },
                     rawImgOrientation: "vertical"
                 }
@@ -456,6 +497,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Momonga" },
                     rawImgOrientation: "horizontal" //change
                 }
@@ -470,8 +512,13 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Rakko" },
                     rawImgOrientation: "vertical"
+                },
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
                 }
             ]
         }
@@ -484,6 +531,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Hachiware" },
                     rawImgOrientation: "vertical"
                 }
@@ -498,6 +546,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Hachiware" },
                     rawImgOrientation: "vertical"
                 }
@@ -512,6 +561,7 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Hachiware" },
                     rawImgOrientation: "vertical"
                 }
@@ -526,10 +576,137 @@ export const MegateamList: Megateam[] = [
         yearEntries: {
             "2025-2026": [
                 {
+                    type: "parent",
                     jiating: { name: "Hachiware" },
                     rawImgOrientation: "vertical"
                 }
             ]
         }
-    }
+    },
+    {
+        id: 35,
+        name: "Miky Zheng",
+        major: "Mathematics '28", //todo
+        instagram: "phamtjacob", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 36,
+        name: "Evangeline Su",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 37,
+        name: "Dylan Mire",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 38,
+        name: "Kai Hammel",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 39,
+        name: "Andrew Zhang",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 40,
+        name: "Marho Akpenyi",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 41,
+        name: "Harrison Li",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 42,
+        name: "Shangqing Li",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
+    {
+        id: 43,
+        name: "Chloe Cheong",
+        major: "", //todo
+        instagram: "", //todo
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical" //todo
+                }
+            ]
+        }
+    },
 ]
