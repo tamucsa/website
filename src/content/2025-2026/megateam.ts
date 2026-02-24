@@ -586,8 +586,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 35,
         name: "Miky Zheng",
-        major: "Mathematics '28", //todo
-        instagram: "phamtjacob", //todo
+        major: "Economics '29",
+        instagram: "mikii.996",
         yearEntries: {
             "2025-2026": [
                 {
@@ -600,8 +600,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 36,
         name: "Evangeline Su",
-        major: "", //todo
-        instagram: "", //todo
+        major: "General Engineering '29",
+        instagram: "eevee._.chu954",
         yearEntries: {
             "2025-2026": [
                 {
@@ -614,8 +614,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 37,
         name: "Dylan Mire",
-        major: "", //todo
-        instagram: "", //todo
+        major: "General Engineering '29",
+        instagram: "dylan.jpegg",
         yearEntries: {
             "2025-2026": [
                 {
@@ -628,8 +628,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 38,
         name: "Kai Hammel",
-        major: "", //todo
-        instagram: "", //todo
+        major: "International Affairs '29",
+        instagram: "aka_hammel",
         yearEntries: {
             "2025-2026": [
                 {
@@ -642,8 +642,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 39,
         name: "Andrew Zhang",
-        major: "", //todo
-        instagram: "", //todo
+        major: "General Engineering '29",
+        instagram: "kanji_gawa",
         yearEntries: {
             "2025-2026": [
                 {
@@ -656,8 +656,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 40,
         name: "Marho Akpenyi",
-        major: "", //todo
-        instagram: "", //todo
+        major: "Biomedical Engineering '29",
+        instagram: "c.u.2marh0",
         yearEntries: {
             "2025-2026": [
                 {
@@ -670,8 +670,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 41,
         name: "Harrison Li",
-        major: "", //todo
-        instagram: "", //todo
+        major: "Computer Science '28",
+        instagram: "harrisonli0531",
         yearEntries: {
             "2025-2026": [
                 {
@@ -684,8 +684,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 42,
         name: "Shangqing Li",
-        major: "", //todo
-        instagram: "", //todo
+        major: "General Engineering '29",
+        instagram: "shangqing_li",
         yearEntries: {
             "2025-2026": [
                 {
@@ -698,8 +698,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 43,
         name: "Chloe Cheong",
-        major: "", //todo
-        instagram: "", //todo
+        major: "Kinesiology '29",
+        instagram: "ce_cheong",
         yearEntries: {
             "2025-2026": [
                 {
