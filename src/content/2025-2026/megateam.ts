@@ -469,7 +469,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -491,21 +491,6 @@ export const MegateamList: Megateam[] = [
     },
     {
         id: 29,
-        name: "Lia Chen",
-        major: "Accounting '27",
-        instagram: "lcennies",
-        yearEntries: {
-            "2025-2026": [
-                {
-                    type: "parent",
-                    jiating: { name: "Momonga" },
-                    rawImgOrientation: "horizontal" //change
-                }
-            ]
-        }
-    },
-    {
-        id: 30,
         name: "Evan Chang",
         major: "Computer Engineering '28",
         instagram: "hypeplane07",
@@ -518,13 +503,13 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
-        id: 31,
+        id: 30,
         name: "Jamie Lee",
         major: "Architecture '27",
         instagram: "j_lee.h",
@@ -539,7 +524,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 32,
+        id: 31,
         name: "Vivian Chen",
         major: "Business '28", //change
         instagram: "vvivianchenn",
@@ -554,7 +539,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 33,
+        id: 32,
         name: "Peixuan Jiang",
         major: "Biological Engineering '25",
         instagram: "peiixxuann",
@@ -569,7 +554,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 34,
+        id: 33,
         name: "Jacob Pham",
         major: "Mathematics '28",
         instagram: "phamtjacob",
@@ -584,7 +569,7 @@ export const MegateamList: Megateam[] = [
         }
     },
     {
-        id: 35,
+        id: 34,
         name: "Miky Zheng",
         major: "Economics '29",
         instagram: "mikii.996",
@@ -592,13 +577,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 36,
+        id: 35,
         name: "Evangeline Su",
         major: "General Engineering '29",
         instagram: "eevee._.chu954",
@@ -606,13 +591,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 37,
+        id: 36,
         name: "Dylan Mire",
         major: "General Engineering '29",
         instagram: "dylan.jpegg",
@@ -620,13 +605,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 38,
+        id: 37,
         name: "Kai Hammel",
         major: "International Affairs '29",
         instagram: "aka_hammel",
@@ -634,13 +619,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
-        id: 39,
+        id: 38,
         name: "Andrew Zhang",
         major: "General Engineering '29",
         instagram: "kanji_gawa",
@@ -648,13 +633,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 40,
+        id: 39,
         name: "Marho Akpenyi",
         major: "Biomedical Engineering '29",
         instagram: "c.u.2marh0",
@@ -662,13 +647,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 41,
+        id: 40,
         name: "Harrison Li",
         major: "Computer Science '28",
         instagram: "harrisonli0531",
@@ -676,13 +661,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
-        id: 42,
+        id: 41,
         name: "Shangqing Li",
         major: "General Engineering '29",
         instagram: "shangqing_li",
@@ -690,13 +675,13 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
-        id: 43,
+        id: 42,
         name: "Chloe Cheong",
         major: "Kinesiology '29",
         instagram: "ce_cheong",
@@ -704,7 +689,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
