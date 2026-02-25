@@ -577,7 +577,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical"
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
