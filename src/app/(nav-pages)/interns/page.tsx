@@ -1,0 +1,29 @@
+import { Metadata } from "next";
+import { InternList } from "@/content/2025-2026/interns";
+import InternCard from "@/app/(nav-pages)/interns/components/InternCard";
+
+const InternPage = () => {
+    return (
+        <div className="flex flex-col items-center mx-15 sm:mx-15">
+          {/* <header className="flex flex-col text-center mt-10 md:mt-15 gap-3">
+            <h1 className="font-primary tracking-wider text-3xl md:text-4xl">Interns</h1>
+          </header> */}
+          <main className="my-10 md:my-15">
+            <div className='grid gap-7 grid-cols-1 grid-rows-11 sm:gap-12 md:grid-cols-2 md:grid-rows-6 md:gap-10 lg:grid-cols-4 lg:grid-rows-3 lg:gap-12'>
+              {
+                  InternList.map((intern) => (
+                      <InternCard key={intern.name} intern={intern} />
+                  ))
+              }
+            </div>  
+          </main>
+        </div>
+    );
+}
+
+export const metadata: Metadata = {
+  title: "TAMU CSA - Interns",
+  description: "Meet the interns of the Chinese Student Association at TAMU!",
+};
+
+export default InternPage;
