@@ -133,5 +133,18 @@ export const AlbumList2025_26: Album[] = [
                 titleForGroup: "Chinese New Year 2026"
             }
         ]
+    },
+    {
+        id: 56,
+        title: "Chiikawa's Craft Cafe",
+        url: "https://drive.google.com/drive/u/1/folders/1BUylgKzCeu3LRArk8HawC22KKLbB4r35",
+        years: "2025-2026",
+        date: "3/1/2026",
+        groupInfo: [
+            {
+                group: "Intern Event",
+                titleForGroup: "Chiikawa's Craft Cafe 2026"
+            }
+        ]
     }
 ];

@@ -43,7 +43,7 @@ export interface Album {
     years: string;
     date?: string; // Optional field for the date of the event or album
     groupInfo?: Array<{
-        group: "Howdy Week" | "GM" | "Jiating Reveal" | "Pumpkin Patch" | "Chinese New Year" | "Ni-Howdy" | "Formals" | "VSA Mixer" | "PhilSA Mixer" | "EPIC Mixer" | "TASA Mixer" | "SASE Mixer";
+        group: "Howdy Week" | "GM" | "Jiating Reveal" | "Pumpkin Patch" | "Chinese New Year" | "Intern Event" | "Ni-Howdy" | "Formals" | "VSA Mixer" | "PhilSA Mixer" | "EPIC Mixer" | "TASA Mixer" | "SASE Mixer";
         titleForGroup?: string; // Optional field for providing a different title for the group
     }>;
 }
