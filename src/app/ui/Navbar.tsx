@@ -17,7 +17,7 @@ const Navbar = () => {
     const menuItems = [
         { label: 'Home', href: '/', submenu: false },
         { label: 'Officers', href: '/officers', submenu: true, submenuItems: [
-            { label: 'Interns', href: '/interns' },
+            // { label: 'Interns', href: '/interns' },
         ]},
         { label: 'Events', href: '/events', submenu: true, submenuItems: [
             // { label: 'Concessions', href: '/concessions' },
