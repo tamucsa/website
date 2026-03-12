@@ -58,12 +58,12 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "Discord",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     2: JiatingList.find(jiating => jiating.name === "Hachiware"),
-        //     3: JiatingList.find(jiating => jiating.name === "Usagi")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Hachiware"),
+            2: JiatingList.find(jiating => jiating.name === "Usagi"),
+            3: JiatingList.find(jiating => jiating.name === "Rakko")
+        }
     },
     {
         title: "Dodgeball",
@@ -78,12 +78,12 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "Main Rec Center",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Momonga"),
-        //     2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     3: JiatingList.find(jiating => jiating.name === "Kurimanju")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Momonga"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
     },
     {
         title: "Badminton",
@@ -98,12 +98,32 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "Main Rec Center",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Usagi"),
-        //     2: JiatingList.find(jiating => jiating.name === "Rakko"),
-        //     3: JiatingList.find(jiating => jiating.name === "Momonga")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Momonga"),
+            2: JiatingList.find(jiating => jiating.name === "Rakko"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
+    },
+    {
+        title: "Bowling",
+        semester: "Spring 2026",
+        oneDay: true,
+        dayEntries: [
+            {
+                title: "Bowling",
+                date: "Mar 3rd",
+                day: "Tues",
+                time: "9:00pm - 11:00pm"
+            }
+        ],
+        location: "Grand Station",
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Momonga"),
+            2: JiatingList.find(jiating => jiating.name === "Rakko"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
     },
     {
         title: "Volleyball",
@@ -112,7 +132,7 @@ export const Spring2026JTOList: JTOEvent[] = [
         dayEntries: [
             {
                 title: "Volleyball",
-                date: "Mar 15th",
+                date: "Mar 21th",
                 day: "Sun",
                 time: "12:30pm - 2:30pm"
             }
