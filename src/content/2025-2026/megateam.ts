@@ -469,7 +469,7 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
@@ -491,21 +491,6 @@ export const MegateamList: Megateam[] = [
     },
     {
         id: 29,
-        name: "Lia Chen",
-        major: "Accounting '27",
-        instagram: "lcennies",
-        yearEntries: {
-            "2025-2026": [
-                {
-                    type: "parent",
-                    jiating: { name: "Momonga" },
-                    rawImgOrientation: "horizontal" //change
-                }
-            ]
-        }
-    },
-    {
-        id: 30,
         name: "Evan Chang",
         major: "Computer Engineering '28",
         instagram: "hypeplane07",
@@ -518,13 +503,13 @@ export const MegateamList: Megateam[] = [
                 },
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
-        id: 31,
+        id: 30,
         name: "Jamie Lee",
         major: "Architecture '27",
         instagram: "j_lee.h",
@@ -539,7 +524,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 32,
+        id: 31,
         name: "Vivian Chen",
         major: "Business '28", //change
         instagram: "vvivianchenn",
@@ -554,7 +539,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 33,
+        id: 32,
         name: "Peixuan Jiang",
         major: "Biological Engineering '25",
         instagram: "peiixxuann",
@@ -569,7 +554,7 @@ export const MegateamList: Megateam[] = [
         },
     },
     {
-        id: 34,
+        id: 33,
         name: "Jacob Pham",
         major: "Mathematics '28",
         instagram: "phamtjacob",
@@ -584,127 +569,127 @@ export const MegateamList: Megateam[] = [
         }
     },
     {
-        id: 35,
+        id: 34,
         name: "Miky Zheng",
-        major: "Mathematics '28", //todo
-        instagram: "phamtjacob", //todo
+        major: "Economics '29",
+        instagram: "mikii.996",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 35,
+        name: "Evangeline Su",
+        major: "General Engineering '29",
+        instagram: "eevee._.chu954",
+        yearEntries: {
+            "2025-2026": [
+                {
+                    type: "intern",
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
         id: 36,
-        name: "Evangeline Su",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Dylan Mire",
+        major: "General Engineering '29",
+        instagram: "dylan.jpegg",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
         id: 37,
-        name: "Dylan Mire",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Kai Hammel",
+        major: "International Affairs '29",
+        instagram: "aka_hammel",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
         id: 38,
-        name: "Kai Hammel",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Andrew Zhang",
+        major: "General Engineering '29",
+        instagram: "kanji_gawa",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
         id: 39,
-        name: "Andrew Zhang",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Marho Akpenyi",
+        major: "Biomedical Engineering '29",
+        instagram: "c.u.2marh0",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
         id: 40,
-        name: "Marho Akpenyi",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Harrison Li",
+        major: "Computer Science '28",
+        instagram: "harrisonli0531",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
     {
         id: 41,
-        name: "Harrison Li",
-        major: "", //todo
-        instagram: "", //todo
+        name: "Shangqing Li",
+        major: "General Engineering '29",
+        instagram: "shangqing_li",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }
     },
     {
         id: 42,
-        name: "Shangqing Li",
-        major: "", //todo
-        instagram: "", //todo
-        yearEntries: {
-            "2025-2026": [
-                {
-                    type: "intern",
-                    rawImgOrientation: "vertical" //todo
-                }
-            ]
-        }
-    },
-    {
-        id: 43,
         name: "Chloe Cheong",
-        major: "", //todo
-        instagram: "", //todo
+        major: "Kinesiology '29",
+        instagram: "ce_cheong",
         yearEntries: {
             "2025-2026": [
                 {
                     type: "intern",
-                    rawImgOrientation: "vertical" //todo
+                    rawImgOrientation: "vertical"
                 }
             ]
         }

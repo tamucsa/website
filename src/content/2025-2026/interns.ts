@@ -14,7 +14,7 @@ const internNames = [
     "Harrison Li",
     "Shangqing Li", // might change to Ella
     "Evan Chang",
-    "Chloe Cheong "
+    "Chloe Cheong"
 ];
 
 export const InternList: Megateam[] = internNames

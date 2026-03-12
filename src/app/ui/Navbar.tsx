@@ -16,7 +16,9 @@ const Navbar = () => {
     }
     const menuItems = [
         { label: 'Home', href: '/', submenu: false },
-        { label: 'Officers', href: '/officers', submenu: false },
+        { label: 'Officers', href: '/officers', submenu: true, submenuItems: [
+            // { label: 'Interns', href: '/interns' },
+        ]},
         { label: 'Events', href: '/events', submenu: true, submenuItems: [
             // { label: 'Concessions', href: '/concessions' },
             { label: 'Nihowdy', href: '/nihowdy' },
@@ -79,6 +81,17 @@ const Navbar = () => {
                                     <div key={item.href}>
                                         <Link className={`block py-2 px-5 font-primary tracking-wider transition-colors text-xl text-black hover:text-primary ${isActive ? ' text-primary' : '' }`}
                                         href={item.href}>{item.label}</Link>
+                                        {item.submenu && item.submenuItems && (
+                                            <div className='pl-4'>
+                                                {item.submenuItems.map((subitem) => {
+                                                    const isSubActive = pathname === subitem.href;
+                                                    return (
+                                                        <Link key={subitem.href} className={`block py-2 px-5 font-primary tracking-wider transition-colors text-lg text-black hover:text-primary ${isSubActive ? 'text-primary' : ''}`}
+                                                        href={subitem.href}>{subitem.label}</Link>
+                                                    );
+                                                })}
+                                            </div>
+                                        )}
                                     </div>
                                 )
                             })
