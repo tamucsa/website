@@ -97,3 +97,32 @@
     line-height: 1.1;
     font-weight: 1000;
 }
+
+/* ---- card ---- */
+.csaCard {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35rem;
+    background-color: white;
+    z-index: 3;
+    height:12.5rem;
+}
+
+.csaTextContainer {
+    padding: 1.5rem;
+}
+
+.csaCardTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: black;
+}
+
+.csaCardText {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+}

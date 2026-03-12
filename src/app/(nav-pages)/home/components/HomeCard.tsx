@@ -34,6 +34,14 @@ export default function HomeCard({ className }: HomeCardProps) {
                         </h1>
                     </div>
                 </div>
+                <div className="csaCard">
+                    <div className="csaTextContainer">
+                        <h2 className="csaCardTitle">What is CSA?</h2>
+                        <p className="csaCardText">
+                            Established in 1963, the Texas A&M Chinese Student Association (CSA) is a welcoming community that serves our university through social and cultural Chinese experiences.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div className="homeCardBadge">
                 <p className="homeCardBadgeText">
