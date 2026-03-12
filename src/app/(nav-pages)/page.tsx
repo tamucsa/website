@@ -1,4 +1,5 @@
 import HomeCard from "@/app/(nav-pages)/home/components/HomeCard";
+import "./page.css";
 
 import { Metadata } from "next";
 
