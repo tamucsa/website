@@ -15,6 +15,7 @@ const NihowdyPage = () => {
             <div className="flex flex-col justify-center gap-3">
               <h1 className="font-primary tracking-wider text-2xl md:text-4xl">WHAT IS NI-HOWDY?</h1>
               <h2 className=" text-xl md:text-2xl">Ni-Howdy is an annual weekend-long conference in the spring that unites CSAs all over Texas. It features competitive <b>SPORTS</b>, <b>DANCE</b> and performance, and mixer <b>EVENTS</b> hosted at Texas A&M University!</h2>
+              <h2 className="text-xl md:text-2xl">This year, Ni-Howdy is <b>April 11th-12th</b>, 2026!</h2>
             </div>
             <div className="flex flex-row w-full items-center justify-center">
               <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
@@ -66,7 +67,7 @@ const NihowdyPage = () => {
                 >
                   <div className="flex flex-row gap-2 items-center">
                     <RiBallPenFill className='size-6'/>
-                    Sign up Form (Due 2/28)
+                    Sign up Form (Due 3/14)
                   </div>
                 </LinkButton>
               </div>

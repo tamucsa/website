@@ -73,12 +73,12 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
                             The Spring 2026 standings for each Jiating:
                         </p>
                         <div className="font-secondary text-lg md:text-2xl tracking-wide">
-                            <p className="">1st: Momonga - 307 points</p>
-                            <p className="">2nd: Usagi - 254 points</p>
-                            <p className="">3rd: Kurimanju- 140 points</p>
-                            <p className="">4th: Chiikawa - 119 points</p>
-                            <p className="">5th: Rakko - 113 points</p>
-                            <p className="">6th: Hachiware - 98 points</p>
+                            <p className="">1st: Momonga - 494 points</p>
+                            <p className="">2nd: Usagi - 490 points</p>
+                            <p className="">3rd: Kurimanju- 281 points</p>
+                            <p className="">4th: Rakko - 214 points</p>
+                            <p className="">5th: Chiikawa - 193 points</p>
+                            <p className="">6th: Hachiware - 171 points</p>
                         </div>
                     </div>
         
