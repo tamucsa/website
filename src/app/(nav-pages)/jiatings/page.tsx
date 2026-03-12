@@ -1,8 +1,12 @@
 import JiatingPageComponent from "@/app/(nav-pages)/jiatings/components/JiatingPageComponent";
-import { getJTOMedals } from "@/lib/medals.server";
+import { getJTOMedalsCached } from "@/lib/medals.server";
 import { JiatingList } from "@/content/2025-2026/jiatings";
 
 import { Metadata } from "next";
+
+// Revalidate this route every 60s so Google Sheets data refreshes without redeploy.
+export const revalidate = 60;
+export const dynamic = "force-static";
 
 // server-only helper (no 'use client')
 export default async function JiatingsPage() {
@@ -10,7 +14,7 @@ export default async function JiatingsPage() {
   const names = JiatingList.map((j) => j.name);
   const results = await Promise.all(names.map(async (name) => {
     try {
-      return await getJTOMedals(name);
+      return await getJTOMedalsCached(name);
     } catch (err: any) {
       // capture error message so the UI can show why a given fetch failed
       return { error: err?.message ?? String(err) };
