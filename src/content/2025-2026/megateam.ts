@@ -294,7 +294,7 @@ export const MegateamList: Megateam[] = [
             "2025-2026": [
                 {
                     type: "officer",
-                    position: "Secretary",
+                    position: "Graphics Chair",
                     rawImgOrientation: "horizontal"
                 },
                 {
