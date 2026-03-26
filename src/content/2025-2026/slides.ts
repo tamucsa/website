@@ -72,7 +72,8 @@ export const GMSlideshowList: GMSlideshow[] = [
         baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vRoWU_FiUBlzK6q8SAuXbAJ_VNkRVZs4I4btwrn4obKmM4du60sesUJ8AJ_65bszKKPXB-mcyaUcp9Y/",
         years: "2025-2026",
         slug: "9",
-        date: "2/12/2026"
+        date: "2/12/2026",
+        recapQuizUrl:"https://docs.google.com/forms/d/e/1FAIpQLScB2Fsvp_OvLe5ZNsjIWQhEkR6YVVgTiQ8Iae5dgUo-xqsXGA/viewform"
     },
     {
         title: "General Meeting #10",
@@ -86,6 +87,7 @@ export const GMSlideshowList: GMSlideshow[] = [
         baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vR_C-HolyFlgXz1UJGfcEprBKucbY7cPqKVVqVNSFDYpVauUEFI0RZeXQ469QqpfrTnmWmg3TFtdmUQ/",
         years: "2025-2026",
         slug: "11",
-        date: "3/19/2026"
+        date: "3/19/2026",
+        recapQuizUrl:"https://docs.google.com/forms/d/e/1FAIpQLSePbvHOENRnh6exeoAsJjBMyf8wi9FlLFUOjaSWQCQV8-WJ3Q/viewform"
     }
 ];
