@@ -80,5 +80,12 @@ export const GMSlideshowList: GMSlideshow[] = [
         years: "2025-2026",
         slug: "10",
         date: "2/26/2026"
+    },
+    {
+        title: "GM #11",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vR_C-HolyFlgXz1UJGfcEprBKucbY7cPqKVVqVNSFDYpVauUEFI0RZeXQ469QqpfrTnmWmg3TFtdmUQ/",
+        years: "2025-2026",
+        slug: "11",
+        date: "3/19/2026"
     }
 ];
