@@ -7,9 +7,10 @@ interface SlideCardProps {
     title: string;
     baseUrl: string;
     slug: string;
+    recapQuizUrl?: string;
 }
 
-export default function SlideCard({ title, baseUrl, slug }: SlideCardProps) {
+export default function SlideCard({ title, baseUrl, slug, recapQuizUrl }: SlideCardProps) {
     const finalProps = "?start=true&loop=true&delayms=10000";
     const [loaded, setLoaded] = useState(false);
 
@@ -35,8 +36,10 @@ export default function SlideCard({ title, baseUrl, slug }: SlideCardProps) {
                     onLoad={() => setLoaded(true)}
                 />
             </div>
-
-            <Link href={baseUrl + "pub" + finalProps} target="_blank" className="font-primary tracking-wider text-lg lg:text-2xl underline hover:text-primary transition-colors">View Slides</Link>
+            <div className="flex flex-row items-center gap-5">
+                <Link href={baseUrl + "pub" + finalProps} target="_blank" className="font-primary tracking-wider text-lg lg:text-2xl underline hover:text-primary transition-colors">View Slides</Link>
+                {recapQuizUrl && <Link href={recapQuizUrl} target="_blank" className="font-primary tracking-wider text-lg lg:text-2xl underline hover:text-primary transition-colors">Take Recap Quiz</Link>}
+            </div>
         </div>
     );
 }

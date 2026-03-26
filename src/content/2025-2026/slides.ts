@@ -61,24 +61,33 @@ export const GMSlideshowList: GMSlideshow[] = [
         date: "1/15/2026"
     },
     {
-        title: "GM #8",
+        title: "General Meeting #8",
         baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQrgG6wkCopzAiPuRLYjuFXS83Y1pg_RlsE7p5yiCGBdPFvwIPRAnQ1vPHvCROAmWsBwz3GAQZtq7W5/",
         years: "2025-2026",
         slug: "8",
         date: "1/29/2026"
     },
     {
-        title: "GM #9",
+        title: "General Meeting #9",
         baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vRoWU_FiUBlzK6q8SAuXbAJ_VNkRVZs4I4btwrn4obKmM4du60sesUJ8AJ_65bszKKPXB-mcyaUcp9Y/",
         years: "2025-2026",
         slug: "9",
-        date: "2/12/2026"
+        date: "2/12/2026",
+        recapQuizUrl:"https://docs.google.com/forms/d/e/1FAIpQLScB2Fsvp_OvLe5ZNsjIWQhEkR6YVVgTiQ8Iae5dgUo-xqsXGA/viewform"
     },
     {
-        title: "GM #10",
+        title: "General Meeting #10",
         baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQoB5rGj39pMp5p54YmitZe1Yqne5mJP3ViBGjnSPGzbOIxJcGCOByJD1xKM8pkHR8OSlHvvd1lJo2X/",
         years: "2025-2026",
         slug: "10",
         date: "2/26/2026"
+    },
+    {
+        title: "General Meeting #11",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vR_C-HolyFlgXz1UJGfcEprBKucbY7cPqKVVqVNSFDYpVauUEFI0RZeXQ469QqpfrTnmWmg3TFtdmUQ/",
+        years: "2025-2026",
+        slug: "11",
+        date: "3/19/2026",
+        recapQuizUrl:"https://docs.google.com/forms/d/e/1FAIpQLSePbvHOENRnh6exeoAsJjBMyf8wi9FlLFUOjaSWQCQV8-WJ3Q/viewform"
     }
 ];

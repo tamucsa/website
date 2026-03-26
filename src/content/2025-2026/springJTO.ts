@@ -138,12 +138,12 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "Main Rec Center",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Usagi"),
-        //     2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     3: JiatingList.find(jiating => jiating.name === "Chiikawa")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Usagi"),
+            3: JiatingList.find(jiating => jiating.name === "Momonga")
+        }
     },
     {
         title: "Basketball",
@@ -174,7 +174,7 @@ export const Spring2026JTOList: JTOEvent[] = [
                 title: "Pickleball",
                 date: "Mar 29th",
                 day: "Sun",
-                time: "12:30pm - 1:30pm"
+                time: "11:30am - 1:30pm"
             }
         ],
         location: "Omar Smith Courts",

@@ -54,6 +54,7 @@ export interface GMSlideshow {
     years: string;
     slug: string;
     date?: string; // Optional field for the date of the GM
+    recapQuizUrl?: string; // optional URL for the GM recap quiz
 }
 
 export interface JTOEvent {
