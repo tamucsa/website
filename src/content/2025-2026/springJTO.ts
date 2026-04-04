@@ -158,12 +158,12 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "A&M United Methodist Church",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Momonga"),
-        //     2: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     3: JiatingList.find(jiating => jiating.name === "Hachiware")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Usagi"),
+            2: JiatingList.find(jiating => jiating.name === "Momonga"),
+            3: JiatingList.find(jiating => jiating.name === "Rakko")
+        }
     },
     {
         title: "Pickleball",
@@ -178,12 +178,12 @@ export const Spring2026JTOList: JTOEvent[] = [
             }
         ],
         location: "Omar Smith Courts",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     2: JiatingList.find(jiating => jiating.name === "Hachiware"),
-        //     3: JiatingList.find(jiating => jiating.name === "Momonga")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Usagi"),
+            3: JiatingList.find(jiating => jiating.name === "Momonga")
+        }
     },
     {
         title: "Tennis",
@@ -192,9 +192,9 @@ export const Spring2026JTOList: JTOEvent[] = [
         dayEntries: [
             {
                 title: "Tennis",
-                date: "Apr 4th",
-                day: "Sat",
-                time: "12:30pm - 1:30pm"
+                date: "Apr 5th",
+                day: "Sun",
+                time: "8:00pm - 10:00pm"
             },
         ],
         location: "Omar Smith Courts",

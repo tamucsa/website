@@ -58,10 +58,10 @@ const NihowdyPage = () => {
             <div className="flex flex-col gap-5 p-8 col-span-5 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
               <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM FOR NI-HOWDY?</h1>
               <div className="flex flex-col gap-1">
-                <h2 className="text-base md:text-xl">If you are committed to performing for Ni-Howdy, please fill out the sign-up form below!</h2>
+                <h2 className="text-base md:text-xl">If you'd like to perform for Ni-Howdy, it is too late for this year, but we would love to have you on stage next year!</h2>
                 {/* <h3 className="text-xs md:text-sm italic text-gray-400">*Application dates may change when apps open</h3> */}
               </div>
-              <div className="flex flex-row gap-5">
+              {/* <div className="flex flex-row gap-5">
                 <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeQlsMJ47_721_U3dJo1OpillxYAZjCZnsak8T4mCJoUGkxAw/viewform" newTab={true}
                     className="text-base md:text-lg"
                 >
@@ -70,7 +70,7 @@ const NihowdyPage = () => {
                     Sign up Form (Due 3/14)
                   </div>
                 </LinkButton>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-row w-full items-center justify-center col-span-3">
               <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
