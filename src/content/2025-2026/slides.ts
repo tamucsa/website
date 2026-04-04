@@ -89,5 +89,12 @@ export const GMSlideshowList: GMSlideshow[] = [
         slug: "11",
         date: "3/19/2026",
         recapQuizUrl:"https://docs.google.com/forms/d/e/1FAIpQLSePbvHOENRnh6exeoAsJjBMyf8wi9FlLFUOjaSWQCQV8-WJ3Q/viewform"
+    },
+    {
+        title: "General Meeting #12",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vRYBxjNPfO1Wr6dgv2lfpDtnViPEjek9Tlixtj7qr-Zu_I3egGXKwQbmJ2KSQ--rWVBmTPwdiJdsR0q/",
+        years: "2025-2026",
+        slug: "12",
+        date: "4/2/2026",
     }
 ];
