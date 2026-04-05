@@ -1,14 +1,13 @@
 import HomeCard from "@/app/(nav-pages)/home/components/HomeCard";
-import "./page.css";
 
 import { Metadata } from "next";
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="">
         {/* <UnderConstruction /> */}
         <HomeCard className=""/>
-        <div className="home-content">
+        <div className="">
           {/* What is CSA? */}
           {/* <div className="home-description-section">
             <h2 className="home-title"><u>What is CSA?</u></h2>

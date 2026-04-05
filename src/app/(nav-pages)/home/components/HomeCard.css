@@ -271,8 +271,6 @@
 .jiatingName {
     position: absolute;   /* 👈 overlay on image */
     bottom: 1rem;
-    transform: translateX(-50%) rotate(270deg);
-    transform-origin: center center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 4.5rem;
