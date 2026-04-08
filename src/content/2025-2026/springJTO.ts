@@ -198,11 +198,11 @@ export const Spring2026JTOList: JTOEvent[] = [
             },
         ],
         location: "Omar Smith Courts",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     2: JiatingList.find(jiating => jiating.name === "Momonga"),
-        //     3: JiatingList.find(jiating => jiating.name === "Hachiware")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Momonga"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
     }
 ];
