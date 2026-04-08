@@ -5,7 +5,7 @@ import ContactForm from "@/app/(nav-pages)/contact/components/ContactForm";
 
 const ContactPage = () => {
     return (
-        <div className='flex flex-col items-center gap-5 md:gap-7'>
+        <div className='flex flex-col items-center mx-10 gap-5 md:gap-7'>
             <h1 className="container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15">Contact Us</h1>
             <div className="flex flex-col lg:flex-row items-center justify-center gap-5 md:gap-25 pb-15">
                 {/* Left/Top - Contact Form */}

@@ -21,15 +21,15 @@ export default function RewardsCard() {
                     {/* Rewards: stacked vertically on mobile, horizontal on md+ */}
                     <div className="relative flex flex-col md:flex-row md:justify-between w-full px-4 md:px-8 gap-6 md:gap-8">
                     {rewards.map((reward, index) => (
-                        <div key={index} className="flex w-full md:w-auto md:flex-col items-center md:items-center gap-3">
-                            <div className="flex items-center w-full md:w-auto gap-4 md:gap-1 md:flex-col md:items-center">
+                        <div key={index} className="flex w-full md:w-auto md:flex-col items-start md:items-center gap-3">
+                            <div className="flex items-start w-full md:w-auto gap-4 md:gap-1 md:flex-col md:items-center">
                                 {/* Circle */}
-                                <div className={classNames("relative z-10 h-12 w-12 rounded-full border-4 border-white",
+                                <div className={classNames("relative z-10 h-12 w-12 shrink-0 rounded-full border-4 border-white",
                                     reward.color === "rose" ? "bg-accent" : "bg-primary"
                                 )} />
 
                                 {/* Text block */}
-                                <div className="flex flex-col md:gap-2 md:items-center">
+                                <div className="flex min-w-0 flex-col md:gap-2 md:items-center">
                                     <div className="flex flex-row md:flex-col gap-1 md:gap-0 text-center">
                                         <div className={classNames("text-3xl md:text-4xl font-bold",
                                             reward.color === "rose" ? "text-accent" : "text-primary"

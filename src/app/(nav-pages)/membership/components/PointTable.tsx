@@ -11,8 +11,8 @@ export default function PointTableCard() {
         { event: "CSA-wide Events / Concessions", points: "3" },
     ]
     return (
-    <div className="flex flex-col gap-5 items-stretch p-8 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl w-full lg:max-w-xl mx-auto min-w-0 self-stretch">
-            <h2 className="font-primary tracking-wider text-center text-2xl lg:text-3xl">Earning Points</h2>
+    <div className="flex flex-col gap-5 items-stretch p-4 md:p-8 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl w-full lg:max-w-xl mx-auto min-w-0 self-stretch">
+            <h2 className="font-primary tracking-wider text-center mt-3 md:mt-0 text-2xl lg:text-3xl">Earning Points</h2>
             <div className="relative w-full">
                 <div className="divide-y divide-border">
                     {/* Header Row */}
@@ -24,7 +24,7 @@ export default function PointTableCard() {
                     {/* Data Rows */}
                     {pointsData.map((row, index) => (
                         <div key={index} className="grid grid-cols-2 hover:bg-muted/50 transition-colors">
-                        <div className="px-6 py-2 text-center">{row.event}</div>
+                        <div className="px-2 py-2 text-center">{row.event}</div>
                         <div className="border-l border-border px-6 py-2 text-center">{row.points}</div>
                         </div>
                     ))}

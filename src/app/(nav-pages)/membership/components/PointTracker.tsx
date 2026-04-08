@@ -65,7 +65,7 @@ export default function PointTracker() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 w-full">
             {/* Search for Points Card */}
             <div className="flex flex-col items-center justify-center gap-3 p-8 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl w-full lg:w-lg">
-                <h2 className="font-primary tracking-wider text-xl md:text-2xl">Look up Your Points!</h2>
+                <h2 className="font-primary tracking-wider text-lg md:text-2xl">Look up Your Points!</h2>
                 <input
                     className="border border-gray-400 text-sm md:text-base rounded-lg px-3 py-2 w-3/4 lg:w-3/5"
                     type="text"

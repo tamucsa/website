@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const GMPage = () => {
     return (
-        <div className='flex flex-col items-center gap-5 sm:gap-10 md:gap-10 mx-10 md:pb-10'>
+        <div className='flex flex-col items-center gap-5 sm:gap-10 md:gap-10 mx-7 md:mx-10 md:pb-10'>
             <h2 className='container text-center font-secondary tracking-wide text-xl sm:text-3xl lg:text-4xl/12 mt-5 md:mt-15'>
                 Come join us at our General Meeting <b>every other Thursday</b> in <b>PSYC 338</b> from <b>7-8 PM</b>! 
                 Check out the calendar on <Link href='/events' className="underline hover:text-primary transition-colors">Events</Link> for more accurate dates!
