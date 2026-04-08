@@ -6,7 +6,7 @@ import { RiInstagramFill} from "react-icons/ri";
 
 export default function SchoolCard({ school }: { school: NiHowdySchool }) {
     return (
-        <div id={`${school.shortname}`} className="flex flex-col items-center justify-end gap-0 md:gap-2 p-2 md:p-4 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
+        <div id={`${school.shortname}`} className="flex flex-col items-center justify-end gap-0 md:gap-2 p-3 md:p-4 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
             <div className="flex flex-col relative justify-center h-full p-2">
                 {/* Large image as clickable button */}

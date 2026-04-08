@@ -23,7 +23,7 @@ const JiatingPageComponent: React.FC<JiatingPageComponentProps> = ({ initialMeda
     return (
         <main className="items-center justify-center">
             {/* Actual page contents*/}
-            <div className="flex flex-col gap-10 md:gap-15 items-center justify-center mx-10 md:mx-25 mt-10 md:mt-15 mb-10">
+            <div className="flex flex-col gap-10 md:gap-15 items-center justify-center mx-7 md:mx-25 mt-10 md:mt-15 mb-10">
                 {/* This year's paragraph */}
                 <div className="flex flex-col items-center gap-5">
                     <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>2025-2026 Jiatings</h1>

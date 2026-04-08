@@ -6,7 +6,7 @@ import { RiInstagramFill} from "react-icons/ri";
 
 export default function JiatingCard({ jiating }: { jiating: Jiating }) {
     return (
-        <div id={`${jiating.id}`} className="flex flex-col items-center justify-end w-26 gap-1 sm:gap-2 p-1 sm:p-1 md:p-2 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
+        <div id={`${jiating.id}`} className="flex flex-col items-center justify-end md:w-26 gap-1 sm:gap-2 p-1 sm:p-1 md:p-2 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-2xl">
             {/* Image section w/ clickable button to open modal */}
             <div className="relative">
                 {/* Large image as clickable button */}

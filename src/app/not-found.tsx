@@ -14,7 +14,7 @@ export default function NotFound({showNavbar = true}: {showNavbar?: boolean}) {
         return (
             <div>
                 <Navbar />
-                <div className="flex flex-col min-h-screen pt-18">
+                <div className="flex flex-col min-h-screen md:pt-18">
                     <main className="grow">
                         <NotFoundBox showNavbar={true}/>
                     </main>

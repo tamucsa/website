@@ -68,7 +68,7 @@ const SportsPageComponent: React.FC<SportsPageComponentProps> = ({ initialMedals
                             >
                                 <div className="flex flex-row items-center gap-2">
                                     <RiDiscordFill className='size-8'/>
-                                    Intramurals Discord Server
+                                    Intramurals Server
                                 </div>
                             </LinkButton>
                         </div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const EventsPage = () => {
     return (
-        <div className='flex flex-col items-center mt-10 gap-7 pb-5 md:mt-15 md:gap-10 md:pb-15'>
+        <div className='flex flex-col items-center mx-10 mt-10 md:mt-15 gap-7 md:gap-10 pb-5 md:pb-15'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>Upcoming Events!</h1>
             <div className="flex flex-col xl:flex-row gap-3 xl:gap-10">
                 {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSeFtlEuedU5CF74JTTbCwnqMq4dvgfYggYBixY8cBaszXaSig/viewform" newTab={true}

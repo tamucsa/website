@@ -3,6 +3,7 @@ import Link from "next/link";
 import '@/app/globals.css';
 
 import { Jiating } from "@/utils/types";
+import { RiArrowUpLine } from "react-icons/ri";
 
 type HomeCardProps = {
     className?: string;
@@ -33,7 +34,7 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                         priority
                     />
                     <div className="absolute inset-0 bg-[rgba(100,100,100,0.5)] z-1" />
-                    <div className="absolute top-18 left-13 md:top-20 md:left-16 z-2 text-white">
+                    <div className="absolute top-18 left-1/2 -translate-x-1/2 md:top-20 md:left-16 md:translate-x-0 z-2 text-white text-left">
                         <p className="text-2xl md:text-4xl mb-1 leading-[0.9] font-medium">Texas A&amp;M</p>
                         <h1 className="text-6xl md:text-8xl m-0 leading-[1.1] font-bold">    
                         Chinese<br/>
@@ -60,7 +61,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-xs md:text-base text-subtitle mx-4 mt-2 md:mb-1 leading-[1.1] pt-1 md:pt-2">Join a Jiating and meet new people</p>
                         <h3 className="text-[1.25rem] md:text-[2rem] font-bold mx-4 leading-[1.15] flex-1 mb-2">Become a Member</h3>
-                        <Link href="/membership" className="w-full md:w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Sign Up</Link>
+                        <Link href="/membership" className="w-full md:w-48 h-12 flex justify-center text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">
+                            <div className="flex flex-row items-center gap-1">
+                                <RiArrowUpLine className='size-4 -ml-4'/>
+                                Sign Up
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex flex-col">
@@ -70,7 +76,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-xs md:text-base text-subtitle mx-4 mt-2 md:mb-1 leading-[1.1] pt-1 md:pt-2">Want to learn more about CSA?</p>
                         <h3 className="text-[1.25rem] md:text-[2rem] font-bold mx-4 leading-[1.15] flex-1 mb-2">Internship Program</h3>
-                        <Link href="/interns" className="w-full md:w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Learn More</Link>
+                        <Link href="/interns" className="w-full md:w-48 h-12 flex justify-center text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">
+                            <div className="flex flex-row items-center gap-1">
+                                <RiArrowUpLine className='size-4 -ml-4'/>
+                                Learn More
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex flex-col">
@@ -80,7 +91,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-xs md:text-base text-subtitle mx-4 mt-2 md:mb-1 leading-[1.1] pt-1 md:pt-2">Play for CSA against other teams</p>
                         <h3 className="text-[1.25rem] md:text-[2rem] font-bold mx-4 leading-[1.15] flex-1 mb-2">Intramurals</h3>
-                        <Link href="/sports" className="w-full md:w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Compete</Link>
+                        <Link href="/sports" className="w-full md:w-48 h-12 flex justify-center text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">
+                            <div className="flex flex-row items-center gap-1">
+                                <RiArrowUpLine className='size-4 -ml-4'/>
+                                Compete
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex flex-col">
@@ -90,7 +106,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-t border-solid border-home-border">
                         <p className="text-xs md:text-base text-subtitle mx-4 mt-2 md:mb-1 leading-[1.1] pt-1 md:pt-2">Represent your Jiating in sports</p>
                         <h3 className="text-[1.25rem] md:text-[2rem] font-bold mx-4 leading-[1.15] flex-1 mb-2">Jiating Olympics</h3>
-                        <Link href="/sports" className="w-full md:w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Learn More</Link>
+                        <Link href="/sports" className="w-full md:w-48 h-12 flex justify-center text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black md:border-l border-t border-solid border-[#ccc] hover:border-black md:rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">
+                            <div className="flex flex-row items-center gap-1">
+                                <RiArrowUpLine className='size-4 -ml-4'/>
+                                Learn More
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -139,7 +160,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                             Hosted here at College Station, Ni-Howdy is a weekend-long event that features sports competitions, dance, performances, and mixers.
                         </p>
                     </div>
-                    <Link href="/nihowdy" className="w-full md:w-54 py-2 md:py-0 md:h-14 bg-transparent hover:bg-black md:border-l border-t border-solid text-text hover:text-white text-sm md:text-[1.1rem] cursor-pointer transition-colors duration-200 md:absolute md:bottom-0 md:right-0 text-center content-center md:rounded-tl-xl">↑ Learn More</Link>
+                    <Link href="/nihowdy" className="w-full md:w-54 py-2 md:py-0 md:h-14 flex justify-center bg-transparent hover:bg-black md:border-l border-t border-solid text-text hover:text-white text-sm md:text-[1.1rem] cursor-pointer transition-colors duration-200 md:absolute md:bottom-0 md:right-0 text-center content-center md:rounded-tl-xl">
+                        <div className="flex flex-row items-center gap-1">
+                            <RiArrowUpLine className='size-3 -ml-3 md:size-4 md:-ml-4'/>
+                            Learn More
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="relative w-full h-[calc(100vh-4.5rem)] md:h-screen">
@@ -160,7 +186,12 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                             The Jiating Olympics is a semester-long event which occurs twice a year. Members of each Jiating compete against their peers in a variety of sports, including basketball, volleyball, badminton, and more. To the winning Jiating? Money and bragging rights.
                         </p>
                     </div>
-                    <Link href="/jiatings" className="w-full md:w-54 py-2 md:py-0 md:h-14 bg-transparent hover:bg-black md:border-l border-t border-solid text-text hover:text-white text-sm md:text-[1.1rem] cursor-pointer transition-colors duration-200 md:absolute md:bottom-0 md:right-0 text-center content-center md:rounded-tl-xl">↑ Learn More</Link>
+                    <Link href="/sports" className="w-full md:w-54 py-2 md:py-0 md:h-14 flex justify-center bg-transparent hover:bg-black md:border-l border-t border-solid text-text hover:text-white text-sm md:text-[1.1rem] cursor-pointer transition-colors duration-200 md:absolute md:bottom-0 md:right-0 text-center content-center md:rounded-tl-xl">
+                        <div className="flex flex-row items-center gap-1">
+                            <RiArrowUpLine className='size-3 -ml-3 md:size-4 md:-ml-4'/>
+                            Learn More
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

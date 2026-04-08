@@ -71,13 +71,14 @@ const JTOScheduleCard: FC<FullScreenModalProps> = ({ semester, isOpen, onClose, 
         inset: 0,
         zIndex: 2147483647,
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         justifyContent: 'center',
+        paddingTop: '1.25rem',
         backgroundColor: 'rgba(0,0,0,0.6)',
         boxSizing: 'border-box'
       }}
     >
-  <div className="relative w-full max-w-xl rounded-lg bg-white p-6 shadow-xl m-5">
+  <div className="relative w-full max-w-xl rounded-lg bg-white p-6 shadow-xl m-5 max-h-[calc(100dvh-2.5rem)] overflow-y-auto md:mt-0" >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-600 hover:text-gray-800 text-4xl"

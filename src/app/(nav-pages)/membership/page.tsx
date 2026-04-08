@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 const MembershipPage = () => {
     return (
-        <div className='flex flex-col items-center gap-5 md:gap-15 mb-10 mx-13 md:mx-13'>
+        <div className='flex flex-col items-center gap-5 md:gap-15 mb-10 mx-10 md:mx-13'>
             <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl mt-10 md:mt-15'>How to Join CSA!</h1>
             {/* <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
                 <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSecQc7JYAfMWQ634FLjHDyj6NEhga-4MrU_PCJQSQpEaJe-rw/viewform" newTab={true}

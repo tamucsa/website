@@ -24,7 +24,7 @@ const Footer = () => {
                 }
             </div>
             <div>
-                <div className='font-primary text-white text-lg'> &copy; 2025 TAMU Chinese Student Association</div>
+                <div className='font-primary text-white text-lg'> &copy; 2026 TAMU Chinese Student Association</div>
             </div>
         </div>
     </footer>

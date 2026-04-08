@@ -458,7 +458,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 27,
         name: "Matthew Yen",
-        major: "Finance '28",
+        major: "Management Information Systems '28",
         instagram: "morthew_yen",
         yearEntries: {
             "2025-2026": [
