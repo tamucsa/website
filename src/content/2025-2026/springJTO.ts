@@ -192,17 +192,17 @@ export const Spring2026JTOList: JTOEvent[] = [
         dayEntries: [
             {
                 title: "Tennis",
-                date: "Apr 5th",
-                day: "Sun",
-                time: "8:00pm - 10:00pm"
+                date: "Apr 4th",
+                day: "Sat",
+                time: "6:00pm - 8:00pm"
             },
         ],
         location: "Omar Smith Courts",
-        completed: false,
-        // placements: {
-        //     1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
-        //     2: JiatingList.find(jiating => jiating.name === "Momonga"),
-        //     3: JiatingList.find(jiating => jiating.name === "Hachiware")
-        // }
+        completed: true,
+        placements: {
+            1: JiatingList.find(jiating => jiating.name === "Kurimanju"),
+            2: JiatingList.find(jiating => jiating.name === "Momonga"),
+            3: JiatingList.find(jiating => jiating.name === "Usagi")
+        }
     }
 ];
