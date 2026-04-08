@@ -11,6 +11,7 @@ const NihowdyPage = () => {
     return (
         <div className="flex flex-col items-center mt-10 gap-7 pb-5 md:mt-15 md:gap-15 md:pb-15 mx-15">
           {/* <h1 className='container text-center font-primary tracking-wider text-3xl md:text-4xl'>Ni-howdy!</h1> */}
+          {/* Row 1 */}
           <div className='grid grid-cols-0 md:grid-cols-2 justify-center gap-5 md:gap-20 w-full lg:w-5xl'>
             <div className="flex flex-col justify-center gap-3">
               <h1 className="font-primary tracking-wider text-2xl md:text-4xl">WHAT IS NI-HOWDY?</h1>
@@ -18,19 +19,20 @@ const NihowdyPage = () => {
               <h2 className="text-xl md:text-2xl">This year, Ni-Howdy is <b>April 11th-12th</b>, 2026!</h2>
             </div>
             <div className="flex flex-row w-full items-center justify-center">
-              <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
+              <div className="relative w-full md:w-lg hover:scale-102 transition-transform duration-300">
                 <Image src="/stockImages/NiHowdy-2.JPG" alt="" width={2048} height={1365} className="object-cover rounded-lg shadow-md" style={{ width: "100%", height: "auto" }}/>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-0 md:grid-cols-5 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
-            <div className="flex flex-row w-full items-center justify-center col-span-2">
-              <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
+          {/* Row 2 */}
+          <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
+            <div className="order-2 md:order-1 flex flex-row w-full items-center justify-center col-span-2">
+              <div className="relative w-full md:w-lg hover:scale-102 transition-transform duration-300">
                 <Image src="/stockImages/NiHowdy-6.JPG" alt="" width={2048} height={1365} className="object-cover rounded-lg shadow-md" style={{ width: "100%", height: "auto" }}/>
               </div>
             </div>
-            <div className="flex flex-col gap-5 p-8 col-span-3 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
+            <div className="order-1 md:order-2 flex flex-col gap-5 p-8 col-span-3 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
               <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN SCHOOLS JOIN NI-HOWDY?</h1>
               <h2 className="text-base md:text-xl">Reach out to us on Instagram <b>@tamu.csa</b> or email us at <b>tamu.csa1963@gmail.edu</b> and let us know you'd like to join!</h2>
               <div className="flex flex-row gap-5">
@@ -54,7 +56,8 @@ const NihowdyPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-0 md:grid-cols-8 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
+          {/* Row 3 */}
+          <div className="grid grid-cols-1 md:grid-cols-8 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
             <div className="flex flex-col gap-5 p-8 col-span-5 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">
               <h1 className="font-primary tracking-wider text-lg md:text-3xl">HOW CAN I PERFORM FOR NI-HOWDY?</h1>
               <div className="flex flex-col gap-1">
@@ -73,7 +76,7 @@ const NihowdyPage = () => {
               </div> */}
             </div>
             <div className="flex flex-row w-full items-center justify-center col-span-3">
-              <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
+              <div className="relative w-full md:w-lg hover:scale-102 transition-transform duration-300">
                 <Image src="/stockImages/NiHowdy-4.JPG" alt="" width={2048} height={1365} className="object-cover rounded-lg shadow-md" style={{ width: "100%", height: "auto" }}/>
               </div>
             </div>
