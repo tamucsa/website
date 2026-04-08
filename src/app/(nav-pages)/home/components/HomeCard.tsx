@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import '@/app/globals.css';
 
+import { Jiating } from "@/utils/types";
+
 type HomeCardProps = {
     className?: string;
+    jiatings: Jiating[];
 };
 
-export default function HomeCard({ className }: HomeCardProps) {
+export default function HomeCard({ className, jiatings }: HomeCardProps) {
+    
     return (
         <div className="relative">
             <div className="flex flex-row relative w-full h-[calc(100vh-4.5rem)] overflow-hidden">
@@ -24,6 +28,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                         alt=""
                         fill
                         className="object-cover object-center"
+                        priority
                     />
                     <div className="absolute inset-0 bg-[rgba(100,100,100,0.5)] z-1" />
                     <div className="absolute top-20 left-16 z-2 text-white">
@@ -47,7 +52,7 @@ export default function HomeCard({ className }: HomeCardProps) {
             <div className="grid grid-cols-4 grid-rows-1 w-full bg-bg">
                 <div className="flex flex-col">
                     <div className="relative w-full aspect-square overflow-hidden bg-secondary">
-                        <Image src="/stockImages/Informational-7.jpg" alt="learn more about becoming a member and joining a jiating" fill className="object-cover object-center" />
+                        <Image priority src="/stockImages/Informational-7.jpg" alt="learn more about becoming a member and joining a jiating" fill className="object-cover object-center" />
                     </div>
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Join a Jiating and meet new people</p>
@@ -57,7 +62,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                 </div>
                 <div className="flex flex-col">
                     <div className="relative w-full aspect-square overflow-hidden bg-secondary">
-                        <Image src="/stockImages/internGroupPhoto.jpg" alt="learn more about internship program" fill className="object-cover object-center" />
+                        <Image priority src="/stockImages/internGroupPhoto.jpg" alt="learn more about internship program" fill className="object-cover object-center" />
                     </div>
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Want to learn more about CSA?</p>
@@ -67,7 +72,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                 </div>
                 <div className="flex flex-col">
                     <div className="relative w-full aspect-square overflow-hidden bg-secondary">
-                        <Image src="/stockImages/basketball.jpg" alt="play for csa in intramurals" fill className="object-cover object-center" />
+                        <Image priority src="/stockImages/basketball.jpg" alt="play for csa in intramurals" fill className="object-cover object-center" />
                     </div>
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Play for CSA against other teams</p>
@@ -77,7 +82,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                 </div>
                 <div className="flex flex-col">
                     <div className="relative w-full aspect-square overflow-hidden bg-secondary">
-                        <Image src="/stockImages/placeholderJTO.jpg" alt="learn more about the jiating olympics" fill className="object-cover object-center" />
+                        <Image priority src="/stockImages/placeholderJTO.jpg" alt="learn more about the jiating olympics" fill className="object-cover object-center" />
                     </div>
                     <div className="flex flex-col flex-1 border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Represent your Jiating in sports</p>
@@ -93,20 +98,13 @@ export default function HomeCard({ className }: HomeCardProps) {
                 </div>
             </div>
             <div className="grid grid-cols-6 grid-rows-1 w-full bg-bg">
-                {[
-                    { name: "Chiikawa", img: "/jiatings/chiikawa.jpg" },
-                    { name: "Hachiware", img: "/jiatings/hachi.jpg" },
-                    { name: "Kurimanju", img: "/jiatings/kuri.jpg" },
-                    { name: "Momonga", img: "/jiatings/momonga.jpg" },
-                    { name: "Rakko", img: "/jiatings/rakko.jpg" },
-                    { name: "Usagi", img: "/jiatings/usagi.jpg" },
-                ].map((jiating, i) => (
-                    <div className="relative overflow-hidden" key={i}>
+                {jiatings.map((jiating) => (
+                    <div className="relative overflow-hidden" key={jiating.name}>
                         <div className="relative w-full aspect-2/3 overflow-hidden bg-secondary">
                             <div className="absolute inset-0 bg-[rgba(100,100,100,0.5)] z-1"></div>
-                            <Image src={jiating.img} alt={jiating.name} fill className="object-cover object-center" />
+                            <Image src={`/${jiating.years}/jiatings/${jiating.name}/home.jpg`} alt={jiating.name} fill className="object-cover object-center" />
                         </div>
-                        <Link href={`/jiatings/${jiating.name.toLowerCase()}`} className="absolute inset-0 z-2 flex items-center justify-center">
+                        <Link href={`/jiatings/${jiating.id}`} className="absolute inset-0 z-2 flex items-center justify-center">
                             <p className="absolute bottom-4 text-[4rem] hover:text-[4.5rem] font-semibold text-white whitespace-nowrap z-2 [writing-mode:vertical-rl] translate-x-1/4 rotate-180 tracking-[0.1rem] transition-all duration-200">{jiating.name}</p>
                         </Link>
                     </div>
