@@ -124,7 +124,7 @@ export default function HomeCard({ className, jiatings }: HomeCardProps) {
                 <div className="relative w-full h-full overflow-hidden">
                     <div className="absolute inset-0 bg-[rgba(100,100,100,0.5)] z-1"></div>
                     <Image
-                        src="/stockImages/NiHowdy-3.jpg"
+                        src="/stockImages/NiHowdy-3.JPG"
                         alt="Ni-Howdy event"
                         fill
                         className="object-cover object-center"
