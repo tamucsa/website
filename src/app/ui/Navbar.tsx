@@ -27,7 +27,6 @@ const Navbar = () => {
         { label: 'Membership', href: '/membership', submenu: false },
         { label: 'General Meetings', href: '/gm', submenu: false },
         { label: 'Jiatings', href: '/jiatings', submenu: false },
-        // { label: 'Nihowdy', href: '/nihowdy', submenu: false },
         { label: 'Photos', href: '/photos', submenu: false },
         { label: 'Contact', href: '/contact', submenu: false },
     ];
