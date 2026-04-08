@@ -26,7 +26,7 @@ const NihowdyPage = () => {
           <div className="grid grid-cols-0 md:grid-cols-5 justify-center gap-5 md:gap-15 w-full lg:w-5xl">
             <div className="flex flex-row w-full items-center justify-center col-span-2">
               <div className="relative md:w-lg hover:scale-102 transition-transform duration-300">
-                <Image src="/stockImages/NiHowdy-3.JPG" alt="" width={2048} height={1365} className="object-cover rounded-lg shadow-md" style={{ width: "100%", height: "auto" }}/>
+                <Image src="/stockImages/NiHowdy-6.JPG" alt="" width={2048} height={1365} className="object-cover rounded-lg shadow-md" style={{ width: "100%", height: "auto" }}/>
               </div>
             </div>
             <div className="flex flex-col gap-5 p-8 col-span-3 border border-gray-300 shadow-md/30 shadow-gray-600 rounded-xl">

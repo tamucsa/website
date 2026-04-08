@@ -72,7 +72,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-r border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Play for CSA against other teams</p>
                         <h3 className="text-[2rem] font-bold mx-4 flex-1">Intramurals</h3>
-                        <Link href="/contact" className="w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black border-l border-t border-solid border-[#ccc] hover:border-black rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Compete</Link>
+                        <Link href="/sports" className="w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black border-l border-t border-solid border-[#ccc] hover:border-black rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Compete</Link>
                     </div>
                 </div>
                 <div className="flex flex-col">
@@ -82,7 +82,7 @@ export default function HomeCard({ className }: HomeCardProps) {
                     <div className="flex flex-col flex-1 border-t border-solid border-home-border">
                         <p className="text-base text-subtitle m-4 mb-1 leading-0 pt-2">Represent your Jiating in sports</p>
                         <h3 className="text-[2rem] font-bold mx-4 flex-1">Jiating Olympics</h3>
-                        <Link href="/jiatings" className="w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black border-l border-t border-solid border-[#ccc] hover:border-black rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Learn More</Link>
+                        <Link href="/sports" className="w-48 h-12 text-base relative self-end text-text hover:text-white bg-transparent hover:bg-black border-l border-t border-solid border-[#ccc] hover:border-black rounded-tl-xl cursor-pointer text-center content-center transitions-colors duration-200">↑ Learn More</Link>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,9 @@ export default function HomeCard({ className }: HomeCardProps) {
                             <div className="absolute inset-0 bg-[rgba(100,100,100,0.5)] z-1"></div>
                             <Image src={jiating.img} alt={jiating.name} fill className="object-cover object-center" />
                         </div>
-                        <p className="absolute bottom-4 text-7xl font-semibold text-white whitespace-nowrap z-2 [writing-mode:vertical-rl] translate-x-1/4 rotate-180 tracking-[0.1rem]">{jiating.name}</p>
+                        <Link href={`/jiatings/${jiating.name.toLowerCase()}`} className="absolute inset-0 z-2 flex items-center justify-center">
+                            <p className="absolute bottom-4 text-[4rem] hover:text-[4.5rem] font-semibold text-white whitespace-nowrap z-2 [writing-mode:vertical-rl] translate-x-1/4 rotate-180 tracking-[0.1rem] transition-all duration-200">{jiating.name}</p>
+                        </Link>
                     </div>
                 ))}
             </div>
