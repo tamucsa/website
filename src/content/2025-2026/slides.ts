@@ -96,5 +96,12 @@ export const GMSlideshowList: GMSlideshow[] = [
         years: "2025-2026",
         slug: "12",
         date: "4/2/2026",
+    },
+    {
+        title: "General Meeting #13",
+        baseUrl: "https://docs.google.com/presentation/d/e/2PACX-1vRNKeLSVMjuPXtXBSngOC2AV4l4CjRMGdR3-TJ4wL49Gu2obgwaP4as_lKOjKLpdKqdOG1XnOmboM8F/",
+        years: "2025-2026",
+        slug: "13",
+        date: "4/16/2026",
     }
 ];
