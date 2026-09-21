@@ -81,11 +81,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Vice President External",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Miffy" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -115,11 +110,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Treasurer",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -166,11 +156,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Public Relations",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Smiski" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -200,11 +185,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Graphics Chair",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -281,11 +261,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Sports Chair",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Smiski" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -300,11 +275,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Fundraising Chair",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -351,254 +321,8 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Culture Chair",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Dimoo" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
-    {
-        id: 21,
-        name: "Justin Zhang",
-        major: "Biology '28",
-        instagram: "just_zhangg",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "Dimoo" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 22,
-        name: "Aryan Bandi",
-        major: "Computer Science '29",
-        instagram: "aryann.bandi",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "Smiski" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 23,
-        name: "Alysa Zhao",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "Miffy" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 24,
-        name: "Ethan Mak",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "Mofusand" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 25,
-        name: "Alice Yu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 26,
-        name: "Kevinn Tran",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 27,
-        name: "Alexis Carmel",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 28,
-        name: "Lanxi Xu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 29,
-        name: "Vivian Xu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 30,
-        name: "William Vu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 31,
-        name: "Ethan Lam",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 32,
-        name: "Bonnie Tsoi",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 33,
-        name: "Manya Tiwari",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 34,
-        name: "Reilly Mize",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 35,
-        name: "Miky Zheng",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    {
-        id: 36,
-        name: "Evan Ying",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
-        yearEntries: {
-            "2026-2027": [
-                {
-                    type: "parent",
-                    jiating: { name: "PLACEHOLDER" },
-                    rawImgOrientation: "horizontal"
-                }
-            ]
-        }
-    },
-    
 ]

@@ -85,7 +85,6 @@ export default function FullJTPopup({ jiating }: { jiating: Jiating }) {
                             'lg:w-1/2': (jiating.groupImgOrientation === "horizontal"),
                             'lg:w-70/100': (jiating.groupImgOrientation === "vertical")
                         })}>
-                        {/* 
                         <Image
                             src={`/${jiating.years}/jiatings/${jiating.name}/infoslide.jpg`}
                             alt=""
@@ -93,7 +92,7 @@ export default function FullJTPopup({ jiating }: { jiating: Jiating }) {
                             height={540}
                             className="object-cover rounded-lg shadow-md"
                             style={{ width: "100%", height: "auto" }}
-                        />*/}
+                        />
                     </div>
                 </div>
             </div> 
