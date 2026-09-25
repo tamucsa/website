@@ -393,8 +393,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 23,
         name: "Alysa Zhao",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Computer Science '28",
+        instagram: "alysxzhao",
         yearEntries: {
             "2026-2027": [
                 {
@@ -408,8 +408,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 24,
         name: "Ethan Mak",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Management Information Systems '29",
+        instagram: "ethanmak1",
         yearEntries: {
             "2026-2027": [
                 {
@@ -423,8 +423,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 25,
         name: "Alice Yu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Nuclear Engineering '29",
+        instagram: "whyamihere_alice._",
         yearEntries: {
             "2026-2027": [
                 {
@@ -438,8 +438,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 26,
         name: "Kevinn Tran",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Computer Science '27",
+        instagram: "_kevinntran_",
         yearEntries: {
             "2026-2027": [
                 {
@@ -453,8 +453,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 27,
         name: "Alexis Carmel",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Psychology '28",
+        instagram: "alexis_violinist",
         yearEntries: {
             "2026-2027": [
                 {
@@ -468,8 +468,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 28,
         name: "Lanxi Xu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Computer Science '28",
+        instagram: "lanshi.i",
         yearEntries: {
             "2026-2027": [
                 {
@@ -483,8 +483,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 29,
         name: "Vivian Xu",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Management Information Systems '29",
+        instagram: "kuerilakkuma",
         yearEntries: {
             "2026-2027": [
                 {
@@ -498,7 +498,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 30,
         name: "William Vu",
-        major: "PLACEHOLDER",
+        major: "Biochemistry '27",
         instagram: "wills.vu",
         yearEntries: {
             "2026-2027": [
@@ -513,7 +513,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 31,
         name: "Ethan Lam",
-        major: "PLACEHOLDER",
+        major: "Political Science '27",
         instagram: "ethan.lamb74",
         yearEntries: {
             "2026-2027": [
@@ -528,7 +528,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 32,
         name: "Bonnie Tsoi",
-        major: "PLACEHOLDER",
+        major: "Financial Planning  '28",
         instagram: "bxing0930",
         yearEntries: {
             "2026-2027": [
@@ -543,7 +543,7 @@ export const MegateamList: Megateam[] = [
     {
         id: 33,
         name: "Manya Tiwari",
-        major: "PLACEHOLDER",
+        major: "Biology '28",
         instagram: "manyatiwari_",
         yearEntries: {
             "2026-2027": [
@@ -588,8 +588,8 @@ export const MegateamList: Megateam[] = [
     {
         id: 36,
         name: "Evan Ying",
-        major: "PLACEHOLDER",
-        instagram: "PLACEHOLDER",
+        major: "Biology '28",
+        instagram: "evan_ying_",
         yearEntries: {
             "2026-2027": [
                 {
