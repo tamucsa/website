@@ -73,7 +73,7 @@ export default function FullJTPopup({ jiating }: { jiating: Jiating }) {
                             'lg:w-30/100': (jiating.groupImgOrientation === "vertical")
                         })}>
                         <Image
-                            src={`/${jiating.years}/jiatings/${jiating.name}/parents/group.JPG`}
+                            src={`/${jiating.years}/jiatings/${jiating.name}/parents/${jiating.name}-group.JPG`}
                             alt=""
                             width={750}
                             height={450}
