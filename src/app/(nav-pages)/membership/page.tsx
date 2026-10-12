@@ -33,20 +33,22 @@ const MembershipPage = () => {
                         <p className=""><b>Semester:</b> $35</p>
                         <p className=""><b>Full Year:</b> $45</p>
                         {/* <p className="">Payment Methods will be listed in the form!</p> */}
-                        <p className="">Membership will be available next semester!</p>
+                        <p className="">Membership Form Below!</p>
                     </div>
-                    {/* <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSfLgIOk44m5nT5L82dpdxPL71TESjYk7jXve-q8CWNVOSL6HQ/viewform?usp=header" newTab={true}
+                    <LinkButton href="https://docs.google.com/forms/d/e/1FAIpQLSc95DX-DViiRJ6ECFtlP5QyWm9oetcQeWllNdY5IeZoOZsarg/viewform" newTab={true}
                         className="w-full text-xl md:text-2xl"
                     >
-                        Membership Form! (Due 1/23)
-                    </LinkButton> */}
+                        Membership Form! (Due 9/11 at 11:59pm)
+                    </LinkButton> 
                 </div>
             </div>
+            {/*
             <PointTracker />
             <div className="flex flex-col lg:flex-row w-full gap-5">
                 <PointTableCard />
                 <RewardsCard />
             </div>
+            */}
         </div>
     );
 }
