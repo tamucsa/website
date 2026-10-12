@@ -81,11 +81,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Vice President External",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Miffy" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -115,11 +110,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Treasurer",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -166,11 +156,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Public Relations",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Smiski" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -200,11 +185,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Graphics Chair",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -281,11 +261,6 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Sports Chair",
                     rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Smiski" },
-                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -300,11 +275,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Fundraising Chair",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -350,11 +320,6 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Culture Chair",
-                    rawImgOrientation: "horizontal"
-                },
-                {
-                    type: "parent",
-                    jiating: { name: "Dimoo" },
                     rawImgOrientation: "horizontal"
                 }
             ]
