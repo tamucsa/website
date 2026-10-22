@@ -71,6 +71,11 @@ If you have any questions, feel free to contact [@akhilk999](https://github.com/
 
 Also for any future PR Chairs, please update this documentation if you change anything, I want to make sure to keep development as easy as possible for future years and future webmasters too.
 
+## Details to Consider When Updating
+
+- Photos of the megateam in public must end in .JPG (not .jpg). .jpg will show up correctly on localhost but not when you deploy your changes.
+- Each JT in public/20XY-20AB/jiatings has a character.webp, home.jpg, and infoslide.jpg
+
 ## Contact
 
 For questions or suggestions, please contact [TAMU CSA](mailto:tamu.csa1963@gmail.com).

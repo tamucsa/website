@@ -1,5 +1,5 @@
 import FullJTPopup from "@/app/(nav-pages)/jiatings/components/FullJTPopup";
-import { JiatingList } from "@/content/2025-2026/jiatings";
+import { JiatingList } from "@/content/2026-2027/jiatings";
 
 import { Metadata, ResolvingMetadata } from "next";
 import NotFound from "@/app/not-found"

@@ -1,6 +1,6 @@
 import ParentFullImage from "@/app/(other)/jiatings/components/ParentFullImage";
 import { MegateamList } from "@/content/2026-2027/megateam";
-import { JiatingList } from "@/content/2025-2026/jiatings"; //TO DO: CHANGE TO 2026-27 when thats created
+import { JiatingList } from "@/content/2026-2027/jiatings";
 import NotFound from "@/app/not-found"
 
 import { Metadata } from "next";

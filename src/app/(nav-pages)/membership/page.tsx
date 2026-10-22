@@ -49,6 +49,11 @@ const MembershipPage = () => {
                 <RewardsCard />
             </div>
             */}
+                <LinkButton href="https://points.csatamu.org/" newTab={true}
+                    className="w-full text-xl md:text-2xl"
+                >
+                    CLick to Check My CSA Points!
+                </LinkButton> 
         </div>
     );
 }

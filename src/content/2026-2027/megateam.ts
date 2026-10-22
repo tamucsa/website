@@ -81,6 +81,11 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Vice President External",
                     rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Miffy" },
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -110,6 +115,11 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Treasurer",
+                    rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -156,6 +166,11 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Public Relations",
                     rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Smiski" },
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -185,6 +200,11 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Graphics Chair",
+                    rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -261,6 +281,11 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Sports Chair",
                     rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Smiski" },
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
@@ -275,6 +300,11 @@ export const MegateamList: Megateam[] = [
                 {
                     type: "officer",
                     position: "Fundraising Chair",
+                    rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Peach Riot" },
                     rawImgOrientation: "horizontal"
                 }
             ]
@@ -321,8 +351,254 @@ export const MegateamList: Megateam[] = [
                     type: "officer",
                     position: "Culture Chair",
                     rawImgOrientation: "horizontal"
+                },
+                {
+                    type: "parent",
+                    jiating: { name: "Dimoo" },
+                    rawImgOrientation: "horizontal"
                 }
             ]
         }
     },
+    {
+        id: 21,
+        name: "Justin Zhang",
+        major: "Biology '28",
+        instagram: "just_zhangg",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Miffy" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 22,
+        name: "Aryan Bandi",
+        major: "Computer Science '29",
+        instagram: "aryann.bandi",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Smiski" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 23,
+        name: "Alysa Zhao",
+        major: "Computer Science '28",
+        instagram: "alysxzhao",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Miffy" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 24,
+        name: "Ethan Mak",
+        major: "Management Information Systems '29",
+        instagram: "ethanmak1",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Mofusand" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 25,
+        name: "Alice Yu",
+        major: "Nuclear Engineering '29",
+        instagram: "whyamihere_alice._",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Mofusand" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 26,
+        name: "Kevinn Tran",
+        major: "Computer Science '27",
+        instagram: "_kevinntran_",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Dimoo" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 27,
+        name: "Alexis Carmel",
+        major: "Psychology '28",
+        instagram: "alexis_violinist",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Smiski" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 28,
+        name: "Lanxi Xu",
+        major: "Computer Science '28",
+        instagram: "lanshi.i",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Miffy" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 29,
+        name: "Vivian Xu",
+        major: "Management Information Systems '29",
+        instagram: "kuerilakkuma",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Mofusand" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 30,
+        name: "William Vu",
+        major: "Biochemistry '27",
+        instagram: "wills.vu",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Hirono" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 31,
+        name: "Ethan Lam",
+        major: "Political Science '27",
+        instagram: "ethan.lamb74",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Hirono" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 32,
+        name: "Bonnie Tsoi",
+        major: "Financial Planning  '28",
+        instagram: "bxing0930",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Hirono" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 33,
+        name: "Manya Tiwari",
+        major: "Biology '28",
+        instagram: "manyatiwari_",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Dimoo" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 34,
+        name: "Reilly Mize",
+        major: "Genetics '28",
+        instagram: "r__mize",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Peach Riot" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 35,
+        name: "Miky Zheng",
+        major: "Accounting '29",
+        instagram: "mikii.996",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Mofusand" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    {
+        id: 36,
+        name: "Evan Ying",
+        major: "Biology '28",
+        instagram: "evan_ying_",
+        yearEntries: {
+            "2026-2027": [
+                {
+                    type: "parent",
+                    jiating: { name: "Dimoo" },
+                    rawImgOrientation: "horizontal"
+                }
+            ]
+        }
+    },
+    
 ]
