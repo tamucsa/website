@@ -1,6 +1,6 @@
 import JiatingPageComponent from "@/app/(nav-pages)/jiatings/components/JiatingPageComponent";
 import { getJTOMedalsCached } from "@/lib/medals.server";
-import { JiatingList } from "@/content/2025-2026/jiatings";
+import { JiatingList } from "@/content/2026-2027/jiatings";
 
 import { Metadata } from "next";
 

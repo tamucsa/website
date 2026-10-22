@@ -559,7 +559,7 @@ export const MegateamList: Megateam[] = [
         id: 34,
         name: "Reilly Mize",
         major: "Genetics '28",
-        instagram: "r_mize",
+        instagram: "r__mize",
         yearEntries: {
             "2026-2027": [
                 {

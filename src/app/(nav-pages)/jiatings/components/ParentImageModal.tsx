@@ -32,7 +32,7 @@ export default function ParentImageModal({ parent, jiating, className }: ImageMo
         <div className={`relative ${className}`}>
             {/* Actual Image */}
             <div className="m-7">
-                <Image alt={`${parent.name}'s Full Image`} src={`/2025-2026/jiatings/${jiating.name}/parents/raw/${parent.id}.JPG`} width={width} height={height}
+                <Image alt={`${parent.name}'s Full Image`} src={`/2026-2027/jiatings/${jiating.name}/parents/raw/${parent.id}.JPG`} width={width} height={height}
                     className="rounded-2xl shadow-lg" style={{ objectFit: "contain" }} sizes=""
                 />  
             </div>
