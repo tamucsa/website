@@ -1,6 +1,7 @@
 import PastYearSection from "@/app/(nav-pages)/photos/components/PastYearSection";
 import YearAlbumSection from "@/app/(nav-pages)/photos/components/YearAlbumSection";
 import { AlbumList2025_26 } from "@/content/albums/2025-26";
+import LinkButton from "@/app/ui/LinkButton";
 
 import { Metadata } from "next";
 
@@ -14,12 +15,14 @@ const PhotosPage = () => {
 
           {/* Button list of photo albums */}
           <main className="w-full max-w-5xl flex flex-col md:flex-row gap-8 mb-10 md:mb-16">
-            <YearAlbumSection
-              year="2025-2026" //TO DO update to 2026-2027 when that's created
-              thisYear={true}
-              albumList={AlbumList2025_26}
-              className="flex-1"
-            />
+            <div className="flex flex-col items-center text-center gap-4">
+              <h2 className="font-primary tracking-wider text-2xl md:text-3xl">CSA's Official Flickr (2026-2027)</h2>
+              <LinkButton href="https://www.flickr.com/people/tamucsa/" newTab={true}
+                className="w-fit text-xl md:text-2xl px-6 py-3"
+              >
+                CLick Here!
+              </LinkButton> 
+            </div>
             <PastYearSection className="flex-1" toggable={false}/>
           </main>
         </div>

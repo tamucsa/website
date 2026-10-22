@@ -4,6 +4,7 @@ import { AlbumList2021_22 } from "@/content/albums/2021-22";
 import { AlbumList2022_23 } from "@/content/albums/2022-23";
 import { AlbumList2023_24 } from "@/content/albums/2023-24";
 import { AlbumList2024_25 } from "@/content/albums/2024-25";
+import { AlbumList2025_26 } from "@/content/albums/2025-26";
 
 import React, { useState } from "react";
 import { RiArrowUpSLine } from "react-icons/ri";
@@ -63,6 +64,7 @@ export default function PastYearSection({ className, toggable }: PastYearSection
                             "flex": isVisible,
                             "hidden": !isVisible
                         })}>
+                <YearAlbumSection year="2025-2026" thisYear={false} albumList={AlbumList2025_26} />
                 <YearAlbumSection year="2024-2025" thisYear={false} albumList={AlbumList2024_25} />
                 <YearAlbumSection year="2023-2024" thisYear={false} albumList={AlbumList2023_24} />
                 <YearAlbumSection year="2022-2023" thisYear={false} albumList={AlbumList2022_23} />
